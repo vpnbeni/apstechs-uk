@@ -1,7 +1,8 @@
 import React from "react";
 import HeroSection from "../landingPage/HeroSection";
 import SectionTwo from "../landingPage/SectionTwo";
-import LandingServicesCard from "../landingPage/landingServicesCard";
+import LandingServicesCard from "../landingPage/LandingServicesCard";
+
 import Heighlights from "../landingPage/Heighlights";
 import OurClients from "../landingPage/OurClients";
 import ParallaxSection from "../landingPage/ParallaxSection";
