@@ -8,6 +8,7 @@ import OurClients from "../landingPage/OurClients";
 import ParallaxSection from "../landingPage/ParallaxSection";
 import Enquiry from "../landingPage/Enquiry";
 import TestimonialSlider from "../landingPage/TestimonialSlider";
+import Careers from "../landingPage/Careers";
 
 const Home = () => {
   return (
@@ -19,8 +20,8 @@ const Home = () => {
       <ParallaxSection />
       <OurClients />
       <TestimonialSlider />
-
       <Enquiry />
+      <Careers />
     </div>
   );
 };
