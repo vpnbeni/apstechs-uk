@@ -2,7 +2,11 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./assets/components/layout/Home";
 import Header from "./assets/components/layout/Header";
 import CreditPage from "./assets/pages/Credits";
+<<<<<<< Updated upstream
 import About from "./assets/pages/About";
+=======
+import Footer from "./assets/components/layout/Footer";
+>>>>>>> Stashed changes
 
 function App() {
   return (
@@ -13,6 +17,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/credit" element={<CreditPage />} />
       </Routes>
+      {/* <Footer /> */}
     </Router>
   );
 }
