@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { FaArrowRight, FaDownload } from "react-icons/fa";
+import SectionHeading from "../common/heading/SectionHeading";
 
 const AboutHeroSection = () => {
   const [isVisible, setIsVisible] = useState(false);
-  
-    useEffect(() => {
-      setIsVisible(true);
-    }, []);
+
+  useEffect(() => {
+    setIsVisible(true);
+  }, []);
   return (
     <div
       className="w-screen relative flex h-[90vh]"
@@ -18,9 +19,8 @@ const AboutHeroSection = () => {
     >
       <div className="w-[45%] flex flex-col items-start pl-32 justify-center text-white py-10">
         <div className="relative">
-          <h1 className="w-fit bg-secondary px-3 tracking-[.2em] text-white text-lg mt-6 py-1">
-            Our Story
-          </h1>
+          <SectionHeading heading={"Our Story"} />
+
           <div className="text-lg lg:text-[28px] text-start leading-[50px] tracking-widest font-light my-4">
             From Planning to Power: <br />
             Our Journey to Becoming <br /> Your Nationwide ICP.

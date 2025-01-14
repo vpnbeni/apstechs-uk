@@ -1,104 +1,86 @@
 import React from "react";
 import { FaArrowRight } from "react-icons/fa";
+import SectionHeading from "../common/heading/SectionHeading";
+import { RxArrowRight, RxArrowTopRight } from "react-icons/rx";
 
 const LandingServicesCard = () => {
+  const data = [
+    {
+      name: "Plant Engineering",
+      description:
+        "Expert solutions for optimizing plant efficiency and reliability through innovative engineering practices.",
+      image: "/assets/landingPage/service/PlantEngineering.jpg",
+    },
+    {
+      name: "Cable Solution",
+      description:
+        "High-quality cable solutions designed for durability and preformance in demanding environments.",
+      image: "/assets/landingPage/service/CableSolution.png",
+    },
+
+    {
+      name: "Earthing Solution",
+      description:
+        "Comprehensive earthing solutions to ensure safety and compliance in electrical systems.",
+      image: "/assets/landingPage/service/EarthingSolution.jpg",
+    },
+    {
+      name: "Battery Storage Integration",
+      description:
+        "Seamless integration of battery storage systems to enhance energy management and sustainability.",
+      image: "/assets/landingPage/service/BatteryStorageIntegration.jpg",
+    },
+    {
+      name: "Protection Design",
+      description:
+        "Tailored protection designs to safeguard your electrical systems from faults and overloads.",
+      image: "/assets/landingPage/service/ProtectionDesign.jpg",
+    },
+    {
+      name: "Power System Studies",
+      description:
+        "In-depth power system studies to analyze,optimize, and ensure the reliability of your electrical infrastructure.",
+      image: "/assets/landingPage/service/PowerSystemStudies.jpg",
+    },
+  ];
   return (
-    <div className="w-full flex flex-col items-center min-h-screen text-center">
-      <h1 className="w-fit bg-secondary px-3 tracking-[.25em]  text-white text-lg mt-10 py-[-1px]">
-        SERVICES
-      </h1>
+    <div className="w-full pt-10 flex flex-col items-center min-h-screen text-center">
+      <SectionHeading heading={"SERVICES"} />
       <div className=" text-3xl font-light my-4">
         We've Been Transforming Ideas into Reality for Over a Decade.
       </div>
 
-      <div className="flex justify-between w-full px-[10%] py-10  lg:pb-20 items-center ">
-        {/* design */}
-        <div className="border bg-[#EBEFF2] relative flex flex-col px-12 items-center justify-between w-[326px]  h-[630px] border-primary rounded-lg p-6 font-light">
-          <div className="flex flex-col items-center text-center gap-6">
-            <img
-              src="/assets/landingPage/service/computer-worker.png"
-              alt=""
-              className="w-[70px] h-[70px]"
-            />
-            <div className="text-primaryText font-semibold text-lg">Design</div>
-          </div>
-          <div className="">
-            <div className="leading-[1.8em] text-[17px]">
-              Our in-house design team holds over 100 years of combined
-              experience, equipping us to assist with any aspect of your
-              project.
+      <div className="grid grid-flow-row gap-10  grid-cols-3 w-full px-[10%] py-10  lg:pb-20 items-center ">
+        {data.map((item, index) => {
+          return (
+            <div className=" shadow-md border-b-2 w-full group relative flex flex-col items-start justify-start overflow-hidden  h-[428px] border-[#6796DF]  font-light">
+              <div className="flex   w-full flex-col items-start text-start ">
+                <img
+                  src={item.image}
+                  alt={item.name}
+                  className="w-full h-[240px] group-hover:scale-105 duration-700"
+                />
+              </div>
+              <div className="px-4  pt-6 flex flex-col items-start justify-between">
+                <div className="text-black group-hover:text-[#6796DF] font-semibold text-lg">
+                  {item.name}
+                </div>
+                <div className="text-start  text-[17px]">
+                  {item.description}
+                </div>
+                <div className="flex text-[#6796DF] group-hover:tracking-wider duration-700  items-center justify-center">
+                  <div className=" pr-2 uppercase font-semibold text-sm cursor-pointer py-2 ">
+                    Read More
+                  </div>
+                  <span className="  rounded-r-lg">
+                    <RxArrowRight className="group-hover:hidden block " />
+                    <RxArrowTopRight className="group-hover:block hidden" />
+                  </span>
+                </div>
+              </div>
             </div>
-            <div className="leading-[1.8em] my-4 text-[17px]">
-              From feasibility assessments and utility searches to a full
-              turnkey design and build service, we have you covered.
-            </div>
-          </div>
-          <div className="flex  border border-primary  rounded-lg text-primaryText items-center justify-center">
-            <div className=" px-6 cursor-pointer hover:bg-primaryText hover:text-white py-2 border-r  border-primary rounded-l-lg ">
-              Read More
-            </div>
-            <span className="px-4 py-2  rounded-r-lg">
-              <FaArrowRight />
-            </span>
-          </div>
-        </div>
-        {/* Project Build */}
-        <div className="border bg-[#EBEFF2] relative flex flex-col items-center justify-between w-[326px]  h-[630px] border-primary rounded-lg p-6 font-light">
-          <div className="flex flex-col items-center text-center gap-6">
-            <img
-              src="/assets/landingPage/service/electrical-engineer.png"
-              alt=""
-              className="w-[70px] h-[70px]"
-            />
-            <div className="text-primaryText font-semibold text-lg">
-              Project Build
-            </div>
-          </div>
-          <div className="leading-[1.8em] ">
-            As a NERS accredited ICP, we work with all UK DNOs on contestable
-            projects up to 132kV. Our comprehensive range of solutions extends
-            to private network owners, encompassing the replacement of existing
-            assets, network expansion, installation of additional equipment and
-            substations, as well as private wire connections from renewable
-            energy generators to demand users
-          </div>
-          <div className="flex  border border-primary  rounded-lg text-primaryText items-center justify-center">
-            <div className=" px-6 cursor-pointer hover:bg-primaryText hover:text-white py-2 border-r  border-primary rounded-l-lg ">
-              Read More
-            </div>
-            <span className="px-4 py-2  rounded-r-lg">
-              <FaArrowRight />
-            </span>
-          </div>
-        </div>
-        {/* Operations and Maintenance */}
-        <div className="border bg-[#EBEFF2] relative flex flex-col items-center justify-between w-[326px]  h-[630px] border-primary rounded-lg p-6 font-light">
-          <div className="flex flex-col items-center text-center gap-6">
-            <img
-              src="/assets/landingPage/service/electrical-mechanic.png"
-              alt=""
-              className="w-[70px] h-[70px]"
-            />
-            <div className="text-primaryText font-semibold text-lg">
-              Operations and Maintenance
-            </div>
-          </div>
-          <div className="leading-[1.8em] ">
-            Owning and maintaining HV equipment can be a challenging and costly
-            responsibility, which is why we create flexible tailored maintenance
-            plans to suit your business needs. From planned preventative
-            maintenance and non-intrusive inspections to emergency callouts, we
-            are here for you 24 hours a day, 7 days a week, 365 days a year
-          </div>
-          <div className="flex  border border-primary  rounded-lg text-primaryText items-center justify-center">
-            <div className=" px-6 cursor-pointer hover:bg-primaryText hover:text-white py-2 border-r  border-primary rounded-l-lg ">
-              Read More
-            </div>
-            <span className="px-4 py-2  rounded-r-lg">
-              <FaArrowRight />
-            </span>
-          </div>
-        </div>
+          );
+        })}
       </div>
     </div>
   );

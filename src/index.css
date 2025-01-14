@@ -9,6 +9,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Alexandria", serif;
+  font-weight: 300;
 }
 .parallax {
   background-attachment: fixed;

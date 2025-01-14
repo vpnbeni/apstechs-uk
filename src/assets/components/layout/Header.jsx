@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -26,7 +27,9 @@ const Header = () => {
         isScrolled ? "-translate-y-[96px]" : "translate-y-0"
       }`}
     >
-      <img className="h-[80px]" src={"/assets/header/logo.png"} alt="Logo" />
+      <Link to={"/"}>
+        <img className="h-[80px]" src={"/assets/header/logo.png"} alt="Logo" />
+      </Link>
       <div className="w-fit flex justify-center gap-8">
         {[
           { name: "Home", link: "/" },
@@ -37,13 +40,13 @@ const Header = () => {
           { name: "Our Services", link: "/our-services" },
         ].map((item, index) => {
           return (
-            <a
-              href={item.link}
+            <Link
+              to={item.link}
               key={index}
               className="text-dark hover:text-secondary cursor-pointer text-lg font-semibold"
             >
               {item.name}
-            </a>
+            </Link>
           );
         })}
         <button className="cursor-pointer border-2 border-dark rounded-lg px-3 hover:bg-dark hover:text-white text-dark">

@@ -23,12 +23,12 @@ const HeroSection = () => {
         }`}
       >
         <div
-          className={`relative text-[#f0f0f0] leading-10 text-3xl font-semibold text-start w-1/2`}
+          className={`relative text-[#f0f0f0] leading-10 text-3xl font-light text-start w-1/2`}
         >
-          <span className="font-bold text-white">
+          <span className="font-semibold text-white">
             Welcome to APSTECHS, <br />
           </span>
-          Your Trusted Partner in High Voltage Solutions For Over a Decade.
+          Design and Engineering Solutions For Power Sector.
         </div>
         <div className="cursor-pointer bg-primary w-fit hover:bg-white hover:text-dark my-6 text-white flex justify-start items-center rounded-lg border border-white">
           <button className="text-lg pl-5 py-1 rounded-l-lg">Contact Us</button>
