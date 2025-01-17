@@ -87,7 +87,7 @@ const Footer = () => {
         <div className="border border-primaryText rounded-lg py-10 px-6 w-fit flex flex-col gap-5">
           <SectionHeading heading={"SUBSCRIBE"} />
           <div className="text-base font-[250] ">
-            Sign up to receive EAST's latest news and updates
+            Sign up to receive APS's latest news and updates
           </div>
           <div className="relative rounded-lg h-[40px] w-[300px] border border-primaryText">
             <div className="cursor-pointer  absolute right-0 rounded-lg bg-primaryText text-white hover:text-primaryText hover:bg-white hover:border  hover:border-primaryText px-4 h-[39px] text-center flex justify-center items-center ">

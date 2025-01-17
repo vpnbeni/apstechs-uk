@@ -1,0 +1,37 @@
+import React, { useEffect, useState } from "react";
+import { FaArrowRight, FaDownload } from "react-icons/fa";
+import SectionHeading from "../common/heading/SectionHeading";
+
+const CaseStudiesHeroSection = () => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    setIsVisible(true);
+  }, []);
+  return (
+    <div
+      className="w-screen relative flex h-[80vh]"
+      style={{
+        backgroundImage: `url("/assets/landingPage/windmill.jpg")`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+    >
+      <div className="w-[70%] mx-auto flex flex-col items-start  justify-center text-white py-10">
+        <div className="absolute inset-0 bg-black bg-opacity-15 "></div>
+        <div className="relative">
+          <div className="text-lg lg:text-[28px] text-start leading-[50px] tracking-widest font-light my-4">
+            <span className="font-bold text-[32px] ">
+              Explore Our Case Studies
+            </span>{" "}
+            <br />
+            Building Reliable Connections, <br />
+            Unlocking Infinite Possibilities
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default CaseStudiesHeroSection;

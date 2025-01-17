@@ -27,7 +27,7 @@ const Enquiry = () => {
         </div>
       </div>
       <div
-        className="w-[55%] bg-center  h-full"
+        className="w-[55%] bg-center bg-cover  h-full"
         style={{
           backgroundImage: `url("/assets/landingPage/enquiry/team.jpg")`,
         }}

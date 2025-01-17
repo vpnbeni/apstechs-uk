@@ -8,7 +8,6 @@ const CreditPage = () => {
 
         <div className="bg-white shadow-lg rounded-lg p-6">
           <h2 className="text-xl font-semibold mb-4">Icons</h2>
-
           <a
             href="https://www.flaticon.com/free-icons/web-development"
             title="web development icons"
@@ -72,6 +71,19 @@ const CreditPage = () => {
           >
             Retail icons created by Karyative - Flaticon
           </a>
+          Image by{" "}
+          <a href="https://pixabay.com/users/tonyprats-375584/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4848028">
+            Tony Prats
+          </a>{" "}
+          from{" "}
+          <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4848028">
+            Pixabay
+          </a>
+          <a href="https://www.freepik.com/free-photo/energy-concept-outlet-fresh-spring-green-grass_1007485.htm#fromView=search&page=1&position=11&uuid=892c1a97-4ae1-4d1d-8734-3d9dac217f0d&query=Earthing">
+            Image by jannoon028 on Freepik
+          </a>
+          Video by Stefano Rinaldo:
+          https://www.pexels.com/video/drone-footage-of-a-mountain-landscape-with-snow-2871918/
         </div>
       </div>
     </div>

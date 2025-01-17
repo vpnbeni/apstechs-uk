@@ -79,7 +79,7 @@ const Heighlights = () => {
       <div
         className="w-[60%] bg-center  h-full"
         style={{
-          backgroundImage: `url("/assets/landingPage/heighlights/heighlight.jpg")`,
+          backgroundImage: `url("/assets/landingPage/heighlights/group-photo.png")`,
         }}
       ></div>
     </div>

@@ -38,7 +38,7 @@ const TestimonialSlider = () => {
       {/* Background Video */}
       <video
         className="absolute top-0 left-0 h-full w-full object-cover -z-10"
-        src="/assets/landingPage/testimonials/bgvideo.mp4"
+        src="/assets/landingPage/testimonials/bgvideo1.mp4"
         autoPlay
         muted
         loop
