@@ -41,7 +41,7 @@ const Heighlights = () => {
             </div>
           </div>
           <div className="">
-            <div className="text-[70px] font-light">15</div>
+            <div className="text-[70px] font-light">5</div>
             <div className="leading-3 relative">
               <div
                 className="bg-secondary h-[1.5px] -top-[1.5px] absolute w-6 left-0 transform 
@@ -54,7 +54,7 @@ const Heighlights = () => {
             </div>
           </div>
           <div className="">
-            <div className="text-[70px] font-light">696</div>
+            <div className="text-[70px] font-light">100+</div>
             <div className="leading-3 relative">
               <div
                 className="bg-secondary h-[1.5px] -top-[1.5px] absolute w-6 left-0 transform 

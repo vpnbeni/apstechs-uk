@@ -12,7 +12,7 @@ const Card = ({ name, description, image, link }) => {
         <img
           src={image}
           alt={name}
-          className="w-full h-[230px] overflow-hidden group-hover:scale-105 duration-700"
+          className="w-full h-[230px] overflow-hidden object-cover group-hover:scale-105 duration-700"
         />
       </div>
       <div className="px-4 pt-6 flex flex-col items-start justify-between">

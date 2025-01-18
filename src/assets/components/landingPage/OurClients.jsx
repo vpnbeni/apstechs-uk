@@ -65,7 +65,11 @@ const OurClients = () => {
               key={index}
               className="flex flex-col items-center justify-center"
             >
-              <img className="w-[57px] mb-4" src={client.icon} alt={client.name} />
+              <img
+                className="w-[57px] mb-4"
+                src={client.icon}
+                alt={client.name}
+              />
               {client.name}
             </div>
           ))}

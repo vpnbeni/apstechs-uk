@@ -23,7 +23,7 @@ const LandingServicesCard = () => {
       name: "Earthing Solution",
       description:
         "Comprehensive earthing solutions to ensure safety and compliance in electrical systems.",
-      image: "/assets/landingPage/service/EarthingSolution.jpg",
+      image: "/assets/landingPage/service/EarthingSolution.png",
     },
     {
       name: "Battery Storage Integration",
@@ -46,7 +46,7 @@ const LandingServicesCard = () => {
   ];
   return (
     <div className="w-full pt-10 flex flex-col items-center min-h-screen text-center">
-      <SectionHeading heading={"SERVICES"} />
+      <div className=" text-5xl font-normal tracking-wider my-4">SERVICES</div>
       <div className=" text-3xl font-light my-4">
         We've Been Transforming Ideas into Reality for Over a Decade.
       </div>
@@ -55,7 +55,7 @@ const LandingServicesCard = () => {
         {data.map((item, index) => {
           return (
             <div key={index}>
-              <Card 
+              <Card
                 name={item.name}
                 description={item.description}
                 image={item.image}

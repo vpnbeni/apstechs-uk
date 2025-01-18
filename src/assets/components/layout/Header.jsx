@@ -37,7 +37,6 @@ const Header = () => {
           { name: "Services", link: "/services" },
           { name: "Case Studies", link: "/case-studies" },
           { name: "Careers", link: "/careers" },
-          { name: "Our Services", link: "/our-services" },
         ].map((item, index) => {
           return (
             <Link
