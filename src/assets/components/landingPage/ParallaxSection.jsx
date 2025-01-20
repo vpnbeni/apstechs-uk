@@ -1,7 +1,9 @@
 import React from "react";
 import { FaArrowRight } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 const ParallaxSection = () => {
+  const navigate = useNavigate();
   return (
     <div
       className="relative h-[100vh] flex items-center justify-start bg-fixed px-[15%] bg-center bg-cover"
@@ -54,7 +56,12 @@ const ParallaxSection = () => {
               </div>
             </div>
           </div>
-          <div className="flex w-fit mt-10 border border-white rounded-lg text-white items-center justify-center">
+          <div
+            onClick={() => {
+              navigate("/whychooseus");
+            }}
+            className="flex w-fit mt-10 border border-white rounded-lg text-white items-center justify-center"
+          >
             <div className="px-4 cursor-pointer font-light text-[14px] hover:bg-white    hover:text-primaryText py-2 border-r border-white rounded-l-lg">
               Read More
             </div>

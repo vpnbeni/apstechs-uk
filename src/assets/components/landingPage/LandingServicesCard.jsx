@@ -46,7 +46,7 @@ const LandingServicesCard = () => {
   ];
   return (
     <div className="w-full pt-10 flex flex-col items-center min-h-screen text-center">
-      <div className=" text-5xl font-normal tracking-wider my-4">SERVICES</div>
+      <div className=" text-4xl font-normal tracking-wider my-4">SERVICES</div>
       <div className=" text-3xl font-light my-4">
         We've Been Transforming Ideas into Reality for Over a Decade.
       </div>

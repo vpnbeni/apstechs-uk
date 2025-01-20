@@ -7,6 +7,8 @@ import Footer from "./assets/components/layout/Footer";
 import CaseStudies from "./assets/pages/CaseStudies";
 import DesignAndSupply from "./assets/pages/DesignAndSupply";
 import Services from "./assets/pages/Services";
+import WhyChooseUs from "./assets/pages/WhyChooseUs";
+import TeamPage from "./assets/pages/TeamPage";
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
         <Route path="/credit" element={<CreditPage />} />
         <Route path="/case-studies" element={<CaseStudies />} />
         <Route path="/services" element={<Services />} />
+        <Route path="/teampage" element={<TeamPage />} />
+        <Route path="/whychooseus" element={<WhyChooseUs />} />
         <Route
           path="/case-studies/design&supply"
           element={<DesignAndSupply />}

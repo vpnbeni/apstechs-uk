@@ -6,6 +6,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { TfiAngleLeft, TfiAngleRight } from "react-icons/tfi";
 import SectionHeading from "../common/heading/SectionHeading";
+import { useNavigate } from "react-router-dom";
 
 const teamData = [
   {
@@ -26,8 +27,14 @@ const teamData = [
 ];
 
 const TeamCard = ({ name, designation, image }) => {
+  const navigate = useNavigate();
   return (
-    <div className="relative group overflow-hidden  h-[500px]">
+    <div
+      onClick={() => {
+        navigate("/teampage");
+      }}
+      className="relative group overflow-hidden  h-[500px]"
+    >
       <img
         src={image}
         alt={name}

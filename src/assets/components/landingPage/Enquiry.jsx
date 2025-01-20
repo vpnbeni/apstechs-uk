@@ -29,7 +29,7 @@ const Enquiry = () => {
       <div
         className="w-[55%] bg-center bg-cover  h-full"
         style={{
-          backgroundImage: `url("/assets/landingPage/enquiry/team.jpg")`,
+          backgroundImage: `url("/assets/landingPage/enquiry/team2.jpeg")`,
         }}
       ></div>
     </div>

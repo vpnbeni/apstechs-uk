@@ -32,24 +32,6 @@ const Footer = () => {
             )}
           </div>
           <div className="flex flex-col gap-6">
-            <div>
-              <span className="font-medium mr-2">Tel:</span>
-              <a href="tel:+44 3301184436" className="text-blue-500 underline">
-                +44 3301184436
-              </a>
-            </div>
-
-            {/* Email */}
-            <div>
-              <span className="font-medium mr-2">Email:</span>
-              <a
-                href="mailto:info@apstechs.co.uk"
-                className="text-blue-500 underline"
-              >
-                info@apstechs.co.uk
-              </a>
-            </div>
-
             {/* Address */}
             <div className="flex flex-col gap-2">
               <span className="font-medium mr-2">Address:</span>
@@ -67,36 +49,39 @@ const Footer = () => {
                 street 178, Tashkent city, Uzbekistan, 100012
               </div>
             </div>
-
-            {/* LinkedIn */}
-            <div>
-              <span className="font-medium mr-2">LinkedIn:</span>
-              <a
-                href="https://www.linkedin.com/company/aps-techs/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-500 underline"
-              >
-                LinkedIn
-              </a>
-            </div>
           </div>
         </div>
       </div>
       <div className="w-[45%] flex justify-end ">
         <div className="border border-primaryText rounded-lg py-10 px-6 w-fit flex flex-col gap-5">
-          <SectionHeading heading={"SUBSCRIBE"} />
-          <div className="text-base font-[250] ">
-            Sign up to receive APS's latest news and updates
+          <div>
+            <span className="font-medium mr-2">Tel:</span>
+            <a href="tel:+44 3301184436" className="text-blue-500 underline">
+              +44 3301184436
+            </a>
           </div>
-          <div className="relative rounded-lg h-[40px] w-[300px] border border-primaryText">
-            <div className="cursor-pointer  absolute right-0 rounded-lg bg-primaryText text-white hover:text-primaryText hover:bg-white hover:border  hover:border-primaryText px-4 h-[39px] text-center flex justify-center items-center ">
-              Subscribe
-            </div>
-            <input
-              type="email"
-              className="rounded-l-lg h-full w-[186px] focus:outline-none text-sm  px-4"
-            />
+
+          {/* Email */}
+          <div>
+            <span className="font-medium mr-2">Email:</span>
+            <a
+              href="mailto:info@apstechs.co.uk"
+              className="text-blue-500 underline"
+            >
+              info@apstechs.co.uk
+            </a>
+          </div>
+          {/* LinkedIn */}
+          <div>
+            <span className="font-medium mr-2">LinkedIn:</span>
+            <a
+              href="https://www.linkedin.com/company/aps-techs/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-500 underline"
+            >
+              LinkedIn
+            </a>
           </div>
         </div>
       </div>
