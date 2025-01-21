@@ -1,13 +1,56 @@
 import React from "react";
 import SectionHeading from "../common/heading/SectionHeading";
+import { MdMail } from "react-icons/md";
+import { IoCall } from "react-icons/io5";
+import { FaXTwitter } from "react-icons/fa6";
+import { FaInstagram } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className="flex justify-between items-start lg:px-[13%] my-4 lg:my-20">
-      <div className="flex flex-col lg:w-[55%]">
-        <div className="text-[25px] font-medium mb-8 tracking-widest">
-          APSTECHS
+    <div className="flex justify-between items-start lg:px-[13%] my-4 gap-10 lg:my-16">
+      <div className="flex flex-col gap-4  lg:w-[35%]">
+        <div className="bg-white relative h-[80px]   rounded-b-lg w-[150px]">
+          <img
+            src="/assets/header/logo.png"
+            alt="Logo"
+            className="cursor-pointer  w-[214px] h-[80px] "
+          />
         </div>
+        <div className="text-[16px] ">
+          Empowering Sustainable Solutions for Tomorrow’s Energy Needs
+        </div>
+
+        <div>
+          <span className="font-medium mr-2">Tel:</span>
+          <a href="tel:+44 3301184436" className="text-blue-500 underline">
+            +44 3301184436
+          </a>
+        </div>
+
+        {/* Email */}
+        <div>
+          <span className="font-medium mr-2">Email:</span>
+          <a
+            href="mailto:info@apstechs.co.uk"
+            className="text-blue-500 underline"
+          >
+            info@apstechs.co.uk
+          </a>
+        </div>
+        {/* LinkedIn */}
+        <div>
+          <span className="font-medium mr-2">LinkedIn:</span>
+          <a
+            href="https://www.linkedin.com/company/aps-techs/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-500 underline"
+          >
+            LinkedIn
+          </a>
+        </div>
+      </div>
+      <div className="w-[65%] flex justify-end ">
         <div className="flex justify-center items-start gap-10">
           <div className="flex flex-col gap-6 ">
             {["Service", "About", "Careers", "Privacy Policy"].map(
@@ -33,8 +76,10 @@ const Footer = () => {
           </div>
           <div className="flex flex-col gap-6">
             {/* Address */}
-            <div className="flex flex-col gap-2">
-              <span className="font-medium mr-2">Address:</span>
+            <div className="flex flex-col gap-4">
+              <span className="font-medium text-xl mr-2">
+                Office Locations:
+              </span>
               <div className="">
                 <span className="font-[500] ">United Kingdom:</span> Suite-12,
                 1st Floor, Cautrac Services Office Great Horkesley, Colchester
@@ -49,39 +94,6 @@ const Footer = () => {
                 street 178, Tashkent city, Uzbekistan, 100012
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-      <div className="w-[45%] flex justify-end ">
-        <div className="border border-primaryText rounded-lg py-10 px-6 w-fit flex flex-col gap-5">
-          <div>
-            <span className="font-medium mr-2">Tel:</span>
-            <a href="tel:+44 3301184436" className="text-blue-500 underline">
-              +44 3301184436
-            </a>
-          </div>
-
-          {/* Email */}
-          <div>
-            <span className="font-medium mr-2">Email:</span>
-            <a
-              href="mailto:info@apstechs.co.uk"
-              className="text-blue-500 underline"
-            >
-              info@apstechs.co.uk
-            </a>
-          </div>
-          {/* LinkedIn */}
-          <div>
-            <span className="font-medium mr-2">LinkedIn:</span>
-            <a
-              href="https://www.linkedin.com/company/aps-techs/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-500 underline"
-            >
-              LinkedIn
-            </a>
           </div>
         </div>
       </div>
