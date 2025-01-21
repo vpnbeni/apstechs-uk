@@ -14,7 +14,7 @@ const HeroSection = () => {
       style={{ backgroundImage: `url('/assets/landingPage/bg.jpeg')` }}
     >
       {/* Dark Filter */}
-      <div className="absolute inset-0 bg-black bg-opacity-15 "></div>
+      {/* <div className="absolute inset-0 bg-black bg-opacity-15 "></div> */}
 
       {/* Content */}
       <div

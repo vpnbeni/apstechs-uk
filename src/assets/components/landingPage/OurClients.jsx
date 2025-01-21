@@ -2,24 +2,24 @@ import React from "react";
 import { FaArrowRight } from "react-icons/fa";
 
 const clientData = [
-  { name: "Agriculture", icon: "/assets/landingPage/clients/tractor.svg" },
-  { name: "Education", icon: "/assets/landingPage/clients/education.svg" },
-  { name: "Energy", icon: "/assets/landingPage/clients/energy.svg" },
-  { name: "Healthcare", icon: "/assets/landingPage/clients/healthcare.svg" },
+  { name: "Solar", icon: "/assets/landingPage/clients/solar-panel.png" },
+  { name: "Wind", icon: "/assets/landingPage/clients/wind.png" },
+  { name: "Data center", icon: "/assets/landingPage/clients/data-center.png" },
+  { name: "Hospital", icon: "/assets/landingPage/clients/healthcare.svg" },
   {
     name: "Manufacturing",
     icon: "/assets/landingPage/clients/manufacturing.svg",
   },
   {
-    name: "Public Sector",
-    icon: "/assets/landingPage/clients/public-sector.svg",
+    name: "BESS",
+    icon: "/assets/landingPage/clients/bess.png",
   },
-  {
-    name: "Retail, Leisure & Property",
-    icon: "/assets/landingPage/clients/property.svg",
-  },
-  { name: "Transport", icon: "/assets/landingPage/clients/transport.svg" },
   { name: "Utilities", icon: "/assets/landingPage/clients/utilities.svg" },
+  {
+    name: "Railway ",
+    icon: "/assets/landingPage/clients/railway.png",
+  },
+  { name: "Earthing", icon: "/assets/landingPage/clients/save.png" },
 ];
 
 const OurClients = () => {

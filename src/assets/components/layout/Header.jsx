@@ -60,7 +60,10 @@ const Header = () => {
   const [activeTab, setActiveTab] = useState("");
 
   return (
-    <div className="w-full h-[96px] fixed z-[1000] top-0 bg-[#f0f8ff] bg-opacity-80 flex justify-between items-center px-[10%] gap-10 transition-transform duration-300">
+    <div
+      onMouseLeave={() => setActiveTab("")}
+      className="w-full h-[96px] fixed z-[1000] top-0 bg-[#f0f8ff] bg-opacity-80 flex justify-between items-center px-[10%] gap-10 transition-transform duration-300"
+    >
       <Link to="/">
         <img className="h-[80px]" src="/assets/header/logo.png" alt="Logo" />
       </Link>
@@ -84,7 +87,7 @@ const Header = () => {
             {item?.subItems?.length > 0 && activeTab === item?.name && (
               <div
                 onMouseLeave={() => setActiveTab("")}
-                className="absolute left-0 mt-2 w-fit py-3 bg-white border-t-2 border-primary shadow-lg block"
+                className="absolute z-100 left-0 mt-2 w-fit py-3 bg-white border-t-2 border-primary shadow-lg block"
               >
                 <ul className="text-sm text-gray-700">
                   {item?.subItems.map((subItem, subIndex) => (

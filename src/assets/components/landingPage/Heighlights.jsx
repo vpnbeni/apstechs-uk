@@ -77,7 +77,7 @@ const Heighlights = () => {
         </div>
       </div>
       <div
-        className="w-[60%] bg-center  h-full"
+        className="w-[60%] bg-center bg-cover bg-no-repeat h-full"
         style={{
           backgroundImage: `url("/assets/landingPage/heighlights/group-photo.png")`,
         }}
