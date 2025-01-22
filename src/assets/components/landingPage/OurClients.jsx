@@ -3,7 +3,7 @@ import { FaArrowRight } from "react-icons/fa";
 
 const clientData = [
   { name: "Solar", icon: "/assets/landingPage/clients/solar-panel.png" },
-  { name: "Wind", icon: "/assets/landingPage/clients/wind.png" },
+  { name: "Wind", icon: "/assets/landingPage/clients/windmill.png" },
   { name: "Data center", icon: "/assets/landingPage/clients/data-center.png" },
   { name: "Hospital", icon: "/assets/landingPage/clients/healthcare.svg" },
   {
@@ -19,7 +19,10 @@ const clientData = [
     name: "Railway ",
     icon: "/assets/landingPage/clients/railway.png",
   },
-  { name: "Earthing", icon: "/assets/landingPage/clients/save.png" },
+  {
+    name: "Earthing",
+    icon: "/assets/landingPage/clients/internet-connection.png",
+  },
 ];
 
 const OurClients = () => {

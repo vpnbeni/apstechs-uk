@@ -4,7 +4,9 @@ const SectionHeading = ({ heading, clasName }) => {
   return (
     <h1
       className={`w-fit font-[500]  px-3 tracking-[.25em]   py-[-1px] uppercase ${
-        clasName ? clasName : "bg-secondary text-white  text-lg"
+        clasName
+          ? clasName
+          : "bg-secondary text-white  text-lg tracking-[.25em]"
       }`}
     >
       {heading}

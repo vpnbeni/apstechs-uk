@@ -2,13 +2,13 @@ import React from "react";
 import { FaArrowRight } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 
-const ParallaxSection = () => {
+const ParallaxSection = ({ url }) => {
   const navigate = useNavigate();
   return (
     <div
       className="relative h-[100vh] flex items-center justify-start bg-fixed px-[15%] bg-center bg-cover"
       style={{
-        backgroundImage: `url('/assets/landingPage/parallax/parallax-bg.jpeg')`,
+        backgroundImage: `url(${url})`,
       }}
     >
       <div className="bg-primaryText  text-white px-8 py-6 rounded-3xl shadow-lg max-w-[450px] text-start">

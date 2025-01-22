@@ -1,11 +1,16 @@
 import React from "react";
-import CaseStudiesHeroSection from "../components/case-studies/CaseStudiesHeroSection";
+import HeroSectionTemplate from "../components/common/HeroSectionTemplate";
 import CaseStudyCards from "../components/case-studies/CaseStudyCards";
 
 const CaseStudies = () => {
   return (
     <div className="w-full overflow-x-hidden">
-      <CaseStudiesHeroSection />
+      <HeroSectionTemplate
+        heading={"Explore Our Case Studies"}
+        description={`Building Reliable Connections,
+            Unlocking Infinite Possibilities`}
+        bg={"/assets/landingPage/windmill.jpg"}
+      />
       <CaseStudyCards />
     </div>
   );

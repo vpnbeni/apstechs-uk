@@ -17,7 +17,7 @@ const Home = () => {
       <SectionTwo />
       <LandingServicesCard />
       <Heighlights />
-      <ParallaxSection />
+      <ParallaxSection url={"/assets/landingPage/parallax/parallax-bg.jpeg"} />
       <OurClients />
       <TestimonialSlider />
       <Enquiry />

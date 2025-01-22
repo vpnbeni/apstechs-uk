@@ -9,12 +9,9 @@ const Footer = () => {
   return (
     <div className="flex justify-between items-start lg:px-[13%] my-4 gap-10 lg:my-16">
       <div className="flex flex-col gap-4  lg:w-[35%]">
-        <div className="bg-white relative h-[80px]   rounded-b-lg w-[150px]">
-          <img
-            src="/assets/header/logo.png"
-            alt="Logo"
-            className="cursor-pointer  w-[214px] h-[80px] "
-          />
+        <div className="bg-white relative text-5xl  rounded-b-lg ">
+          <span className="text-secondary font-medium  ">APS</span>
+          <span className="font-medium  text-primaryText">TECHS</span>
         </div>
         <div className="text-[16px] ">
           Empowering Sustainable Solutions for Tomorrow’s Energy Needs

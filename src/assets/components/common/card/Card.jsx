@@ -5,7 +5,7 @@ const Card = ({ name, description, image, link }) => {
   const navigate = useNavigate();
   return (
     <div
-      onClick={() => navigate(link)}
+      onClick={() => navigate(`/${link}`)}
       className="shadow-md border-b-2 w-full group relative flex flex-col items-start justify-start overflow-hidden h-[428px] border-[#6796DF] font-light"
     >
       <div className="flex w-full flex-col items-start text-start">

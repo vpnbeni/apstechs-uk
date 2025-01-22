@@ -6,15 +6,19 @@ import About from "./assets/pages/About";
 import Footer from "./assets/components/layout/Footer";
 import CaseStudies from "./assets/pages/CaseStudies";
 import DesignAndSupply from "./assets/pages/DesignAndSupply";
-import Services from "./assets/pages/Services";
 import WhyChooseUs from "./assets/pages/WhyChooseUs";
 import TeamPage from "./assets/pages/TeamPage";
+import PlantEngineering from "./assets/pages/service/PlantEngineering";
+import Services from "./assets/pages/service/Services";
+import ScrollToTop from "./assets/components/common/ScrollToTop";
 
-function App() {
+const App = () => {
   return (
     <Router>
       <Header />
+      <ScrollToTop />
       <Routes>
+        {/* Main Routes */}
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/credit" element={<CreditPage />} />
@@ -22,14 +26,22 @@ function App() {
         <Route path="/services" element={<Services />} />
         <Route path="/teampage" element={<TeamPage />} />
         <Route path="/whychooseus" element={<WhyChooseUs />} />
+
+        {/* Service Sub-Routes */}
         <Route
-          path="/case-studies/design&supply"
+          path="/services/plant-engineering"
+          element={<PlantEngineering />}
+        />
+
+        {/* Case Studies Sub-Routes */}
+        <Route
+          path="/case-studies/design-and-supply"
           element={<DesignAndSupply />}
         />
       </Routes>
       <Footer />
     </Router>
   );
-}
+};
 
 export default App;

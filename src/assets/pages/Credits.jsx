@@ -84,6 +84,53 @@ const CreditPage = () => {
           </a>
           Video by Stefano Rinaldo:
           https://www.pexels.com/video/drone-footage-of-a-mountain-landscape-with-snow-2871918/
+          <a href="https://www.freepik.com/free-ai-image/portrait-engineers-work-hours-job-site_210193860.htm#fromView=keyword&page=1&position=8&uuid=dd44d5b5-bcef-44ae-86c2-9e97afe07c0a&new_detail=true&query=Plant+Engineering">
+            Image by freepik
+          </a>
+          <a
+            href="https://www.flaticon.com/free-icons/transformer"
+            title="transformer icons"
+          >
+            Transformer icons created by yunaspandusatria - Flaticon
+          </a>
+          <a
+            href="https://www.flaticon.com/free-icons/voltage"
+            title="voltage icons"
+          >
+            Voltage icons created by Freepik - Flaticon
+          </a>
+          <a
+            href="https://www.flaticon.com/free-icons/power-plant"
+            title="power plant icons"
+          >
+            Power plant icons created by Freepik - Flaticon
+          </a>
+          <a
+            href="https://www.flaticon.com/free-icons/solar-panel"
+            title="solar panel icons"
+          >
+            Solar panel icons created by Mutualism - Flaticon
+          </a>
+          <a
+            href="https://www.flaticon.com/free-icons/eco-electric"
+            title="eco electric icons"
+          >
+            Eco electric icons created by Graphics Hill - Flaticon
+          </a>
+          <a
+            href="https://www.flaticon.com/free-icons/requirement"
+            title="requirement icons"
+          >
+            Requirement icons created by Ida Desi Mariana - Flaticon
+          </a>
+          <a
+            href="https://www.flaticon.com/free-icons/leadership"
+            title="leadership icons"
+          >
+            Leadership icons created by Prosymbols Premium - Flaticon
+          </a>
+          Photo by ThisIsEngineering:
+          https://www.pexels.com/photo/engineer-standing-among-solar-panels-19895867/
         </div>
       </div>
     </div>

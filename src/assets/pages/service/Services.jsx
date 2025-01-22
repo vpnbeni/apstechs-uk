@@ -1,5 +1,5 @@
 import React from "react";
-import LandingServicesCard from "../components/landingPage/LandingServicesCard";
+import LandingServicesCard from "../../components/landingPage/LandingServicesCard";
 
 const Services = () => {
   return (

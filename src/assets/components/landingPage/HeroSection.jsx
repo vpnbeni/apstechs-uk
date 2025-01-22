@@ -13,9 +13,7 @@ const HeroSection = () => {
       className="relative flex flex-col items-start justify-center px-4 lg:px-[20%] min-h-screen max-h-screen bg-cover bg-no-repeat bg-center min-w-full max-w-full"
       style={{ backgroundImage: `url('/assets/landingPage/bg.jpeg')` }}
     >
-      {/* Dark Filter */}
-      {/* <div className="absolute inset-0 bg-black bg-opacity-15 "></div> */}
-
+    
       {/* Content */}
       <div
         className={`relative z-[1000] transition-all duration-1000 delay-500 ease-out transform ${

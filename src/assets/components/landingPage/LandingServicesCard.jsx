@@ -11,39 +11,45 @@ const LandingServicesCard = () => {
       description:
         "Expert solutions for optimizing plant efficiency and reliability through innovative engineering practices.",
       image: "/assets/landingPage/service/PlantEngineering.jpg",
+      slug: "services/plant-engineering",
     },
     {
       name: "Cable Solution",
       description:
-        "High-quality cable solutions designed for durability and preformance in demanding environments.",
+        "High-quality cable solutions designed for durability and performance in demanding environments.",
       image: "/assets/landingPage/service/CableSolution.jpg",
+      slug: "services/cable-solution",
     },
-
     {
       name: "Earthing Solution",
       description:
         "Comprehensive earthing solutions to ensure safety and compliance in electrical systems.",
       image: "/assets/landingPage/service/EarthingSolution.png",
+      slug: "services/earthing-solution",
     },
     {
       name: "Battery Storage Integration",
       description:
         "Seamless integration of battery storage systems to enhance energy management and sustainability.",
       image: "/assets/landingPage/service/BatteryStorageIntegration.jpeg",
+      slug: "services/battery-storage-integration",
     },
     {
       name: "Protection Design",
       description:
         "Tailored protection designs to safeguard your electrical systems from faults and overloads.",
       image: "/assets/landingPage/service/ProtectionDesign.jpg",
+      slug: "services/protection-design",
     },
     {
       name: "Power System Studies",
       description:
-        "In-depth power system studies to analyze,optimize, and ensure the reliability of your electrical infrastructure.",
+        "In-depth power system studies to analyze, optimize, and ensure the reliability of your electrical infrastructure.",
       image: "/assets/landingPage/service/PowerSystemStudies.jpg",
+      slug: "services/power-system-studies",
     },
   ];
+
   return (
     <div className="w-full pt-10 flex flex-col items-center min-h-screen text-center">
       <div className=" text-4xl font-normal tracking-wider my-4">SERVICES</div>
@@ -59,6 +65,7 @@ const LandingServicesCard = () => {
                 name={item.name}
                 description={item.description}
                 image={item.image}
+                link={item.slug}
               />
             </div>
           );
