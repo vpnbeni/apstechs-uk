@@ -12,40 +12,45 @@ const teamData = [
   {
     name: "Sanjeev Kumar",
     designation: "CEO APS GROUP",
+    moreDetails:
+      "Sanjeev brings 20 years of experience in electrical and construction industries, spearheading Hydro Electric plant upgrades and automation. His leadership expands the APS Group's capabilities in the UK.",
     image: "/assets/team/SanjeevKumar.jpg",
   },
   {
     name: "Azad Panwar",
     designation: "MD, APSTECHS",
+    moreDetails:
+      "Azad has extensive experience managing major projects in the electrical and power industries across the UK and Europe. His expertise ensures cost-effective and reliable solutions for clients.",
     image: "/assets/team/AzadPanwar.jpg",
   },
   {
     name: "Krishna R Pokala",
     designation: "BDM, APSTECHS",
+    moreDetails:
+      "Krishna's decade-long experience in sales, IT, EV solutions, and product development drives APSTECHS' growth in sustainable and innovative solutions. He also co-founded CHARGEMATE PVT Ltd.",
     image: "/assets/team/KrishnaRPokala.jpg",
   },
 ];
 
-const TeamCard = ({ name, designation, image }) => {
-  const navigate = useNavigate();
+const TeamCard = ({ name, designation, image, moreDetails }) => {
   return (
-    <div
-      onClick={() => {
-        navigate("/teampage");
-      }}
-      className="relative group overflow-hidden  h-[500px]"
-    >
+    <div className="relative group overflow-hidden  h-[500px]">
       <img
         src={image}
         alt={name}
         className="w-full h-full object-cover group-hover:blur-sm transition duration-500"
       />
-      <div className="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 bg-black  bg-opacity-50 transition duration-700">
-        <h3 className="text-white text-lg font-bold mb-2 animate-fade-up">
-          {name}
-        </h3>
-        <p className="text-gray-300 text-sm animate-fade-up delay-150">
-          {designation}
+      <div className="absolute text-center inset-0 flex flex-col items-center justify-center gap-5 px-4 lg:px-10 opacity-0 group-hover:opacity-100 bg-black  bg-opacity-50 transition duration-700">
+        <div className="">
+          <h3 className="text-white text-lg font-bold mb-2 animate-fade-up">
+            {name}
+          </h3>
+          <p className="text-gray-300 text-sm animate-fade-up delay-150">
+            {designation}
+          </p>
+        </div>
+        <p className="text-gray-300 text-sm animate-fade-up delay-150 text-center">
+          {moreDetails}
         </p>
       </div>
     </div>
@@ -57,6 +62,14 @@ const Team = () => {
     <div className="py-10 px-5 bg-gray-100">
       <div className="mb-5 w-full flex justify-center items-center">
         <SectionHeading heading={"Meet Our Team"} />
+      </div>
+      <div className="text-center w-[90%] mx-auto lg:w-[80%] my-2 lg:my-5">
+        We at APSTECHS offer Design & Advisory Solutions for efficient and
+        effective utilization of power sector resources. Our services ensure
+        maximum business and operational success for our clients. With a proven
+        track record of delivering customized, cost-effective, safe,
+        sustainable, and viable projects, we provide technical and financial
+        solutions tailored to customer goals and regulatory requirements.
       </div>
       <div className="relative w-[80%] mx-auto">
         <Swiper
@@ -79,6 +92,7 @@ const Team = () => {
             <SwiperSlide key={index}>
               <TeamCard
                 name={member.name}
+                moreDetails={member.moreDetails}
                 designation={member.designation}
                 image={member.image}
               />

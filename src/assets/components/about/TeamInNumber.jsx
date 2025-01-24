@@ -31,7 +31,7 @@ const TeamInNumber = () => {
           </div>
 
           <div className="">
-            <div className="text-[70px] font-light">15</div>
+            <div className="text-[70px] font-light">20+</div>
             <div className="leading-3 relative">
               <div
                 className="bg-green-500 h-[3px] -top-[3px] absolute w-6 left-0 transform 

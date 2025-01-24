@@ -132,6 +132,9 @@ const CreditPage = () => {
           Photo by ThisIsEngineering:
           https://www.pexels.com/photo/engineer-standing-among-solar-panels-19895867/
         </div>
+        <a href="https://www.freepik.com/free-photo/business-person-planning-alternative-energies_21081165.htm#fromView=keyword&page=2&position=34&uuid=bac824c5-23cf-4d84-bbde-84be860c590d&query=Electrical+Engineering+Consultant">
+          Image by freepik
+        </a>
       </div>
     </div>
   );

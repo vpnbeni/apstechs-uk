@@ -8,42 +8,42 @@ const CaseStudyCards = () => {
       description:
         "Delivered a bespoke 33kV containerised switchroom, ensuring operational efficiency, reliability, and safety in diverse environmental conditions.",
       image: "/assets/case-study/card/DesignandSupply.jpg",
-      link: "/case-studies/design&supply",
+      link: "case-studies/design&supply",
     },
     {
-      name: "LVAC Panel and Battery System Integration",
+      name: "Earthing System Design for 50MW Battery Energy Storage System",
       description:
-        "Integrated advanced LVAC panels and battery systems compliant with IEC 61439 standards to enhance operational efficiency and reliability.",
+        "The project required the installation of a 50MW Battery Energy Storage System (BESS) in Yorkshire.",
       image: "/assets/case-study/card/LVAC.jpg",
-      link: "/case-studies/design&supply",
+      link: "case-studies/earthingsystemdesign",
     },
     {
       name: "Custom-Engineered Containerised Solutions",
       description:
         "Developed and delivered custom-engineered containerised solutions tailored to meet stringent industry and client-specific requirements.",
       image: "/assets/case-study/card/Custom-Engineered.jpg",
-      link: "/case-studies/design&supply",
+      link: "case-studies/design&supply",
     },
     {
       name: "Advanced Safety Features Implementation",
       description:
         "Integrated advanced safety features in switchrooms to ensure protection for personnel and equipment, adhering to industry safety standards.",
       image: "/assets/case-study/card/AdvancedSafety.jpg",
-      link: "/case-studies/design&supply",
+      link: "case-studies/design&supply",
     },
     {
       name: "Energy-Efficient Infrastructure Design",
       description:
         "Designed and implemented energy-efficient infrastructure solutions to reduce environmental impact while maintaining performance.",
       image: "/assets/case-study/card/Energy-Efficient.jpg",
-      link: "/case-studies/design&supply",
+      link: "case-studies/design&supply",
     },
     {
       name: "Power System Optimization Studies",
       description:
         "Conducted in-depth power system studies to optimize electrical infrastructure, ensuring reliability and long-term performance.",
       image: "/assets/case-study/card/PowerSystem.jpg",
-      link: "/case-studies/design&supply",
+      link: "case-studies/design&supply",
     },
   ];
 

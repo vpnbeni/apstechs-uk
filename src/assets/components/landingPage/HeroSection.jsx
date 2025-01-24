@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { FaArrowRight, FaDownload } from "react-icons/fa";
+import DownloadBtn from "../common/DownloadBtn";
 
 const HeroSection = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -13,7 +14,6 @@ const HeroSection = () => {
       className="relative flex flex-col items-start justify-center px-4 lg:px-[20%] min-h-screen max-h-screen bg-cover bg-no-repeat bg-center min-w-full max-w-full"
       style={{ backgroundImage: `url('/assets/landingPage/bg.jpeg')` }}
     >
-    
       {/* Content */}
       <div
         className={`relative z-[1000] transition-all duration-1000 delay-500 ease-out transform ${
@@ -35,13 +35,7 @@ const HeroSection = () => {
           </button>
         </div>
       </div>
-      <div
-        className={`absolute bottom-8 left-[50%]  -tranalate-x-[50%] bg-primary text-lightBlue rounded-full p-4 border hover:text-dark hover:bg-white cursor-pointer transition-all duration-1000 delay-500 ease-out transform ${
-          isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-48"
-        }`}
-      >
-        <FaDownload />
-      </div>
+      <DownloadBtn />
     </div>
   );
 };

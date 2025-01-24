@@ -10,11 +10,11 @@ const HeroSectionTemplate = ({ heading, description, bg }) => {
   }, []);
   return (
     <div
-      className="w-full relative flex h-[400px]"
+      className="w-full relative flex h-[400px] "
       style={{
         backgroundImage: `url(${bg})`,
         backgroundSize: "cover",
-        backgroundPosition: "center",
+        backgroundPosition: "bottom",
       }}
     >
       <div className="w-[70%] mx-auto flex flex-col items-start  justify-center text-white py-10">

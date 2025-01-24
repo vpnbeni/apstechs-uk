@@ -10,10 +10,11 @@ const navItems = [
   {
     name: "About",
     link: "/about",
-    subItems: [
-      { name: "Meet our team", link: "/about/meet-our-team" },
-      { name: "Sustainability", link: "/about/sustainability" },
-    ],
+    subItems: [],
+    // subItems: [
+    //   { name: "Meet our team", link: "/about/meet-our-team" },
+    //   { name: "Sustainability", link: "/about/sustainability" },
+    // ],
   },
   {
     name: "Services",
@@ -103,9 +104,12 @@ const Header = () => {
             )}
           </div>
         ))}
-        <button className="cursor-pointer border-2 border-dark rounded-lg px-3 hover:bg-dark hover:text-white text-dark">
+        <Link
+          to={"/contact"}
+          className="cursor-pointer border-2 border-dark rounded-lg px-3 hover:bg-dark hover:text-white text-dark"
+        >
           Contact Us
-        </button>
+        </Link>
       </nav>
     </div>
   );
