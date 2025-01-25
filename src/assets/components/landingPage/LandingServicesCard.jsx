@@ -14,6 +14,13 @@ const LandingServicesCard = () => {
       slug: "services/plant-engineering",
     },
     {
+      name: "Battery Storage Integration",
+      description:
+        "Seamless integration of battery storage systems to enhance energy management and sustainability.",
+      image: "/assets/landingPage/service/BatteryStorageIntegration.jpeg",
+      slug: "services/battery-storage-integration",
+    },
+    {
       name: "Cable Solution",
       description:
         "High-quality cable solutions designed for durability and performance in demanding environments.",
@@ -27,13 +34,7 @@ const LandingServicesCard = () => {
       image: "/assets/landingPage/service/EarthingSolution.png",
       slug: "services/earthing-solution",
     },
-    {
-      name: "Battery Storage Integration",
-      description:
-        "Seamless integration of battery storage systems to enhance energy management and sustainability.",
-      image: "/assets/landingPage/service/BatteryStorageIntegration.jpeg",
-      slug: "services/battery-storage-integration",
-    },
+
     {
       name: "Protection Design",
       description:

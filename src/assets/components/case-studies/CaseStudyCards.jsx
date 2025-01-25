@@ -14,15 +14,15 @@ const CaseStudyCards = () => {
       name: "Earthing System Design for 50MW Battery Energy Storage System",
       description:
         "The project required the installation of a 50MW Battery Energy Storage System (BESS) in Yorkshire.",
-      image: "/assets/case-study/card/LVAC.jpg",
+      image: "/assets/case-study/EarthingSystem/bess.jpg",
       link: "case-studies/earthingsystemdesign",
     },
     {
-      name: "Custom-Engineered Containerised Solutions",
+      name: "Power System Studies - Integration of Client Substation with 132kV Substation",
       description:
-        "Developed and delivered custom-engineered containerised solutions tailored to meet stringent industry and client-specific requirements.",
-      image: "/assets/case-study/card/Custom-Engineered.jpg",
-      link: "case-studies/design&supply",
+        "APSTECHS UK LTD was appointed to carry out comprehensive load flow and short circuit studies for the integration of the Client Substation with the 132kV Substation.",
+      image: "/assets/case-study/PowerSystemStudies/img1.jpeg",
+      link: "case-studies/powersystemstudies",
     },
     {
       name: "Advanced Safety Features Implementation",

@@ -15,6 +15,7 @@ import Contact from "./assets/pages/Contact";
 import Careers from "./assets/pages/Careers";
 import EarthingSystemDesign from "./assets/pages/caseStudies/EarthingSystemDesign";
 import BatteryStorageIntegration from "./assets/pages/service/BatteryStorageIntegration";
+import PowerSystemStudies from "./assets/pages/caseStudies/PowerSystemStudies";
 
 const App = () => {
   return (
@@ -51,6 +52,10 @@ const App = () => {
         <Route
           path="/case-studies/earthingsystemdesign"
           element={<EarthingSystemDesign />}
+        />
+        <Route
+          path="/case-studies/powersystemstudies"
+          element={<PowerSystemStudies />}
         />
       </Routes>
       <Footer />
