@@ -22,6 +22,7 @@ import JobApplicationForm from "./assets/pages/JobApplicationForm";
 import EarthingDesign from "./assets/pages/service/EarthingDesign";
 import ProtectionDesign from "./assets/pages/service/ProtectionDesign";
 import PowerSystemStudiesService from "./assets/pages/service/PowerSystemStudiesService";
+import Survey from "./assets/pages/service/Survey";
 
 const App = () => {
   return (
@@ -36,10 +37,11 @@ const App = () => {
         <Route path="/contact" element={<Contact />} />
         <Route path="/case-studies" element={<CaseStudies />} />
         <Route path="/services" element={<Services />} />
-        <Route path="/teampage" element={<TeamPage />} />
-        <Route path="/whychooseus" element={<WhyChooseUs />} />
+        {/* <Route path="/teampage" element={<TeamPage />} /> */}
+        {/* <Route path="/whychooseus" element={<WhyChooseUs />} /> */}
         <Route path="/careers" element={<Careers />} />
         <Route path="/apply" element={<JobApplicationForm />} />
+        <Route path="/temp" element={<JobApplicationForm />} />
 
         {/* Service Sub-Routes */}
         <Route
@@ -63,6 +65,7 @@ const App = () => {
           path="/services/power-system"
           element={<PowerSystemStudiesService />}
         />
+        <Route path="/services/survey" element={<Survey />} />
 
         {/* Case Studies Sub-Routes */}
         <Route

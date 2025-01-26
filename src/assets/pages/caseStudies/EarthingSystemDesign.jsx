@@ -7,26 +7,26 @@ const EarthingSystemDesign = () => {
   }, []);
 
   return (
-    <div className="bg-primaryText w-full py-32">
-      <div className="font-sans w-[60%] mx-auto p-20 bg-white">
+    <div className="bg-primaryText w-full pt-[96px] lg:py-32">
+      <div className="font-sans w-full md:w-[80%] lg:w-[60%] mx-auto p-6 md:p-20 bg-white">
         {/* Project Overview */}
         <section className="bg-gradient-to-r bg-white text-black pb-10">
-          <h1 className="text-5xl tracking-wider font-light mb-4">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl tracking-wider font-light mb-4">
             Case Study: Earthing System Design for 50MW Battery Energy Storage
             System
           </h1>
-          <p className="text-lg">
+          <p className="text-base md:text-lg">
             The project required the installation of a 50MW Battery Energy
             Storage System (BESS) in Yorkshire. APSTECHS was commissioned to
             perform earthing grid calculations and design to ensure safety and
             compliance with UK standards.
           </p>
           {/* Image Section */}
-          <div className="grid grid-cols-2 gap-4 py-10">
-            <div className="bg-gray-200 border rounded-lg aspect-video flex items-center overflow-hidden h-[206px] justify-center">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 py-10">
+            <div className="bg-gray-200 border rounded-lg aspect-video flex items-center overflow-hidden justify-center">
               <img src="/assets/case-study/EarthingSystem/img1.jpg" alt="" />
             </div>
-            <div className="bg-gray-200 border rounded-lg aspect-video flex items-center overflow-hidden h-[206px] justify-center">
+            <div className="bg-gray-200 border rounded-lg aspect-video flex items-center overflow-hidden justify-center">
               <img src="/assets/case-study/EarthingSystem/img2.jpg" alt="" />
             </div>
           </div>
@@ -61,7 +61,7 @@ const EarthingSystemDesign = () => {
             />
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="p-6 border rounded-lg shadow-md">
               <h3 className="text-xl font-normal mb-2">
                 Soil Resistivity Analysis
@@ -110,7 +110,7 @@ const EarthingSystemDesign = () => {
               clasName={"bg-secondary text-white text-sm"}
             />
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="p-6 border rounded-lg shadow-md">
               <h3 className="text-xl font-normal mb-2">
                 Safety and Compliance

@@ -17,7 +17,7 @@ const CoreValues = () => {
   ];
 
   return (
-    <section className="py-16 bg-gray-50 text-gray-800">
+    <section className="py-16 bg-gray-50 text-gray-800 px-4 ">
       <div className="max-w-4xl mx-auto text-center">
         <h2 className="text-3xl font-semibold mb-8 text-gray-900">
           Our Core Values
@@ -26,10 +26,23 @@ const CoreValues = () => {
           {values.map((value, index) => (
             <div
               key={index}
-              className="bg-white shadow-md p-6 rounded-lg transition-transform transform hover:scale-105 h-[170px]"
+              className="bg-white shadow-md p-6 rounded-lg transition-all transform hover:scale-105 min-h-[170px]"
+              role="article"
+              aria-labelledby={`core-value-title-${index}`}
+              aria-describedby={`core-value-description-${index}`}
             >
-              <h3 className="text-xl font-bold text-primaryText">{value.title}</h3>
-              <p className="text-gray-700 mt-2">{value.description}</p>
+              <h3
+                id={`core-value-title-${index}`}
+                className="text-xl font-bold text-primaryText"
+              >
+                {value.title}
+              </h3>
+              <p
+                id={`core-value-description-${index}`}
+                className="text-gray-700 mt-2"
+              >
+                {value.description}
+              </p>
             </div>
           ))}
         </div>

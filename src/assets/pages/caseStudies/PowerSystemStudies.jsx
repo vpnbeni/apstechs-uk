@@ -3,19 +3,19 @@ import SectionHeading from "../../components/common/heading/SectionHeading";
 
 const PowerSystemStudies = () => {
   useEffect(() => {
-    window.scrollTo(0, 0); 
+    window.scrollTo(0, 0);
   }, []);
 
   return (
-    <div className="bg-primaryText w-full py-32">
-      <div className="font-sans w-[60%] mx-auto p-20 bg-white">
+    <div className="bg-primaryText w-full pt-[96px] lg:py-32">
+      <div className="font-sans w-full md:w-[80%] lg:w-[60%] mx-auto p-4 md:p-8 bg-white">
         {/* Project Overview */}
-        <section className="bg-gradient-to-r bg-white text-black pb-10">
-          <h1 className="text-5xl tracking-wider font-light mb-4">
+        <section className="bg-gradient-to-r bg-white text-black pb-6 md:pb-10">
+          <h1 className="text-3xl md:text-5xl tracking-wider font-light mb-4">
             Case Study: Power System Studies - Integration of Client Substation
             with 132kV Substation
           </h1>
-          <p className="text-lg">
+          <p className="text-base md:text-lg">
             APSTECHS UK LTD was appointed to carry out comprehensive load flow
             and short circuit studies for the integration of the Client
             Substation with the 132kV Substation. This project involved an
@@ -26,27 +26,13 @@ const PowerSystemStudies = () => {
           </p>
           <img
             src="/assets/case-study/PowerSystemStudies/img2.jpeg"
-            className="h-[490px] w-full object-cover my-10"
-            alt=""
+            className="h-[290px] md:h-[490px] w-full object-cover my-6"
+            alt="Power System Image"
           />
-          {/* <div className="grid grid-cols-2 gap-4 py-10">
-            <div className="bg-gray-200 border rounded-lg aspect-video flex items-center overflow-hidden h-[206px] justify-center">
-              <img
-                src="/assets/case-study/PowerSystemStudies/img1.jpeg"
-                alt=""
-              />
-            </div>
-            <div className="bg-gray-200 border rounded-lg aspect-video flex items-center overflow-hidden h-[206px] justify-center">
-              <img
-                src="/assets/case-study/PowerSystemStudies/img2.jpeg"
-                alt=""
-              />
-            </div>
-          </div> */}
         </section>
 
         {/* Client Requirement */}
-        <section className="py-10">
+        <section className="py-6 md:py-10">
           <div className="mb-5">
             <SectionHeading
               heading={"Client Requirement"}
@@ -73,7 +59,7 @@ const PowerSystemStudies = () => {
         </section>
 
         {/* APSTECHS Solution */}
-        <section className="py-10 bg-white">
+        <section className="py-6 md:py-10 bg-white">
           <div className="mb-5">
             <SectionHeading
               heading={"APSTECHS Solution"}
@@ -82,7 +68,7 @@ const PowerSystemStudies = () => {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="p-6 border rounded-lg shadow-md">
-              <h3 className="text-xl font-normal mb-2">
+              <h3 className="text-lg md:text-xl font-normal mb-2">
                 Comprehensive Network Modeling
               </h3>
               <p>
@@ -96,7 +82,7 @@ const PowerSystemStudies = () => {
               </p>
             </div>
             <div className="p-6 border rounded-lg shadow-md">
-              <h3 className="text-xl font-normal mb-2">
+              <h3 className="text-lg md:text-xl font-normal mb-2">
                 Steady-State Analysis
               </h3>
               <p>
@@ -109,7 +95,7 @@ const PowerSystemStudies = () => {
               </p>
             </div>
             <div className="p-6 border rounded-lg shadow-md">
-              <h3 className="text-xl font-normal mb-2">
+              <h3 className="text-lg md:text-xl font-normal mb-2">
                 Short Circuit Analysis
               </h3>
               <p>
@@ -123,7 +109,7 @@ const PowerSystemStudies = () => {
               </p>
             </div>
             <div className="p-6 border rounded-lg shadow-md">
-              <h3 className="text-xl font-normal mb-2">
+              <h3 className="text-lg md:text-xl font-normal mb-2">
                 Performance Validation
               </h3>
               <p>
@@ -138,7 +124,7 @@ const PowerSystemStudies = () => {
         </section>
 
         {/* Technical Specifications */}
-        <section className="py-10">
+        <section className="py-6 md:py-10">
           <div className="mb-5">
             <SectionHeading
               heading={"Technical Specifications"}
@@ -183,18 +169,13 @@ const PowerSystemStudies = () => {
           </div>
           <img
             src="/assets/case-study/PowerSystemStudies/Appendices.svg"
-            className="h-[490px] w-full object-cover my-10"
+            className="h-[290px] md:h-[490px] w-full object-cover my-6"
             alt="Earthing System Overview"
           />
-          {/* <img
-            src="/assets/case-study/PowerSystemStudies/result2.png"
-            className="h-[490px] w-full object-cover my-10"
-            alt="Earthing System Overview"
-          /> */}
         </section>
 
         {/* Results */}
-        <section className="py-10 bg-gradient-to-r bg-white text-black">
+        <section className="py-6 md:py-10 bg-gradient-to-r bg-white text-black">
           <div className="mb-5">
             <SectionHeading
               heading={"Results"}
@@ -202,7 +183,6 @@ const PowerSystemStudies = () => {
             />
           </div>
           <div className="flex flex-col gap-5">
-            {/* Text Section */}
             <div>
               <p>
                 The <strong>load flow study</strong> confirmed that the loading
@@ -249,7 +229,7 @@ const PowerSystemStudies = () => {
         </section>
 
         {/* Conclusion */}
-        <footer className="py-10 text-black">
+        <footer className="py-6 md:py-10 text-black">
           <div className="mb-5">
             <SectionHeading
               heading={"Conclusion"}

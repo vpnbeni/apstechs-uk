@@ -6,7 +6,6 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { TfiAngleLeft, TfiAngleRight } from "react-icons/tfi";
 import SectionHeading from "../common/heading/SectionHeading";
-import { useNavigate } from "react-router-dom";
 
 const teamData = [
   {
@@ -34,13 +33,13 @@ const teamData = [
 
 const TeamCard = ({ name, designation, image, moreDetails }) => {
   return (
-    <div className="relative group overflow-hidden  h-[500px]">
+    <div className="relative group overflow-hidden h-[500px] lg:h-[400px]">
       <img
         src={image}
         alt={name}
         className="w-full h-full object-cover group-hover:blur-sm transition duration-500"
       />
-      <div className="absolute text-center inset-0 flex flex-col items-center justify-center gap-5 px-4 lg:px-10 opacity-0 group-hover:opacity-100 bg-black  bg-opacity-50 transition duration-700">
+      <div className="absolute text-center inset-0 flex flex-col items-center justify-center gap-5 px-4 lg:px-10 opacity-0 group-hover:opacity-100 bg-black bg-opacity-50 transition duration-700">
         <div className="">
           <h3 className="text-white text-lg font-bold mb-2 animate-fade-up">
             {name}
@@ -71,7 +70,7 @@ const Team = () => {
         sustainable, and viable projects, we provide technical and financial
         solutions tailored to customer goals and regulatory requirements.
       </div>
-      <div className="relative w-[80%] mx-auto">
+      <div className="relative w-full lg:w-[80%] mx-auto">
         <Swiper
           modules={[Navigation, Pagination]}
           spaceBetween={30}
@@ -101,10 +100,10 @@ const Team = () => {
         </Swiper>
 
         {/* Custom navigation buttons */}
-        <div className="next-btn cursor-pointer absolute -right-14 top-[50%] -translate-y-[50%] text-primaryText">
+        <div className="next-btn cursor-pointer absolute right-0 top-[50%] transform -translate-y-[50%] text-primaryText">
           <TfiAngleRight size={35} />
         </div>
-        <div className="prev-btn cursor-pointer absolute -left-14 top-[50%] -translate-y-[50%] text-primaryText">
+        <div className="prev-btn cursor-pointer absolute left-0 top-[50%] transform -translate-y-[50%] text-primaryText">
           <TfiAngleLeft size={35} />
         </div>
       </div>

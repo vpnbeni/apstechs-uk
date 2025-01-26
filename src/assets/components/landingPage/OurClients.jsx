@@ -17,7 +17,7 @@ const clientData = [
   },
   { name: "Utilities", icon: "/assets/landingPage/clients/utilities.svg" },
   {
-    name: "Railway ",
+    name: "Railway ",
     icon: "/assets/landingPage/clients/railway.png",
   },
   {
@@ -28,9 +28,9 @@ const clientData = [
 
 const OurClients = () => {
   return (
-    <div className="w-full flex h-screen">
-      <div className="w-[40%] bg-[#EBEFF2] flex flex-col items-start px-28 py-10">
-        <div className="mt-10 ml-10">
+    <div className="w-full flex flex-col lg:flex-row h-full">
+      <div className="lg:w-[40%] bg-[#EBEFF2] flex flex-col items-start px-8 lg:px-28 py-10">
+        <div className="mt-10 ml-0 lg:ml-10">
           <div className="flex justify-start items-start h-fit">
             <div className="w-full h-fit relative">
               <div className="w-[1.5px] h-[95%] bg-[#b4b4b4] mr-8 absolute -left-8">
@@ -51,11 +51,14 @@ const OurClients = () => {
                 leveraging our expertise and commitment to quality, we ensure
                 the successful delivery of projects in electrical distribution,
                 automation, and renewable energy, helping our clients achieve
-                their goals with efficiency and reliability.
+                their goals with efficiency and reliability.
               </div>
             </div>
           </div>
-          <Link to={'/case-studies'} className="flex w-fit mt-10 border border-primary rounded-lg text-primaryText items-center justify-center">
+          <Link
+            to={"/case-studies"}
+            className="flex w-fit mt-10 border border-primary rounded-lg text-primaryText items-center justify-center"
+          >
             <div className="px-4 cursor-pointer font-light text-[14px] hover:bg-primaryText hover:text-white py-2 border-r border-primary rounded-l-lg">
               Discover Our Case Studies
             </div>
@@ -65,8 +68,8 @@ const OurClients = () => {
           </Link>
         </div>
       </div>
-      <div className="w-[60%] bg-[#011E3A] flex py-20">
-        <div className="grid grid-flow-row grid-cols-3 gap-4 text-white w-[80%] mx-auto ">
+      <div className="lg:w-[60%] bg-[#011E3A] hidden md:flex py-10 lg:py-20">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 gap-4 text-white w-[90%] mx-auto">
           {clientData.map((client, index) => (
             <div
               key={index}

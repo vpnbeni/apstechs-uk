@@ -6,7 +6,7 @@ import Team from "../components/about/Team";
 
 const About = () => {
   return (
-    <div className="w-full overflow-x-hidden">
+    <div className="w-full overflow-x-hidden ">
       <AboutHeroSection />
       <TeamInNumber />
       <OurValue />

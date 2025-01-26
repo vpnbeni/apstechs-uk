@@ -49,19 +49,17 @@ const CaseStudyCards = () => {
 
   return (
     <div>
-      <div className="grid grid-flow-row gap-10  grid-cols-3 w-full px-[10%] py-10  lg:pb-20 items-center ">
-        {data.map((item, index) => {
-          return (
-            <div key={index}>
-              <Card
-                name={item.name}
-                description={item.description}
-                image={item.image}
-                link={item.link}
-              />
-            </div>
-          );
-        })}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 px-4 sm:px-8 lg:px-[10%] py-10 lg:pb-20 items-center">
+        {data.map((item, index) => (
+          <div key={index} className="flex justify-center">
+            <Card
+              name={item.name}
+              description={item.description}
+              image={item.image}
+              link={item.link}
+            />
+          </div>
+        ))}
       </div>
     </div>
   );

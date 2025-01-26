@@ -4,19 +4,19 @@ import SectionHeading from "../../common/heading/SectionHeading";
 const AboutBatteryService = () => {
   return (
     <div className="bg-primaryText w-full text-white">
-      <div className="mb-5 w-full flex flex-col justify-center items-center gap-2 py-8">
+      <div className="mb-5 flex flex-col justify-center items-center gap-2 py-8 w-[70%] mx-auto">
         <img
           className="w-[80px] mb-4"
           src={"/assets/services/plant-engineering/icons/service.svg"}
-          alt={""}
+          alt="Battery Service Integration Icon" // Descriptive alt text for better accessibility
         />
 
         <SectionHeading
-          heading={"OUR BATTERY SERVICE INTEGRATION SERVICE"}
-          clasName={"bg-secondary text-white  text-base"}
+          heading={"OUR BATTERY SERVICE INTEGRATION "}
+          clasName={"bg-secondary text-white text-base"}
         />
       </div>
-      <div className="text-[20px] text-center w-[70%] mx-auto pb-16">
+      <div className="text-base sm:text-lg md:text-xl text-center w-[90%] lg:w-[70%] mx-auto pb-16">
         With our comprehensive expertise spanning from Power Generation Systems
         to Distribution Systems, APSTECHS offers a seamless integration solution
         for battery storage networks. Leveraging our extensive network knowledge

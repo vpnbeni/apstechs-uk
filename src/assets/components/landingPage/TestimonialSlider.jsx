@@ -45,7 +45,7 @@ const TestimonialSlider = () => {
       ></video>
 
       {/* Testimonial Content */}
-      <div className="flex h-full items-center justify-center">
+      <div className="flex h-full items-center justify-center px-4">
         {testimonials.map((testimonial, index) => (
           <div
             key={index}
@@ -63,14 +63,16 @@ const TestimonialSlider = () => {
 
       {/* Navigation Arrows */}
       <button
-        className="absolute left-4 top-1/2 -translate-y-1/2  p-2 text-white hover:bg-opacity-75"
+        className="absolute left-4 top-1/2 -translate-y-1/2 p-2 text-white hover:bg-opacity-75"
         onClick={handlePrev}
+        aria-label="Previous testimonial"
       >
         <TfiAngleLeft size={30} />
       </button>
       <button
-        className="absolute right-4 top-1/2 -translate-y-1/2  p-2 text-white hover:bg-opacity-75"
+        className="absolute right-4 top-1/2 -translate-y-1/2 p-2 text-white hover:bg-opacity-75"
         onClick={handleNext}
+        aria-label="Next testimonial"
       >
         <TfiAngleRight size={30} />
       </button>
@@ -80,12 +82,13 @@ const TestimonialSlider = () => {
         {testimonials.map((_, index) => (
           <button
             key={index}
-            className={` rounded-full flex justify-center items-center relative border-2 ${
+            className={`rounded-full flex justify-center items-center relative border-2 ${
               index === currentIndex
                 ? "bg-transparent border-white h-3 w-3"
                 : "bg-gray-400 border-transparent h-2 w-2"
             }`}
             onClick={() => handleDotClick(index)}
+            aria-label={`Go to testimonial ${index + 1}`}
           ></button>
         ))}
       </div>

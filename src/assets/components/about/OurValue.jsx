@@ -4,9 +4,10 @@ import { FaArrowRight } from "react-icons/fa";
 const OurValue = () => {
   return (
     <div className="">
-      <div className="w-full  bg-[#EBEFF2] flex h-fit">
-        <div className="w-[60%] flex flex-col items-start px-28 py-20">
-          <div className=" ml-10">
+      <div className="w-full bg-[#EBEFF2] flex flex-col lg:flex-row h-fit">
+        {/* Left Section (Text) */}
+        <div className="w-full lg:w-[60%] flex flex-col items-start px-6 lg:px-28 py-10 lg:py-20">
+          <div className="ml-0 lg:ml-10">
             <div className="flex justify-start items-start h-fit">
               <div className="w-full h-fit relative">
                 <div className="w-[1.5px] h-[95%] bg-[#b4b4b4] mr-8 absolute -left-8">
@@ -49,9 +50,11 @@ const OurValue = () => {
             </div>
           </div>
         </div>
-        <div className="w-[40%]  flex py-20 lg:pr-20 relative">
+
+        {/* Right Section (Video) */}
+        <div className="w-full lg:w-[40%] flex py-10 lg:py-20 lg:pr-20 relative">
           <video
-            className=" top-0 left-0 w-full h-full object-cover rounded-3xl "
+            className="top-0 left-0 w-full h-full object-cover lg:rounded-3xl"
             src="/assets/about/video.mp4"
             autoPlay
             loop
@@ -60,10 +63,12 @@ const OurValue = () => {
           />
         </div>
       </div>
-      <div className="bg-[#001C38] flex flex-col text-center py-14 ">
-        <div className="text-white w-1/2 mx-auto text-xl mb-3 font-[500]">
+
+      {/* Bottom Section */}
+      <div className="bg-[#001C38] flex flex-col text-center py-10 lg:py-14">
+        <div className="text-white w-full lg:w-1/2 mx-auto text-xl mb-3 font-[500]">
           This comprehensive approach to our values - covering safety,
-          environmental care and community engagement - highlights the
+          environmental care, and community engagement - highlights the
           commitment of APSTECHS to positive impacts on both a global and local
           scale.
         </div>

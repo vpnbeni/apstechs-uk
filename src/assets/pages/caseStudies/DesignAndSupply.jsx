@@ -6,14 +6,14 @@ const DesignAndSupply = () => {
     window.scrollTo(0, 0); // Scroll to the top of the page
   }, []);
   return (
-    <div className="bg-primaryText w-full py-32">
-      <div className="font-sans w-[60%] mx-auto  p-20 bg-white">
+    <div className="bg-primaryText w-full pt-[96px] md:py-32">
+      <div className="font-sans max-w-4xl mx-auto p-4 md:p-20 bg-white">
         {/* Project Overview */}
         <section className="bg-gradient-to-r bg-white text-black pb-10">
-          <h1 className="text-5xl tracking-wider font-light mb-4">
+          <h1 className="text-2xl md:text-5xl tracking-wider font-light mb-4">
             Case Study: Design and Supply of 33kV Containerised Switchroom
           </h1>
-          <p className="text-lg">
+          <p className="text-base md:text-lg">
             The project involved the design, manufacturing, and supply of a 33kV
             containerised switchroom, ensuring quality, safety, and
             functionality. This bespoke solution was developed to meet the
@@ -23,20 +23,20 @@ const DesignAndSupply = () => {
           </p>
           <img
             src="/assets/case-study/Design&Supply/img1.jpg"
-            className="h-[490px] w-full object-cover my-10"
-            alt=""
+            className="w-full h-[300px] md:h-[490px] object-cover my-10"
+            alt="Design and Supply Switchroom"
           />
         </section>
 
         {/* Client Requirement */}
-        <section className="py-10 ">
+        <section className="py-10">
           <div className="mb-5">
             <SectionHeading
               heading={"Client Requirement"}
-              clasName={"bg-secondary text-white  text-sm"}
+              clasName={"bg-secondary text-white text-sm"}
             />
           </div>
-          <ul className="list-disc pl-6">
+          <ul className="list-disc pl-6 text-base md:text-lg">
             <li>
               A durable and efficient 33kV containerised switchroom for diverse
               environmental conditions while ensuring operational safety and
@@ -54,7 +54,7 @@ const DesignAndSupply = () => {
           <div className="mb-5">
             <SectionHeading
               heading={"APSTECHS Solutions"}
-              clasName={"bg-secondary text-white  text-sm"}
+              clasName={"bg-secondary text-white text-sm"}
             />
           </div>
 
@@ -81,11 +81,11 @@ const DesignAndSupply = () => {
         </section>
 
         {/* Technical Specifications */}
-        <section className="py-10 ">
+        <section className="py-10">
           <div className="mb-5">
             <SectionHeading
               heading={"Technical Specifications"}
-              clasName={"bg-secondary text-white  text-sm"}
+              clasName={"bg-secondary text-white text-sm"}
             />
           </div>
           <div className="overflow-x-auto">
@@ -135,10 +135,10 @@ const DesignAndSupply = () => {
           <div className="mb-5">
             <SectionHeading
               heading={"Project Scope and Delivery"}
-              clasName={"bg-secondary text-white  text-sm"}
+              clasName={"bg-secondary text-white text-sm"}
             />
           </div>
-          <ol className="list-decimal pl-6">
+          <ol className="list-decimal pl-6 text-base md:text-lg">
             <li className="mb-2">
               Development of detailed, project-specific designs to address
               unique operational requirements.
@@ -163,11 +163,11 @@ const DesignAndSupply = () => {
         </section>
 
         {/* Key Findings and Outcomes */}
-        <section className="py-10 ">
+        <section className="py-10">
           <div className="mb-5">
             <SectionHeading
               heading={"Key Findings and Outcomes"}
-              clasName={"bg-secondary text-white  text-sm"}
+              clasName={"bg-secondary text-white text-sm"}
             />
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -217,23 +217,31 @@ const DesignAndSupply = () => {
               </p>
             </div>
             {/* Image Section */}
-            <div className="grid grid-cols-2 gap-4">
-              <div className="bg-gray-200 border rounded-lg aspect-video flex items-center overflow-hidden h-[206px] justify-center">
-                <img src="/assets/case-study/Design&Supply/img2.jpg" alt="" />
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div className="bg-gray-200 border rounded-lg aspect-video flex items-center overflow-hidden">
+                <img
+                  src="/assets/case-study/Design&Supply/img2.jpg"
+                  className="w-full h-full object-cover"
+                  alt="Result Image 1"
+                />
               </div>
-              <div className="bg-gray-200 border rounded-lg aspect-video flex items-center overflow-hidden h-[206px] justify-center">
-                <img src="/assets/case-study/Design&Supply/img3.jpg" alt="" />
+              <div className="bg-gray-200 border rounded-lg aspect-video flex items-center overflow-hidden">
+                <img
+                  src="/assets/case-study/Design&Supply/img3.jpg"
+                  className="w-full h-full object-cover"
+                  alt="Result Image 2"
+                />
               </div>
             </div>
           </div>
         </section>
 
         {/* Conclusion */}
-        <footer className="py-10  text-black">
+        <footer className="py-10 text-black">
           <div className="mb-5">
             <SectionHeading
               heading={"Conclusion"}
-              clasName={"bg-secondary text-white  text-sm"}
+              clasName={"bg-secondary text-white text-sm"}
             />
           </div>
           <p>
