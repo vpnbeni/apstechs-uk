@@ -1,9 +1,10 @@
 import React from "react";
 import { FaArrowRight } from "react-icons/fa";
+import JobSwiper from "../careers/JobSwiper";
 
 const Careers = () => {
   return (
-    <div className="w-full flex  h-[80vh] bg-[#001C38] ">
+    <div className="w-full flex  h-fit bg-[#001C38] ">
       <div className=" w-[45%]  flex flex-col items-start pl-32 justify-center text-white   py-10">
         <div className="relative ">
           <div className="w-[1.3px] h-[95%] bg-[#b4b4b4] mr-8 absolute -left-10">
@@ -18,19 +19,18 @@ const Careers = () => {
           </div>
         </div>
 
-        <div className="flex mt-10 border border-primary text-white rounded-lg text-primaryText items-center justify-start">
+        <div className="flex mt-10 border border-primary  rounded-lg text-primaryText items-center justify-start">
           <div className=" px-6 cursor-pointer hover:bg-white hover:text-black py-2 border-r  border-primary rounded-l-lg ">
             Openings
-          </div> 
+          </div>
           <span className="px-4 py-2  rounded-r-lg">
             <FaArrowRight />
           </span>
         </div>
       </div>
-      <div className="w-[54%] h-full">
-
+      <div className="w-[54%] h-full py-20 text-white" >
+        <JobSwiper />
       </div>
-     
     </div>
   );
 };

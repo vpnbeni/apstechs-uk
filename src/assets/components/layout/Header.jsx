@@ -16,6 +16,12 @@ const navItems = [
     //   { name: "Sustainability", link: "/about/sustainability" },
     // ],
   },
+
+  {
+    name: "Case Studies",
+    link: "/case-studies",
+    subItems: [],
+  },
   {
     name: "Services",
     link: "/services",
@@ -28,32 +34,13 @@ const navItems = [
         link: "/services/battery-storage-integration",
       },
       { name: "Protection Design", link: "/services/protection-design" },
-      { name: "Power System Studies", link: "/services/power-system-studies" },
+      { name: "Power System Studies", link: "/services/power-system" },
     ],
-  },
-  {
-    name: "Case Studies",
-    link: "/case-studies",
-    subItems: [],
   },
   {
     name: "Careers",
     link: "/careers",
-    subItems: [
-      { name: "Working for APSTECHS", link: "/careers/working-for-apstechs" },
-      { name: "Vacancies", link: "/careers/vacancies" },
-      { name: "Safety first Culture", link: "/careers/safety-first-culture" },
-      {
-        name: "Diversity and Inclusion",
-        link: "/careers/diversity-and-inclusion",
-      },
-      { name: "Family first", link: "/careers/family-first" },
-      { name: "Charity", link: "/careers/charity" },
-      {
-        name: "Learning and development",
-        link: "/careers/learning-and-development",
-      },
-    ],
+    subItems: [],
   },
 ];
 
@@ -88,7 +75,7 @@ const Header = () => {
             {item?.subItems?.length > 0 && activeTab === item?.name && (
               <div
                 onMouseLeave={() => setActiveTab("")}
-                className="absolute z-100 left-0 mt-2 w-fit py-3 bg-white border-t-2 border-primary shadow-lg block"
+                className="absolute z-[1000] left-0 mt-2 w-fit py-3 bg-white border-t-2 border-primary shadow-lg block"
               >
                 <ul className="text-sm text-gray-700">
                   {item?.subItems.map((subItem, subIndex) => (

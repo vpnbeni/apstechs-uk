@@ -91,12 +91,12 @@ const EarthingSystemDesign = () => {
             </div>
           </div>
           <img
-            src="/assets/case-study/EarthingSystem/work1.jpg"
+            src="/assets/case-study/EarthingSystem/result1.png"
             className="h-[490px] w-full object-cover my-10"
             alt="Earthing System Overview"
           />
           <img
-            src="/assets/case-study/EarthingSystem/work2.jpg"
+            src="/assets/case-study/EarthingSystem/result2.png"
             className="h-[490px] w-full object-cover my-10"
             alt="Earthing System Overview"
           />

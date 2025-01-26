@@ -20,7 +20,7 @@ const HeroSectionTemplate = ({ heading, description, bg }) => {
       <div className="w-[70%] mx-auto flex flex-col items-start  justify-center text-white py-10">
         <div className="absolute inset-0 bg-black bg-opacity-25 "></div>
         <div className="relative">
-          <div className="text-lg w-1/2  lg:text-[28px] text-start leading-[40px]  tracking-widest font-light my-4">
+          <div className="text-lg w-2/3 lg:text-[20px] text-start leading-[40px]  tracking-widest font-light my-4">
             <span className="font-bold text-[32px] ">{heading}</span> <br />
             <span className=" mt-4">{description}</span>
           </div>

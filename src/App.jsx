@@ -16,6 +16,12 @@ import Careers from "./assets/pages/Careers";
 import EarthingSystemDesign from "./assets/pages/caseStudies/EarthingSystemDesign";
 import BatteryStorageIntegration from "./assets/pages/service/BatteryStorageIntegration";
 import PowerSystemStudies from "./assets/pages/caseStudies/PowerSystemStudies";
+import CableSolution from "./assets/pages/service/CableSolution";
+import Apply from "./assets/pages/JobApplicationForm";
+import JobApplicationForm from "./assets/pages/JobApplicationForm";
+import EarthingDesign from "./assets/pages/service/EarthingDesign";
+import ProtectionDesign from "./assets/pages/service/ProtectionDesign";
+import PowerSystemStudiesService from "./assets/pages/service/PowerSystemStudiesService";
 
 const App = () => {
   return (
@@ -33,6 +39,7 @@ const App = () => {
         <Route path="/teampage" element={<TeamPage />} />
         <Route path="/whychooseus" element={<WhyChooseUs />} />
         <Route path="/careers" element={<Careers />} />
+        <Route path="/apply" element={<JobApplicationForm />} />
 
         {/* Service Sub-Routes */}
         <Route
@@ -42,6 +49,19 @@ const App = () => {
         <Route
           path="/services/battery-storage-integration"
           element={<BatteryStorageIntegration />}
+        />
+        <Route path="/services/cable-solution" element={<CableSolution />} />
+        <Route
+          path="/services/earthing-solution"
+          element={<EarthingDesign />}
+        />
+        <Route
+          path="/services/protection-design"
+          element={<ProtectionDesign />}
+        />
+        <Route
+          path="/services/power-system"
+          element={<PowerSystemStudiesService />}
         />
 
         {/* Case Studies Sub-Routes */}

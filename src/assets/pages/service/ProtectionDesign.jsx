@@ -8,17 +8,18 @@ import ParallaxSection from "../../components/landingPage/ParallaxSection";
 import TestimonialSlider from "../../components/landingPage/TestimonialSlider";
 import HeroSectionTemplate from "../../components/common/HeroSectionTemplate";
 import ServiceParallaxSection from "../../components/service/ServiceParallaxSection";
+import ProtectionDesignDetails from "../../components/service/ProtectionDesign/ProtectionDesignDetails";
 
-const PlantEngineering = () => {
+const ProtectionDesign = () => {
   return (
     <div className="py-24">
       <HeroSectionTemplate
-        heading={"Plant Engineering"}
-        description={`Expert solutions for optimizing plant efficiency and reliability through innovative engineering practices.`}
-        bg={"/assets/services/plant-engineering/herosection.jpg"}
+        heading={"Protection Design"}
+        description={`We design custom protection schemes to meet client standards, ensuring reliable and safe electrical networks.`}
+        bg={"/assets/services/protection-design/protection-design.jpeg"}
       />
-      <AboutService />
-      <ServicesOverview />
+      <ProtectionDesignDetails />
+
       <ServiceParallaxSection />
       <CoreValues />
       <TestimonialSlider />
@@ -28,4 +29,4 @@ const PlantEngineering = () => {
   );
 };
 
-export default PlantEngineering;
+export default ProtectionDesign;

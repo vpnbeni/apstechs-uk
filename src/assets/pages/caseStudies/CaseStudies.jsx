@@ -9,7 +9,7 @@ const CaseStudies = () => {
         heading={"Explore Our Case Studies"}
         description={`Building Reliable Connections,
             Unlocking Infinite Possibilities`}
-        bg={"/assets/landingPage/windmill.jpg"}
+        bg={"/assets/case-study/bg.jpeg"}
       />
       <CaseStudyCards />
     </div>

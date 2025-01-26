@@ -188,7 +188,7 @@ const ContactMap = () => {
             <div>
               <button
                 type="submit"
-                className="w-full bg-primary text-white py-2 px-4  hover:bg-blue-600 focus: focus:ring-2 focus:ring-primary focus:ring-offset-2"
+                className="w-full bg-primary text-white py-2 px-4  hover:bg-opacity-90 focus: focus:ring-2 focus:ring-primary focus:ring-offset-2"
               >
                 Send
               </button>

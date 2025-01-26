@@ -3,6 +3,7 @@ import SectionHeading from "../common/heading/SectionHeading";
 import DownloadBtn from "../common/DownloadBtn";
 import JobSwiper from "./JobSwiper";
 import { FaArrowRight } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const JobOpenings = () => {
   return (
@@ -22,7 +23,7 @@ const JobOpenings = () => {
         </div>
         <div className="leading-8">
           We are constantly on the lookout for talented individuals to join our
-          team. <br />. Discover below whether your ideal career opportunity is
+          team. <br /> Discover below whether your ideal career opportunity is
           on the horizon.
         </div>
         <DownloadBtn />
@@ -33,16 +34,21 @@ const JobOpenings = () => {
         </div>
         <div className="w-1/2 p-4 md:p-10 lg:p-32 flex flex-col justify-center">
           <div className="flex flex-col gap-6 justify-center w-[350px] h-[350px] p-[30px] bg-white rounded-lg text-primaryText">
-            <div className="text-2xl">Didn't find what you were looking for? </div>
+            <div className="text-2xl">
+              Didn't find what you were looking for?{" "}
+            </div>
             <div className="text-2xl">Send us your CV</div>
-            <div className="flex w-fit mt-10 border border-primaryText rounded-lg text-primaryText items-center justify-center">
+            <Link
+              to={"/apply"}
+              className="flex w-fit mt-10 border border-primaryText rounded-lg text-primaryText items-center justify-center"
+            >
               <div className="px-4 cursor-pointer font-light text-[14px] hover:bg-primaryText hover:text-white py-2 border-r border-primaryText rounded-l-lg">
                 Apply Now
               </div>
               <span className="px-4 py-2 rounded-r-lg">
                 <FaArrowRight />
               </span>
-            </div>
+            </Link>
           </div>
         </div>
       </div>

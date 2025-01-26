@@ -1,0 +1,245 @@
+"use client";
+
+export default function EarthingDesignDetails() {
+  return (
+    <div className="min-h-screen bg-[#001529] text-white">
+      {/* Hero Section */}
+      <section className="py-16 px-4 text-center">
+        <div className="max-w-6xl mx-auto">
+          {/* Icon */}
+          <div className="relative w-24 h-24 mx-auto mb-8">
+            <div className="absolute inset-0 flex items-center justify-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="64"
+                height="64"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="text-white"
+              >
+                <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z" />
+                <circle cx="12" cy="12" r="3" />
+              </svg>
+            </div>
+            <div className="absolute -bottom-1 -right-1">
+              <div className="w-8 h-8 bg-secondary transform rotate-45" />
+            </div>
+          </div>
+
+          {/* Service Banner */}
+          <div className="bg-secondary py-2 px-6 inline-block mx-auto mb-8">
+            <h2 className="text-white text-lg font-medium tracking-wider">
+              EARTHING DESIGN SERVICES
+            </h2>
+          </div>
+
+          <h1 className="text-4xl md:text-5xl font-medium leading-tight max-w-4xl mx-auto mb-8">
+            Comprehensive Earthing Design Solutions Using Advanced CDEGS
+            Software
+          </h1>
+
+          <p className="text-lg text-white/90 max-w-3xl mx-auto mb-12">
+            At APSTECHS, we specialize in providing comprehensive earthing
+            design services using state-of-the-art software tools such as CDEGS.
+            Our expertise extends to both earthing design for various
+            applications and the layout and design of earthing systems for
+            substation equipment.
+          </p>
+
+          <button className="px-6 py-3 text-white border border-white rounded hover:bg-white hover:text-[#001529] transition-colors">
+            Get in touch with our team
+          </button>
+        </div>
+      </section>
+
+      {/* Services Grid Section */}
+      <section className="py-16 px-4 border-t border-white/10">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-16">
+            {/* Software & Analysis */}
+            <div className="space-y-6">
+              <h3 className="text-2xl font-semibold mb-6">
+                Software & Analysis
+              </h3>
+              <ul className="space-y-4">
+                {softwareServices.map((service, index) => (
+                  <li key={index} className="flex items-start gap-3">
+                    <svg
+                      className="w-6 h-6 text-secondary flex-shrink-0 mt-1"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M5 13l4 4L19 7"
+                      />
+                    </svg>
+                    <span className="text-white/90">{service}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Design & Implementation */}
+            <div className="space-y-6">
+              <h3 className="text-2xl font-semibold mb-6">
+                Design & Implementation
+              </h3>
+              <ul className="space-y-4">
+                {designServices.map((service, index) => (
+                  <li key={index} className="flex items-start gap-3">
+                    <svg
+                      className="w-6 h-6 text-secondary flex-shrink-0 mt-1"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M5 13l4 4L19 7"
+                      />
+                    </svg>
+                    <span className="text-white/90">{service}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Standards & Compliance */}
+      <section className="py-16 px-4 bg-white text-primaryText border-t border-priamryText/10">
+        <div className="max-w-6xl mx-auto text-center">
+          <h3 className="text-2xl font-semibold mb-8">
+            Standards & Compliance
+          </h3>
+          <div className="grid md:grid-cols-3 gap-8">
+            {standards.map((standard, index) => (
+              <div
+                key={index}
+                className="p-6 rounded-lg border border-priamryText/10 hover:border-secondary transition-colors"
+              >
+                <h4 className="text-lg font-medium mb-4">{standard.title}</h4>
+                <p className="">{standard.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Additional Services */}
+      <section className="py-16 px-4 border-t border-white/10">
+        <div className="max-w-6xl mx-auto">
+          <h3 className="text-2xl font-semibold mb-8 text-center">
+            Additional Services
+          </h3>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {additionalServices.map((service, index) => (
+              <div
+                key={index}
+                className="p-6 rounded-lg bg-white/5 hover:bg-white/10 transition-all"
+              >
+                <h4 className="text-lg font-medium mb-3">{service.title}</h4>
+                <p className="text-white/90">{service.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-16 px-4 border-t border-white/10">
+        <div className="max-w-3xl mx-auto text-center">
+          <h3 className="text-3xl font-medium mb-6">
+            Partner with APSTECHS for Expert Earthing Design Solutions
+          </h3>
+          <p className="text-lg text-white/90 mb-8">
+            Whether it's for a new substation installation or the upgrade of an
+            existing earthing system, we deliver tailored solutions that
+            prioritize safety, reliability, and compliance with industry
+            standards.
+          </p>
+          <button className="px-8 py-4 bg-secondary text-white rounded hover:bg-secondary transition-colors">
+            Start Your Project
+          </button>
+        </div>
+      </section>
+    </div>
+  );
+}
+
+const softwareServices = [
+  "Advanced CDEGS software for precise earthing system design",
+  "Sophisticated soil resistivity modelling",
+  "Fault current distribution analysis",
+  "Step and touch voltage calculations",
+  "3D modeling and visualization",
+  "Real-time simulation capabilities",
+];
+
+const designServices = [
+  "Substation equipment earthing layout design",
+  "Transformer and switchgear grounding systems",
+  "Control panel earthing solutions",
+  "Soil resistivity surveys and analysis",
+  "Pre and post Fall of Potential (FOP) surveys",
+  "Compliance documentation and certification",
+];
+
+const standards = [
+  {
+    title: "ENA TS 41-24",
+    description:
+      "Comprehensive compliance with industry guidelines for earthing system design and implementation",
+  },
+  {
+    title: "DNO Standards",
+    description:
+      "Adherence to Distribution Network Operator requirements and specifications",
+  },
+  {
+    title: "International Standards",
+    description: "Compliance with global best practices and safety regulations",
+  },
+];
+
+const additionalServices = [
+  {
+    title: "Consultation Services",
+    description:
+      "Expert advice on earthing system design, upgrades, and maintenance",
+  },
+  {
+    title: "Site Surveys",
+    description:
+      "Comprehensive site analysis and soil resistivity measurements",
+  },
+  {
+    title: "Testing & Verification",
+    description:
+      "Thorough testing of installed systems to ensure optimal performance",
+  },
+  {
+    title: "Documentation",
+    description: "Detailed reports, drawings, and compliance certificates",
+  },
+  {
+    title: "Training",
+    description:
+      "Knowledge transfer and staff training on earthing system maintenance",
+  },
+  {
+    title: "Maintenance Plans",
+    description: "Customized maintenance schedules and procedures",
+  },
+];

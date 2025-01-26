@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import SectionHeading from "../common/heading/SectionHeading";
 import { FaArrowRight } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const JobSwiper = () => {
   const swiperRef = useRef(null); // Reference for the Swiper instance
@@ -73,14 +74,17 @@ const JobSwiper = () => {
                     {item.description}
                   </div>
                 </div>
-                <div className="flex w-fit mt-10 border border-white rounded-lg text-white items-center justify-center">
+                <Link
+                  to={"/apply"}
+                  className="flex w-fit mt-10 border border-white rounded-lg text-white items-center justify-center"
+                >
                   <div className="px-4 cursor-pointer font-light text-[14px] hover:bg-white hover:text-primaryText py-2 border-r border-white rounded-l-lg">
                     Apply Now
                   </div>
                   <span className="px-4 py-2 rounded-r-lg">
                     <FaArrowRight />
                   </span>
-                </div>
+                </Link>
               </div>
             </div>
           </SwiperSlide>

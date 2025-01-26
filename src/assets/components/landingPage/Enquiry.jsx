@@ -1,5 +1,6 @@
 import React from "react";
 import { FaArrowRight } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Enquiry = () => {
   return (
@@ -17,14 +18,14 @@ const Enquiry = () => {
           </div>
         </div>
 
-        <div className="flex mt-10 border border-primary  rounded-lg text-primaryText items-center justify-center">
+        <Link to={'/contact'} className="flex mt-10 border border-primary  rounded-lg text-primaryText items-center justify-center">
           <div className=" px-6 cursor-pointer hover:bg-primaryText hover:text-white py-2 border-r  border-primary rounded-l-lg ">
             Contact Us
           </div>
           <span className="px-4 py-2  rounded-r-lg">
             <FaArrowRight />
           </span>
-        </div>
+        </Link>
       </div>
       <div
         className="w-[55%] bg-center bg-cover  h-full"

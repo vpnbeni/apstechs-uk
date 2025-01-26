@@ -12,7 +12,7 @@ const CareersHero = () => {
     <div
       className="w-full relative flex h-[500px]"
       style={{
-        backgroundImage: `url('/assets/careers/career-bg.jpg')`,
+        backgroundImage: `url('/assets/careers/career-bg.jpeg')`,
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
@@ -21,11 +21,11 @@ const CareersHero = () => {
         <div className="absolute inset-0 bg-black bg-opacity-35 "></div>
         <div className="relative w-full ">
           <div className="text-lg w-full  lg:text-[28px] flex flex-col justify-center items-center text-start leading-[40px]  tracking-widest font-light my-4">
-            <span className="font-bold text-[32px] text-center">
+            <span className="font-bold text-[44px] text-center">
               We Power Big Ideas
             </span>{" "}
             <br />
-            <span className=" mt-4">
+            <span className=" ">
               Looking to Spark a New Career with Us?
             </span>
           </div>

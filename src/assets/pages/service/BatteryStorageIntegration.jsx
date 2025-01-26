@@ -18,7 +18,6 @@ const BatteryStorageIntegration = () => {
       <ServiceParallaxSection />
       <CoreValues />
       <TestimonialSlider />
-
       <ContactCTA />
     </div>
   );

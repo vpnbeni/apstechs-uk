@@ -182,15 +182,15 @@ const PowerSystemStudies = () => {
             </table>
           </div>
           <img
-            src="/assets/case-study/PowerSystemStudies/result1.png"
+            src="/assets/case-study/PowerSystemStudies/Appendices.svg"
             className="h-[490px] w-full object-cover my-10"
             alt="Earthing System Overview"
           />
-          <img
+          {/* <img
             src="/assets/case-study/PowerSystemStudies/result2.png"
             className="h-[490px] w-full object-cover my-10"
             alt="Earthing System Overview"
-          />
+          /> */}
         </section>
 
         {/* Results */}

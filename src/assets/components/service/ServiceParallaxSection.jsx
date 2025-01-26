@@ -11,7 +11,7 @@ const ServiceParallaxSection = () => {
         backgroundImage: `url('/assets/services/plant-engineering/BatteryStorageIntegration.jpg')`,
       }}
     >
-      <div className="bg-primaryText  text-white px-8 py-6 rounded-3xl shadow-lg max-w-[450px] text-start">
+      <div className="bg-primaryText text-white px-8 py-6 rounded-3xl shadow-lg max-w-[450px] text-start">
         <div className="mt-10 ml-10">
           <div className="flex justify-start items-start h-fit">
             <div className="w-full h-fit relative">

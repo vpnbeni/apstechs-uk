@@ -17,7 +17,7 @@ const LandingServicesCard = () => {
       name: "Battery Storage Integration",
       description:
         "Seamless integration of battery storage systems to enhance energy management and sustainability.",
-      image: "/assets/landingPage/service/BatteryStorageIntegration.jpeg",
+      image: "/assets/landingPage/service/bess.jpeg",
       slug: "services/battery-storage-integration",
     },
     {
@@ -47,15 +47,17 @@ const LandingServicesCard = () => {
       description:
         "In-depth power system studies to analyze, optimize, and ensure the reliability of your electrical infrastructure.",
       image: "/assets/landingPage/service/PowerSystemStudies.jpg",
-      slug: "services/power-system-studies",
+      slug: "services/power-system",
     },
   ];
 
   return (
     <div className="w-full pt-10 flex flex-col items-center min-h-screen text-center">
-      <div className=" text-4xl font-normal tracking-wider my-4">SERVICES</div>
+      <div className=" text-4xl font-semibold tracking-wider my-4">
+        SERVICES
+      </div>
       <div className=" text-3xl font-light my-4">
-        We've Been Transforming Ideas into Reality for Over a Decade.
+        Transforming Energy Challenges into Engineering Excellence
       </div>
 
       <div className="grid grid-flow-row gap-10  grid-cols-3 w-full px-[10%] py-10  lg:pb-20 items-center ">

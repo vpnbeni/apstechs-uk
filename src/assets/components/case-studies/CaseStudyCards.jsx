@@ -14,7 +14,7 @@ const CaseStudyCards = () => {
       name: "Earthing System Design for 50MW Battery Energy Storage System",
       description:
         "The project required the installation of a 50MW Battery Energy Storage System (BESS) in Yorkshire.",
-      image: "/assets/case-study/EarthingSystem/bess.jpg",
+      image: "/assets/case-study/EarthingSystem/earthing.jpeg",
       link: "case-studies/earthingsystemdesign",
     },
     {

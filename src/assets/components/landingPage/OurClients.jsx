@@ -1,5 +1,6 @@
 import React from "react";
 import { FaArrowRight } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const clientData = [
   { name: "Solar", icon: "/assets/landingPage/clients/solar-panel.png" },
@@ -29,7 +30,7 @@ const OurClients = () => {
   return (
     <div className="w-full flex h-screen">
       <div className="w-[40%] bg-[#EBEFF2] flex flex-col items-start px-28 py-10">
-        <div className="mt-28 ml-10">
+        <div className="mt-10 ml-10">
           <div className="flex justify-start items-start h-fit">
             <div className="w-full h-fit relative">
               <div className="w-[1.5px] h-[95%] bg-[#b4b4b4] mr-8 absolute -left-8">
@@ -42,23 +43,26 @@ const OurClients = () => {
                 Our Clients
               </div>
               <div className="text-[16px] tracking-wide font-[250] mt-4 leading-[30px]">
-                We are proud of the extensive range of clients we serve. Our
-                diverse portfolio includes businesses across various industries,
-                ranging from small local enterprises to large multinational
-                corporations. Our clientele spans across the United Kingdom and
-                we have worked with businesses from the highlands of Scotland to
-                the picturesque landscapes of Cornwall.
+                At APS, we take pride in serving a diverse range of clients,
+                including Distribution Network Operators (DNOs) and Independent
+                Connection Providers (ICPs) across the UK. Our client base spans
+                the length and breadth of the UK, where we provide tailored
+                power system solutions that meet their specific needs. By
+                leveraging our expertise and commitment to quality, we ensure
+                the successful delivery of projects in electrical distribution,
+                automation, and renewable energy, helping our clients achieve
+                their goals with efficiency and reliability.
               </div>
             </div>
           </div>
-          <div className="flex w-fit mt-10 border border-primary rounded-lg text-primaryText items-center justify-center">
+          <Link to={'/case-studies'} className="flex w-fit mt-10 border border-primary rounded-lg text-primaryText items-center justify-center">
             <div className="px-4 cursor-pointer font-light text-[14px] hover:bg-primaryText hover:text-white py-2 border-r border-primary rounded-l-lg">
               Discover Our Case Studies
             </div>
             <span className="px-4 py-2 rounded-r-lg">
               <FaArrowRight />
             </span>
-          </div>
+          </Link>
         </div>
       </div>
       <div className="w-[60%] bg-[#011E3A] flex py-20">

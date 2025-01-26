@@ -5,7 +5,7 @@ import GoogleMaps from "../components/contact/GoogleMaps";
 
 const Contact = () => {
   return (
-    <div className="pt-[96px]">
+    <div className="pt-[96px] w-full overflow-x-hidden">
       <ContactHero />
       <ContactMap />
       <GoogleMaps />

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { FaArrowRight, FaDownload } from "react-icons/fa";
 import DownloadBtn from "../common/DownloadBtn";
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -12,7 +13,7 @@ const HeroSection = () => {
   return (
     <div
       className="relative flex flex-col items-start justify-center px-4 lg:px-[20%] min-h-screen max-h-screen bg-cover bg-no-repeat bg-center min-w-full max-w-full"
-      style={{ backgroundImage: `url('/assets/landingPage/bg.jpeg')` }}
+      style={{ backgroundImage: `url('/assets/landingPage/bg7.jpg')` }}
     >
       {/* Content */}
       <div
@@ -29,7 +30,7 @@ const HeroSection = () => {
           Design and Engineering Solutions For Power Sector.
         </div>
         <div className="cursor-pointer bg-primary w-fit hover:bg-white hover:text-dark my-6 text-white flex justify-start items-center rounded-lg border border-white">
-          <button className="text-lg pl-5 py-1 rounded-l-lg">Contact Us</button>
+          <Link to={'/contact'} className="text-lg pl-5 py-1 rounded-l-lg">Contact Us</Link>
           <button className="flex justify-center pl-3 pr-3 py-1 h-full items-center">
             <FaArrowRight />
           </button>

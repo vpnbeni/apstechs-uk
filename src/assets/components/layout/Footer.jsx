@@ -11,7 +11,7 @@ const Footer = () => {
       <div className="flex flex-col gap-4  lg:w-[35%]">
         <div className="bg-white relative text-5xl  rounded-b-lg ">
           <span className="text-secondary font-medium  ">APS</span>
-          <span className="font-medium  text-primaryText">TECHS</span>
+          <span className="font-medium  text-[#063374]">TECHS</span>
         </div>
         <div className="text-[16px] ">
           Empowering Sustainable Solutions for Tomorrow’s Energy Needs
