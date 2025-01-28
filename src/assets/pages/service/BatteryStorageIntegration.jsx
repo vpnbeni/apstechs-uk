@@ -12,7 +12,7 @@ const BatteryStorageIntegration = () => {
       <HeroSectionTemplate
         heading={"Battery Storage Integration"}
         description={`With our comprehensive expertise spanning from Power Generation Systems to Distribution Systems.`}
-        bg={"/assets/services/battery-storage-integration/img1.jpeg"}
+        bg={"/assets/services/battery-storage-integration/img1.png"}
       />
       <AboutBatteryService />
       <ServiceParallaxSection />

@@ -187,6 +187,14 @@ const CreditPage = () => {
             >
               Image by freepik
             </a>
+            Image by{" "}
+            <a href="https://pixabay.com/users/gabriellepapalia-38460324/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8149854">
+              Gabrielle Papalia
+            </a>{" "}
+            from{" "}
+            <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8149854">
+              Pixabay
+            </a>
           </div>
         </div>
       </div>

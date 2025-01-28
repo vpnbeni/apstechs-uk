@@ -23,6 +23,7 @@ import EarthingDesign from "./assets/pages/service/EarthingDesign";
 import ProtectionDesign from "./assets/pages/service/ProtectionDesign";
 import PowerSystemStudiesService from "./assets/pages/service/PowerSystemStudiesService";
 import Survey from "./assets/pages/service/Survey";
+import LoadTestCaseStudy from "./assets/pages/caseStudies/LoadTestCaseStudy";
 
 const App = () => {
   return (
@@ -43,15 +44,19 @@ const App = () => {
         <Route path="/apply" element={<JobApplicationForm />} />
         <Route path="/temp" element={<JobApplicationForm />} />
 
+
+
+
+
         {/* Service Sub-Routes */}
         <Route
           path="/services/plant-engineering"
           element={<PlantEngineering />}
         />
-        <Route
+        {/* <Route
           path="/services/battery-storage-integration"
           element={<BatteryStorageIntegration />}
-        />
+        /> */}
         <Route path="/services/cable-solution" element={<CableSolution />} />
         <Route
           path="/services/earthing-solution"
@@ -67,6 +72,11 @@ const App = () => {
         />
         <Route path="/services/survey" element={<Survey />} />
 
+
+
+
+
+
         {/* Case Studies Sub-Routes */}
         <Route
           path="/case-studies/design&supply"
@@ -79,6 +89,10 @@ const App = () => {
         <Route
           path="/case-studies/powersystemstudies"
           element={<PowerSystemStudies />}
+        />
+        <Route
+          path="/case-studies/loadtestcasestudy"
+          element={<LoadTestCaseStudy />}
         />
       </Routes>
       <Footer />

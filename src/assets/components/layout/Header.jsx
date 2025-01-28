@@ -23,12 +23,12 @@ const navItems = [
     link: "/services",
     subItems: [
       { name: "Plant Engineering", link: "/services/plant-engineering" },
-      { name: "Cable Solution", link: "/services/cable-solution" },
       { name: "Earthing Solution", link: "/services/earthing-solution" },
-      {
-        name: "Battery Storage Integration",
-        link: "/services/battery-storage-integration",
-      },
+      // {
+      //   name: "Battery Storage Integration",
+      //   link: "/services/battery-storage-integration",
+      // },
+      { name: "Cable Solution", link: "/services/cable-solution" },
       { name: "Protection Design", link: "/services/protection-design" },
       { name: "Power System Studies", link: "/services/power-system" },
       { name: "Survey", link: "/services/survey" },

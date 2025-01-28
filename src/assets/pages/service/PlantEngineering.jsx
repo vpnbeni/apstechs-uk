@@ -17,7 +17,7 @@ const PlantEngineering = () => {
         description={`Expert solutions for optimizing plant efficiency and reliability through innovative engineering practices.`}
         bg={"/assets/services/plant-engineering/herosection.jpg"}
       />
-      <AboutService />
+      {/* <AboutService /> */}
       <ServicesOverview />
       <ServiceParallaxSection />
       <CoreValues />

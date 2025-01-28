@@ -30,7 +30,7 @@ const WelcomeSection = () => {
 
       {/* Right Side Image */}
       <div
-        className="w-full lg:w-1/2 h-[30vh] sm:h-[40vh] lg:h-full object-cover bg-no-repeat bg-center"
+        className="w-full lg:w-1/2 h-[30vh] sm:h-[40vh] lg:h-full object-cover bg-no-repeat bg-cover bg-center"
         style={{ backgroundImage: `url('/assets/careers/field.jpg')` }}
       ></div>
     </div>

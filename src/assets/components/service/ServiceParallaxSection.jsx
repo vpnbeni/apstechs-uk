@@ -8,7 +8,7 @@ const ServiceParallaxSection = () => {
     <div
       className="relative h-[100vh] flex items-center justify-start bg-fixed px-4 lg:px-[15%] bg-center bg-cover"
       style={{
-        backgroundImage: `url('/assets/services/plant-engineering/BatteryStorageIntegration.jpg')`,
+        backgroundImage: `url('/assets/services/parallex.png')`,
       }}
     >
       <div className="bg-primaryText text-white px-8 py-6 rounded-3xl shadow-lg max-w-[450px] text-start">

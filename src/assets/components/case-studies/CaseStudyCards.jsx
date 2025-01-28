@@ -25,11 +25,11 @@ const CaseStudyCards = () => {
       link: "case-studies/powersystemstudies",
     },
     {
-      name: "Advanced Safety Features Implementation",
+      name: "Load Bank Testing for Generator GT1 and Transformer",
       description:
-        "Integrated advanced safety features in switchrooms to ensure protection for personnel and equipment, adhering to industry safety standards.",
-      image: "/assets/case-study/card/AdvancedSafety.jpg",
-      link: "case-studies/design&supply",
+        "Confirm the stability and reliability of GT1's operation under controlled conditions.",
+      image: "/assets/case-study/card/LoadBankTesting.jpeg",
+      link: "case-studies/loadtestcasestudy",
     },
     {
       name: "Energy-Efficient Infrastructure Design",

@@ -39,10 +39,10 @@ const OurClients = () => {
               <h1 className="w-fit bg-secondary px-3 tracking-[.2em] text-white text-lg py-[-1px]">
                 INDUSTRY
               </h1>
-              <div className="text-lg lg:text-[28px] text-start leading-10 tracking-widest font-light my-4">
+              <div className="text-lg lg:text-[28px] text-start leading-10 tracking-widest font-light mt-4 mb-2">
                 Our Clients
               </div>
-              <div className="text-[16px] tracking-wide font-[250] mt-4 leading-[30px]">
+              <div className="text-[16px] tracking-wide font-[250] mt-4 leading-[30px] text-justify">
                 At APS, we take pride in serving a diverse range of clients,
                 including Distribution Network Operators (DNOs) and Independent
                 Connection Providers (ICPs) across the UK. Our client base spans

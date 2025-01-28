@@ -13,7 +13,7 @@ const HeroSection = () => {
   return (
     <div
       className="relative flex flex-col items-start justify-center px-4 sm:px-8 lg:px-[20%] min-h-screen max-h-screen bg-cover bg-no-repeat bg-center min-w-full max-w-full"
-      style={{ backgroundImage: `url('/assets/landingPage/bg7.jpg')` }}
+      style={{ backgroundImage: `url('/assets/landingPage/bg7.png')` }}
     >
       {/* Content */}
       <div
@@ -21,9 +21,7 @@ const HeroSection = () => {
           isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-48"
         }`}
       >
-        <div
-          className="relative text-[#f0f0f0] leading-8 sm:leading-10 text-xl sm:text-2xl lg:text-3xl font-light text-start w-full sm:w-3/4 lg:w-1/2"
-        >
+        <div className="relative text-[#f0f0f0] leading-8 sm:leading-10 text-xl sm:text-2xl lg:text-3xl font-light text-start w-full sm:w-3/4 lg:w-1/2">
           <span className="font-semibold text-white">
             Welcome to APSTECHS, <br />
           </span>

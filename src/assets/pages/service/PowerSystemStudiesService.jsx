@@ -17,7 +17,7 @@ const PowerSystemStudiesService = () => {
       <HeroSectionTemplate
         heading={"Power System Studies"}
         description={`In-depth power system studies to analyze, optimize, and ensure the reliability of your electrical infrastructure.`}
-        bg={"/assets/services/power_system/power_system.jpeg"}
+        bg={"/assets/services/power_system/power_system.png"}
       />
       <PowerSystemStudiesDetails />
 

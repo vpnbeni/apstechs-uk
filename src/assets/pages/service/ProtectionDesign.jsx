@@ -16,7 +16,7 @@ const ProtectionDesign = () => {
       <HeroSectionTemplate
         heading={"Protection Design"}
         description={`We design custom protection schemes to meet client standards, ensuring reliable and safe electrical networks.`}
-        bg={"/assets/services/protection-design/protection-design.jpeg"}
+        bg={"/assets/services/protection-design/protection-design.png"}
       />
       <ProtectionDesignDetails />
 
