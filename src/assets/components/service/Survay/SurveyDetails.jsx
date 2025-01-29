@@ -258,6 +258,21 @@ const tabContent = {
       "Line profile creation",
     ],
   },
+  soilThermalResistivity: {
+    title: "Soil Thermal Resistivity Survey",
+    description:
+      "We conduct soil thermal resistivity surveys to assess the soil's ability to dissipate heat, which is crucial for the design of underground cables and grounding systems.",
+    items: [
+      "Thermal resistivity testing under dry and wet conditions",
+      "Soil composition and moisture content analysis",
+      "Impact assessment on underground power cables",
+      "Evaluation of backfill material suitability",
+      "Temperature-dependent resistivity measurement",
+      "Identification of thermal hotspots",
+      "Optimization of grounding system design",
+      "Mitigation strategies for high-resistivity soils",
+    ],
+  },
 };
 
 const benefits = [

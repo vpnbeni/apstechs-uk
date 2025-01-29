@@ -1,6 +1,10 @@
 "use client";
 
+import { useState } from "react";
+
 export default function EarthingDesignDetails() {
+  const [activeTab, setActiveTab] = useState("earthingCalculation");
+
   return (
     <div className="min-h-screen bg-[#001529] text-white">
       {/* Hero Section */}
@@ -55,7 +59,55 @@ export default function EarthingDesignDetails() {
           </button>
         </div>
       </section>
+      {/* Tabs Section */}
+      <section className="py-16 px-4 border-t border-white/10">
+        <div className="max-w-6xl mx-auto">
+          <div className="flex flex-wrap justify-center gap-4 mb-12">
+            {Object.keys(tabContent).map((tab) => (
+              <button
+                key={tab}
+                className={`px-6 py-3 rounded-full transition-colors ${
+                  activeTab === tab
+                    ? "bg-secondary text-white"
+                    : "bg-white/10 text-white hover:bg-white/20"
+                }`}
+                onClick={() => setActiveTab(tab)}
+              >
+                {tabContent[tab].title}
+              </button>
+            ))}
+          </div>
 
+          <div className="bg-white/5 rounded-lg p-8">
+            <h3 className="text-2xl font-semibold mb-6">
+              {tabContent[activeTab].title}
+            </h3>
+            <p className="text-white/90 mb-8">
+              {tabContent[activeTab].description}
+            </p>
+            <ul className="grid md:grid-cols-2 gap-4">
+              {tabContent[activeTab].items.map((item, index) => (
+                <li key={index} className="flex items-start gap-3">
+                  <svg
+                    className="w-6 h-6 text-secondary flex-shrink-0 mt-1"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M5 13l4 4L19 7"
+                    />
+                  </svg>
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </section>
       {/* Services Grid Section */}
       <section className="py-16 px-4 border-t border-white/10">
         <div className="max-w-6xl mx-auto">
@@ -177,6 +229,38 @@ export default function EarthingDesignDetails() {
     </div>
   );
 }
+const tabContent = {
+  earthingCalculation: {
+    title: "Earthing Calculation using CDEGS",
+    description:
+      "We perform advanced earthing system analysis using CDEGS software to ensure safe grounding, minimize step and touch potential hazards, and comply with international standards.",
+    items: [
+      "Soil resistivity measurement and modeling",
+      "Grid resistance and touch/step voltage analysis",
+      "Ground potential rise (GPR) assessment",
+      "Fault current distribution studies",
+      "Design of grounding grids, rods, and mats",
+      "Lightning protection system integration",
+      "Optimization of grounding conductor sizing",
+      "Compliance with IEEE 80, IEC 60479, and other standards",
+    ],
+  },
+  earthingMaterialSupply: {
+    title: "Supply of Earthing Material",
+    description:
+      "We supply high-quality earthing materials to ensure the reliability and longevity of grounding systems for substations, transmission lines, and industrial facilities.",
+    items: [
+      "Copper-bonded grounding rods",
+      "Galvanized and copper earthing strips",
+      "Grounding conductors and wires",
+      "Earthing electrodes and pits",
+      "Bentonite and conductive backfill materials",
+      "Exothermic welding kits and accessories",
+      "Earth pit covers and inspection chambers",
+      "Lightning protection system components",
+    ],
+  },
+};
 
 const softwareServices = [
   "Advanced CDEGS software for precise earthing system design",

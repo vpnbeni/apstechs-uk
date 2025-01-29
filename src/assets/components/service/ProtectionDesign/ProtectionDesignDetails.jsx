@@ -1,8 +1,11 @@
 "use client";
 
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 export default function ProtectionDesignDetails() {
+  const [activeTab, setActiveTab] = useState("protectionCoordination");
+
   return (
     <div className="min-h-screen bg-[#001529] text-white">
       {/* Hero Section */}
@@ -57,7 +60,55 @@ export default function ProtectionDesignDetails() {
           </Link>
         </div>
       </section>
+      {/* Tabs Section */}
+      <section className="py-16 px-4 border-t border-white/10">
+        <div className="max-w-6xl mx-auto">
+          <div className="flex flex-wrap justify-center gap-4 mb-12">
+            {Object.keys(tabContent).map((tab) => (
+              <button
+                key={tab}
+                className={`px-6 py-3 rounded-full transition-colors ${
+                  activeTab === tab
+                    ? "bg-secondary text-white"
+                    : "bg-white/10 text-white hover:bg-white/20"
+                }`}
+                onClick={() => setActiveTab(tab)}
+              >
+                {tabContent[tab].title}
+              </button>
+            ))}
+          </div>
 
+          <div className="bg-white/5 rounded-lg p-8">
+            <h3 className="text-2xl font-semibold mb-6">
+              {tabContent[activeTab].title}
+            </h3>
+            <p className="text-white/90 mb-8">
+              {tabContent[activeTab].description}
+            </p>
+            <ul className="grid md:grid-cols-2 gap-4">
+              {tabContent[activeTab].items.map((item, index) => (
+                <li key={index} className="flex items-start gap-3">
+                  <svg
+                    className="w-6 h-6 text-secondary flex-shrink-0 mt-1"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M5 13l4 4L19 7"
+                    />
+                  </svg>
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </section>
       {/* Key Features Grid */}
       <section className="py-16 px-4 border-t border-white/10">
         <div className="max-w-6xl mx-auto">
@@ -226,7 +277,68 @@ export default function ProtectionDesignDetails() {
     </div>
   );
 }
-
+const tabContent = {
+  protectionCoordination: {
+    title: "Protection Coordination Studies",
+    description:
+      "Our protection coordination studies ensure the proper selection and setting of protective devices to minimize equipment damage and improve system reliability.",
+    items: [
+      "Short circuit and fault analysis",
+      "Relay coordination and grading",
+      "Time-current characteristic (TCC) curve analysis",
+      "Protection scheme optimization",
+      "Arc flash hazard analysis",
+      "Breaker and fuse coordination",
+      "Relay trip sequence evaluation",
+      "Compliance with IEEE/IEC protection standards",
+    ],
+  },
+  protectionInterfacing: {
+    title: "Protection Interfacing",
+    description:
+      "We design protection interfacing solutions to ensure seamless communication and operation between different protection devices and systems.",
+    items: [
+      "Integration of relays and protection devices",
+      "Interfacing with switchgear and circuit breakers",
+      "Communication protocol implementation (IEC 61850, DNP3, Modbus, etc.)",
+      "Logic development for interlocking and tripping",
+      "Redundancy and fail-safe mechanism design",
+      "Testing and validation of protection schemes",
+      "Remote monitoring and control integration",
+      "Troubleshooting and system optimization",
+    ],
+  },
+  scadaInterfacing: {
+    title: "SCADA Interfacing",
+    description:
+      "Our SCADA interfacing solutions enable real-time monitoring and control of substations, improving operational efficiency and decision-making.",
+    items: [
+      "SCADA system integration with protection relays",
+      "Communication protocol mapping (IEC 61850, DNP3, Modbus, etc.)",
+      "Data acquisition and telemetry configuration",
+      "Remote control and automation setup",
+      "HMI and graphical display configuration",
+      "Event logging and alarm management",
+      "Cybersecurity implementation for SCADA systems",
+      "Testing and validation of SCADA interfaces",
+    ],
+  },
+  relaySetting: {
+    title: "Relay Setting",
+    description:
+      "We provide precise relay setting calculations to ensure accurate fault detection, system stability, and coordination with upstream and downstream devices.",
+    items: [
+      "Relay setting calculation based on fault studies",
+      "Pickup and time delay adjustments",
+      "Primary and secondary injection testing",
+      "Distance relay zone setting configuration",
+      "Differential relay setting optimization",
+      "Directional overcurrent relay coordination",
+      "Load encroachment and stability analysis",
+      "Relay setting validation and testing",
+    ],
+  },
+};
 const keyFeatures = [
   {
     icon: (

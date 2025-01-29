@@ -12,7 +12,7 @@ const JobOpenings = () => {
         <div className="mb-5 w-full flex justify-center items-center">
           <SectionHeading heading={"JOB OPENINGS"} />
         </div>
-        <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold">
+        <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium">
           Be Part of Something Big
         </div>
         <div className="leading-8 text-base sm:text-lg md:text-xl lg:text-2xl max-w-3xl mx-auto">
@@ -40,10 +40,10 @@ const JobOpenings = () => {
         {/* CV Section */}
         <div className="w-full lg:w-1/2 p-4 md:p-10 lg:p-32 flex flex-col justify-center">
           <div className="flex flex-col gap-6 justify-center w-full max-w-sm mx-auto lg:max-w-md p-6 bg-white rounded-lg text-primaryText">
-            <div className="text-2xl sm:text-3xl font-bold">
+            <div className="text-2xl sm:text-3xl font-medium">
               Didn't find what you were looking for?
             </div>
-            <div className="text-2xl sm:text-3xl font-bold">
+            <div className="text-2xl sm:text-3xl font-medium">
               Send us your CV
             </div>
             <Link
