@@ -14,7 +14,7 @@ const ParallaxSection = ({ url }) => {
       <div className="bg-primaryText text-white  sm:px-8 py-6 sm:py-8 rounded-3xl shadow-lg max-w-full sm:max-w-[600px]  text-start">
         <div className="mt-6 ">
           <div className="flex flex-col sm:flex-row justify-start items-start h-fit">
-            <div className="w-full  relative ml-6 px-5">
+            <div className="w-full  relative lg:ml-6 px-5">
               <div className="hidden sm:block w-[1.3px] h-[95%] bg-[#b4b4b4] mr-8 absolute -left-6">
                 <div className="h-20 right-[1px] bg-secondary w-[1.5px] absolute top-[12%]"></div>
               </div>
