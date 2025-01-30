@@ -4,7 +4,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 export default function ProtectionDesignDetails() {
-  const [activeTab, setActiveTab] = useState("protectionCoordination");
+  const [activeTab, setActiveTab] = useState("RelayCoordination");
 
   return (
     <div className="min-h-screen bg-[#001529] text-white">
@@ -278,10 +278,10 @@ export default function ProtectionDesignDetails() {
   );
 }
 const tabContent = {
-  protectionCoordination: {
-    title: "Protection Coordination Studies",
+  RelayCoordination: {
+    title: "Relay Coordination studies",
     description:
-      "Our protection coordination studies ensure the proper selection and setting of protective devices to minimize equipment damage and improve system reliability.",
+      "Our Relay Coordination studies ensure the proper selection and setting of protective devices to minimize equipment damage and improve system reliability.",
     items: [
       "Short circuit and fault analysis",
       "Relay coordination and grading",
@@ -293,10 +293,10 @@ const tabContent = {
       "Compliance with IEEE/IEC protection standards",
     ],
   },
-  protectionInterfacing: {
-    title: "Protection Interfacing",
+  RelayInterfacing: {
+    title: "Relay Interfacing",
     description:
-      "We design protection interfacing solutions to ensure seamless communication and operation between different protection devices and systems.",
+      "We design Relay Interfacing solutions to ensure seamless communication and operation between different protection devices and systems.",
     items: [
       "Integration of relays and protection devices",
       "Interfacing with switchgear and circuit breakers",
@@ -339,6 +339,23 @@ const tabContent = {
     ],
   },
 };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 const keyFeatures = [
   {
     icon: (

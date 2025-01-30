@@ -17,3 +17,26 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+/* Scrollbar container */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;  /* Width for vertical scrollbar */
+  height: 4px; /* Height for horizontal scrollbar */
+}
+
+/* Scrollbar Track */
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+  border-radius: 10px;
+}
+
+/* Scrollbar Thumb */
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius: 10px;
+}
+
+/* Hover effect */
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

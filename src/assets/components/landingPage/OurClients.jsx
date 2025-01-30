@@ -31,7 +31,7 @@ const OurClients = () => {
     <div className="w-full flex flex-col lg:flex-row h-full">
       <div className="lg:w-[40%] bg-[#EBEFF2] flex flex-col items-start px-8 lg:px-28 py-10">
         <div className="mt-10 ml-0 lg:ml-10">
-          <div className="flex justify-start items-start h-fit">
+          <div className="flex justify-start items-start h-fit pb-10">
             <div className="w-full h-fit relative">
               <div className="w-[1.5px] h-[95%] bg-[#b4b4b4] mr-8 absolute -left-8">
                 <div className="h-20 right-[1px] bg-secondary w-[2px] absolute top-[12%]"></div>
@@ -55,17 +55,6 @@ const OurClients = () => {
               </div>
             </div>
           </div>
-          <Link
-            to={"/case-studies"}
-            className="flex w-fit mt-10 border border-primary rounded-lg text-primaryText items-center justify-center"
-          >
-            <div className="px-4 cursor-pointer font-light text-[14px] hover:bg-primaryText hover:text-white py-2 border-r border-primary rounded-l-lg">
-              Discover Our Case Studies
-            </div>
-            <span className="px-4 py-2 rounded-r-lg">
-              <FaArrowRight />
-            </span>
-          </Link>
         </div>
       </div>
       <div className="lg:w-[60%] bg-[#011E3A] hidden md:flex py-10 lg:py-20">

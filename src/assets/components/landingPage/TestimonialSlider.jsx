@@ -3,18 +3,19 @@ import { TfiAngleLeft, TfiAngleRight } from "react-icons/tfi";
 
 const testimonials = [
   {
-    name: "John Doe",
-    message: "This is an amazing service! Highly recommended.",
+    name: "Oliver Thompson",
+    message: "Absolutely brilliant service—efficient, friendly, and reliable!",
   },
   {
-    name: "Jane Smith",
-    message: "A wonderful experience, and the team is great to work with!",
+    name: "Sophie Williams",
+    message: "A fantastic experience from start to finish. Highly recommended!",
   },
   {
-    name: "Michael Brown",
-    message: "Professional and reliable. Will use again!",
+    name: "James Davies",
+    message: "Professional, courteous, and went above and beyond. Will definitely use again!",
   },
 ];
+
 
 const TestimonialSlider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);

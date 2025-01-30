@@ -260,7 +260,34 @@ const tabContent = {
       "Lightning protection system components",
     ],
   },
+  fallOfPotentialSurvey: {
+    title: "Fall of Potential Survey",
+    description:
+      "We conduct Fall of Potential surveys to assess the grounding system's efficiency by measuring voltage drops at various points and ensuring compliance with safety standards.",
+    items: [
+      "Grounding resistance measurement",
+      "Step and touch potential analysis",
+      "Potential gradient mapping",
+      "Assessment of earthing system effectiveness",
+      "Identification of system improvement areas",
+      "Compliance with IEEE 81, IEC 60364",
+    ],
+  },
+  soilResistivityTest: {
+    title: "Soil Resistivity Test",
+    description:
+      "Our soil resistivity testing helps determine the soil's resistance to electrical currents, essential for designing optimal earthing systems.",
+    items: [
+      "Four-point method resistivity testing",
+      "Wenner method resistivity testing",
+      "Analysis of soil resistivity at different depths",
+      "Impact of seasonal variation on resistivity",
+      "Evaluation of resistivity for grounding grid design",
+      "Comprehensive soil resistivity report",
+    ],
+  },
 };
+
 
 const softwareServices = [
   "Advanced CDEGS software for precise earthing system design",

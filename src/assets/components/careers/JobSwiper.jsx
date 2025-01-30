@@ -11,39 +11,25 @@ const JobSwiper = () => {
 
   const data = [
     {
-      title: "PROJECT ENGINEER",
+      title: "POWER SYSTEM ENGINEER",
       type: "PROJECTS",
-      place: "Central England",
+      place: "Delhi, India",
       description:
-        "As a member of the Project Delivery team, you will contribute to substation and infrastructure projects, renewable energy initiatives, contestable connections, and private network installations. Your responsibilities will include the installation of high and low voltage electrical equipment.",
+        "Power System Engineer with expertise in modeling single-line diagrams in Digsilent Powerfactory, PSCAD, and PSS/E. Skilled in conducting power system studies, including load flow analysis, short circuit studies, motor starting analysis, voltage stability, harmonic analysis, and transient stability assessments. Experienced in transmission capability evaluation, voltage constraints, and filter design.",
     },
     {
-      title: "HSQE ADVISOR",
-      type: "HSQE",
-      place: "Central England",
+      title: "PROTECTION AND CONTROL ENGINEER",
+      type: "PROJECT",
+      place: "Delhi, India",
       description:
-        "As a HSQE Advisor, you will play a pivotal role in promoting a robust health, safety, quality, and environmental culture across our organisation. You will ensure compliance with all relevant legislation, internal policies, and best practices, fostering a proactive approach to HSQE issues.",
+        "As a Protection and Control Engineer, you will be responsible for designing, implementing, and testing protection and control systems for power networks. Your role will involve ensuring the reliability and safety of substations, transmission, and distribution systems. You will work on relay coordination, SCADA integration, and fault analysis to optimize system performance and minimize downtime.",
     },
     {
-      title: "PROJECT ENGINEER",
+      title: "GRADUATE ENGINEER TRAINEE ",
       type: "OPERATIONS AND MAINTENANCE",
-      place: "Inverness",
+      place: "England",
       description:
-        "We are seeking a Project Engineer to join our Operations and Maintenance team in Inverness. This position involves overseeing and managing all aspects of high voltage operations and maintenance projects, from planning to execution and completion, including undertaking HV switching at 11kV or 33kV and managing small remedial works.",
-    },
-    {
-      title: "PROJECT ENGINEER",
-      type: "OPERATIONS AND MAINTENANCE",
-      place: "Central Scotland",
-      description:
-        "We are seeking a Project Engineer to join our Operations and Maintenance team in Central Scotland. This position involves overseeing and managing all aspects of high voltage operations and maintenance projects, from planning to execution and completion, including undertaking HV switching at 11kV or 33kV and managing small remedial works.",
-    },
-    {
-      title: "TECHNICIAN",
-      type: "OPERATIONS AND MAINTENANCE",
-      place: "Central Scotland",
-      description:
-        "We are seeking a Technician to join our Operations & Maintenance team. You will play a crucial role in inspecting and maintaining HV and LV assets under ongoing maintenance agreements, as well as working on installation jobs across various sites, including wind (onshore and offshore), solar, AD, and battery storage.",
+        "As a Graduate Engineer Trainee in Operations and Maintenance, you will gain hands-on experience in monitoring, troubleshooting, and maintaining electrical and mechanical systems. You will assist in routine inspections, performance analysis, and the implementation of maintenance strategies to ensure optimal system reliability and efficiency. This role provides a strong foundation for developing technical expertise and problem-solving skills in a dynamic operational environment.",
     },
   ];
 
@@ -70,7 +56,7 @@ const JobSwiper = () => {
                   {item.place}
                 </div>
                 <div className="text-[16px] font-light tracking-wide mt-4 leading-[30px]">
-                  <div className="text-start leading-7 font-light my-4">
+                  <div className="text-start leading-7 font-light my-4 ">
                     {item.description}
                   </div>
                 </div>
