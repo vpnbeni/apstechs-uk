@@ -20,7 +20,7 @@ const AboutBatteryService = () => {
         With our comprehensive expertise spanning from Power Generation Systems
         to Distribution Systems, APSTECHS offers a seamless integration solution
         for battery storage networks. Leveraging our extensive network knowledge
-        and design capabilities, we specialize in providing complete battery
+        and design capabilities, we specialise in providing complete battery
         network solutions for substations and renewable generator projects.{" "}
         <br /> <br />
         By offering a complete battery network integrated solution, APSTECHS

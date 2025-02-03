@@ -48,7 +48,7 @@ export default function ProtectionDesignDetails() {
           <p className="text-lg text-white/90 max-w-3xl mx-auto mb-12">
             Our protection design team is dedicated to ensuring that protection
             systems effectively safeguard assets and ensure uninterrupted power
-            supply. We specialize in performing detailed designs of protection
+            supply. We specialise in performing detailed designs of protection
             schemes tailored to our clients' standards and specifications.
           </p>
 
@@ -340,22 +340,6 @@ const tabContent = {
   },
 };
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 const keyFeatures = [
   {
     icon: (
@@ -485,7 +469,7 @@ const keyFeatures = [
 ];
 
 const protectionServices = [
-  "Customized protection scheme development",
+  "customised protection scheme development",
   "Detailed design and analysis",
   "Protection coordination studies",
   "Relay setting calculations",

@@ -44,14 +44,17 @@ export default function PowerSystemStudiesDetails() {
           </h1>
 
           <p className="text-lg text-white/90 max-w-3xl mx-auto mb-12">
-            At APSTECHS, we specialize in conducting a wide range of power
+            At APSTECHS, we specialise in conducting a wide range of power
             system studies aimed at assessing and optimizing the performance of
             existing power plant designs and systems. Our goal is to enhance
             reliability, increase efficiency, and ensure compliance with
             industry standards and regulations.
           </p>
 
-          <Link to={'/contact'} className="px-6 py-3 text-white border border-white rounded hover:bg-white hover:text-[#001529] transition-colors">
+          <Link
+            to={"/contact"}
+            className="px-6 py-3 text-white border border-white rounded hover:bg-white hover:text-[#001529] transition-colors"
+          >
             Get in touch with our team
           </Link>
         </div>

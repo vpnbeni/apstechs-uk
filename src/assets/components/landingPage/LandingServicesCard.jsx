@@ -9,7 +9,7 @@ const LandingServicesCard = () => {
     {
       name: "Plant Engineering",
       description:
-        "Expert solutions for optimizing plant efficiency and reliability through innovative engineering practices.",
+        "Expert solutions to optimise plant efficiency and reliability through innovative engineering practices.",
       image: "/assets/landingPage/service/PlantEngineering.jpg",
       slug: "services/plant-engineering",
     },

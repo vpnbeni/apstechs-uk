@@ -1,8 +1,8 @@
-import { useState } from "react"
-import { Link } from "react-router-dom"
+import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function HVLVPlantDesign() {
-  const [activeTab, setActiveTab] = useState("overview")
+  const [activeTab, setActiveTab] = useState("overview");
 
   return (
     <div className="min-h-screen bg-[#001529] text-white">
@@ -34,7 +34,9 @@ export default function HVLVPlantDesign() {
 
           {/* Service Banner */}
           <div className="bg-secondary py-2 px-6 inline-block mx-auto mb-8">
-            <h2 className="text-white text-lg font-medium tracking-wider">HV AND LV PLANT DESIGN</h2>
+            <h2 className="text-white text-lg font-medium tracking-wider">
+              HV AND LV PLANT DESIGN
+            </h2>
           </div>
 
           <h1 className="text-4xl md:text-5xl font-medium leading-tight max-w-4xl mx-auto mb-8">
@@ -42,10 +44,11 @@ export default function HVLVPlantDesign() {
           </h1>
 
           <p className="text-lg text-white/90 max-w-3xl mx-auto mb-12">
-            At APSTECHS, we excel in providing comprehensive HV (High Voltage) and LV (Low Voltage) plant design
-            services, spanning from 11kV to 220kV. Our expertise covers the entire spectrum of substation design,
-            offering tailored solutions for primary, secondary, and civil requirements, from initial concept to final
-            commissioning.
+            At APSTECHS, we excel in providing comprehensive HV (High Voltage)
+            and LV (Low Voltage) plant design services, spanning from 11kV to
+            220kV. Our expertise covers the entire spectrum of substation
+            design, offering tailored solutions for primary, secondary, and
+            civil requirements, from initial concept to final commissioning.
           </p>
 
           <Link
@@ -65,7 +68,9 @@ export default function HVLVPlantDesign() {
               <button
                 key={tab}
                 className={`px-6 py-3 rounded-full transition-colors ${
-                  activeTab === tab ? "bg-secondary text-white" : "bg-white/10 text-white hover:bg-white/20"
+                  activeTab === tab
+                    ? "bg-secondary text-white"
+                    : "bg-white/10 text-white hover:bg-white/20"
                 }`}
                 onClick={() => setActiveTab(tab)}
               >
@@ -75,8 +80,12 @@ export default function HVLVPlantDesign() {
           </div>
 
           <div className="bg-white/5 rounded-lg p-8">
-            <h3 className="text-2xl font-semibold mb-6">{tabContent[activeTab].title}</h3>
-            <p className="text-white/90 mb-8">{tabContent[activeTab].description}</p>
+            <h3 className="text-2xl font-semibold mb-6">
+              {tabContent[activeTab].title}
+            </h3>
+            <p className="text-white/90 mb-8">
+              {tabContent[activeTab].description}
+            </p>
             <ul className="grid md:grid-cols-2 gap-4">
               {tabContent[activeTab].items.map((item, index) => (
                 <li key={index} className="flex items-start gap-3">
@@ -86,7 +95,12 @@ export default function HVLVPlantDesign() {
                     viewBox="0 0 24 24"
                     stroke="currentColor"
                   >
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M5 13l4 4L19 7"
+                    />
                   </svg>
                   <span>{item}</span>
                 </li>
@@ -99,10 +113,15 @@ export default function HVLVPlantDesign() {
       {/* Benefits Section */}
       <section className="py-16 px-4 border-t border-white/10 bg-white/5">
         <div className="max-w-6xl mx-auto">
-          <h3 className="text-2xl font-semibold mb-12 text-center">Benefits of Our HV and LV Plant Design Services</h3>
+          <h3 className="text-2xl font-semibold mb-12 text-center">
+            Benefits of Our HV and LV Plant Design Services
+          </h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {benefits.map((benefit, index) => (
-              <div key={index} className="p-6 rounded-lg bg-white/5 hover:bg-white/10 transition-all">
+              <div
+                key={index}
+                className="p-6 rounded-lg bg-white/5 hover:bg-white/10 transition-all"
+              >
                 <div className="text-secondary mb-4">{benefit.icon}</div>
                 <h4 className="text-lg font-medium mb-3">{benefit.title}</h4>
                 <p className="text-white/90">{benefit.description}</p>
@@ -115,12 +134,16 @@ export default function HVLVPlantDesign() {
       {/* Process Steps */}
       <section className="py-16 px-4 border-t border-white/10">
         <div className="max-w-6xl mx-auto">
-          <h3 className="text-2xl font-semibold mb-12 text-center">Our HV and LV Plant Design Process</h3>
+          <h3 className="text-2xl font-semibold mb-12 text-center">
+            Our HV and LV Plant Design Process
+          </h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {processSteps.map((step, index) => (
               <div key={index} className="relative">
                 <div className="p-6 rounded-lg bg-white/5 h-full">
-                  <div className="text-secondary text-4xl font-bold mb-4">{index + 1}</div>
+                  <div className="text-secondary text-4xl font-bold mb-4">
+                    {index + 1}
+                  </div>
                   <h4 className="text-lg font-medium mb-3">{step.title}</h4>
                   <p className="text-white/90">{step.description}</p>
                 </div>
@@ -136,10 +159,13 @@ export default function HVLVPlantDesign() {
       {/* CTA Section */}
       <section className="py-16 px-4 border-t border-white/10">
         <div className="max-w-3xl mx-auto text-center">
-          <h3 className="text-3xl font-medium mb-6">Optimize Your Power Systems with APSTECHS</h3>
+          <h3 className="text-3xl font-medium mb-6">
+            Optimize Your Power Systems with APSTECHS
+          </h3>
           <p className="text-lg text-white/90 mb-8">
-            Through our comprehensive HV and LV plant design services, we help clients develop robust, efficient, and
-            future-ready substations that support reliable power distribution and enhance grid stability.
+            Through our comprehensive HV and LV plant design services, we help
+            clients develop robust, efficient, and future-ready substations that
+            support reliable power distribution and enhance grid stability.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button className="px-8 py-4 bg-secondary text-white rounded hover:bg-[#45a049] transition-colors">
@@ -152,7 +178,7 @@ export default function HVLVPlantDesign() {
         </div>
       </section>
     </div>
-  )
+  );
 }
 
 const tabContent = {
@@ -167,27 +193,28 @@ const tabContent = {
       "Primary System Design",
       "Secondary System Design",
       "Civil Design Requirements",
-      "Concept to Commissioning Support",
+      "Concept-to-Commissioning Support",
     ],
   },
   hv: {
     title: "High Voltage (HV) Design",
     description:
-      "We specialize in designing HV systems ranging from 11kV to 220kV, ensuring optimal performance, reliability, and safety.",
+      "We specialise in designing HV systems ranging from 11kV to 220kV, ensuring optimal performance, reliability, and safety.",
     items: [
       "Equipment selection",
       "Layout planning",
       "Insulation coordination",
       "Protection system design",
       "Switchgear design",
-      "Transformer specification",
+      "Transformer specifications",
       "Busbar system design",
       "Grounding and lightning protection",
     ],
   },
   lv: {
     title: "Low Voltage (LV) Design",
-    description: "Our LV design services encompass the design of distribution systems operating at voltages below 1kV.",
+    description:
+      "Our LV design services encompass the design of distribution systems operating at voltages below 1kV.",
     items: [
       "LV switchgear design",
       "Distribution panel layout",
@@ -246,7 +273,8 @@ const tabContent = {
   },
   civil: {
     title: "Civil Design Requirements",
-    description: "We offer civil engineering services tailored to the unique requirements of substation projects.",
+    description:
+      "We offer civil engineering services tailored to the unique requirements of substation projects.",
     items: [
       "Site layout planning",
       "Foundation design",
@@ -259,7 +287,7 @@ const tabContent = {
     ],
   },
   commissioning: {
-    title: "Concept to Commissioning Support",
+    title: "Concept-to-Commissioning Support",
     description:
       "From conceptualization to commissioning, we provide comprehensive support throughout the project lifecycle.",
     items: [
@@ -273,21 +301,37 @@ const tabContent = {
       "Post-commissioning support",
     ],
   },
-}
+};
 
 const benefits = [
   {
     icon: (
-      <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+      <svg
+        className="w-8 h-8"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={2}
+          d="M13 10V3L4 14h7v7l9-11h-7z"
+        />
       </svg>
     ),
-    title: "Optimized Performance",
-    description: "Enhance power distribution efficiency and reliability through tailored design solutions.",
+    title: "Optimised Performance",
+    description:
+      "Enhance power distribution efficiency and reliability through tailored design solutions.",
   },
   {
     icon: (
-      <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <svg
+        className="w-8 h-8"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
         <path
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -302,7 +346,12 @@ const benefits = [
   },
   {
     icon: (
-      <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <svg
+        className="w-8 h-8"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
         <path
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -312,11 +361,17 @@ const benefits = [
       </svg>
     ),
     title: "Regulatory Compliance",
-    description: "Ensure adherence to local and international standards for HV and LV plant design.",
+    description:
+      "Ensure adherence to local and international standards for HV and LV plant design.",
   },
   {
     icon: (
-      <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <svg
+        className="w-8 h-8"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
         <path
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -326,20 +381,37 @@ const benefits = [
       </svg>
     ),
     title: "Cost-Effective Solutions",
-    description: "Optimize design and equipment selection to reduce capital and operational costs.",
+    description:
+      "Optimize design and equipment selection to reduce capital and operational costs.",
   },
   {
     icon: (
-      <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+      <svg
+        className="w-8 h-8"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={2}
+          d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"
+        />
       </svg>
     ),
     title: "Scalability",
-    description: "Design systems that can accommodate future growth and technological advancements.",
+    description:
+      "Design systems that can accommodate future growth and technological advancements.",
   },
   {
     icon: (
-      <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <svg
+        className="w-8 h-8"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
         <path
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -349,27 +421,30 @@ const benefits = [
       </svg>
     ),
     title: "Integrated Approach",
-    description: "Seamlessly combine HV, LV, and civil design aspects for a cohesive and efficient plant layout.",
+    description:
+      "Seamlessly combine HV, LV, and civil design aspects for a cohesive and efficient plant layout.",
   },
-]
+];
 
 const processSteps = [
   {
     title: "Requirements Analysis",
-    description: "Gather and analyze client requirements, site conditions, and regulatory standards.",
+    description:
+      "Gather and analyze client requirements, site conditions, and regulatory standards.",
   },
   {
     title: "Conceptual Design",
-    description: "Develop initial design concepts, including equipment selection and layout planning.",
+    description:
+      "Develop initial design concepts, including equipment selection and layout planning.",
   },
   {
     title: "Detailed Engineering",
-    description: "Create comprehensive design documentation, including electrical schematics and civil drawings.",
+    description:
+      "Create comprehensive design documentation, including electrical schematics and civil drawings.",
   },
   {
     title: "Review and Optimization",
     description:
       "Conduct design reviews, perform simulations, and optimize the design for performance and cost-effectiveness.",
   },
-]
-
+];

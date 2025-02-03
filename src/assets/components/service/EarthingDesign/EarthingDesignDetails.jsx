@@ -47,7 +47,7 @@ export default function EarthingDesignDetails() {
           </h1>
 
           <p className="text-lg text-white/90 max-w-3xl mx-auto mb-12">
-            At APSTECHS, we specialize in providing comprehensive earthing
+            At APSTECHS, we specialise in providing comprehensive earthing
             design services using state-of-the-art software tools such as CDEGS.
             Our expertise extends to both earthing design for various
             applications and the layout and design of earthing systems for
@@ -288,7 +288,6 @@ const tabContent = {
   },
 };
 
-
 const softwareServices = [
   "Advanced CDEGS software for precise earthing system design",
   "Sophisticated soil resistivity modelling",
@@ -351,6 +350,6 @@ const additionalServices = [
   },
   {
     title: "Maintenance Plans",
-    description: "Customized maintenance schedules and procedures",
+    description: "customised maintenance schedules and procedures",
   },
 ];

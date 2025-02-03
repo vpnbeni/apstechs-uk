@@ -16,9 +16,9 @@ const TeamPage = () => {
         <h2 className="text-3xl font-semibold text-center mb-6">About Us</h2>
         <p className="leading-relaxed max-w-4xl mx-auto">
           We at APSTECHS offer Design & Advisory Solutions for efficient and
-          effective utilization of power sector resources. Our services ensure
+          effective utilisation of power sector resources. Our services ensure
           maximum business and operational success for our clients. With a
-          proven track record of delivering customized, cost-effective, safe,
+          proven track record of delivering customised, cost-effective, safe,
           sustainable, and viable projects, we provide technical and financial
           solutions tailored to customer goals and regulatory requirements.
         </p>

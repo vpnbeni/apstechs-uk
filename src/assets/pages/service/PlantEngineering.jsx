@@ -14,7 +14,7 @@ const PlantEngineering = () => {
     <div className="py-24">
       <HeroSectionTemplate
         heading={"Plant Engineering"}
-        description={`Expert solutions for optimizing plant efficiency and reliability through innovative engineering practices.`}
+        description={`Expert solutions to optimise plant efficiency and reliability through innovative engineering practices.`}
         bg={"/assets/services/plant-engineering/herosection.jpg"}
       />
       {/* <AboutService /> */}

@@ -11,7 +11,7 @@ const EarthingDesign = () => {
     <div className="py-24">
       <HeroSectionTemplate
         heading={"Earthing Design"}
-        description={`At APSTECHS, we specialize in providing comprehensive earthing design services using state-of-the-art software tools such as CDEGS`}
+        description={`At APSTECHS, we specialise in providing comprehensive earthing design services using state-of-the-art software tools such as CDEGS`}
         bg={"/assets/services/earthing/earthing.jpeg"}
       />
       <EarthingDesignDetails />
