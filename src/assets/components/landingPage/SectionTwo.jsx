@@ -1,5 +1,6 @@
 import React from "react";
 import { FaDownload } from "react-icons/fa";
+import DownloadBtn from "../common/DownloadBtn";
 
 const SectionTwo = () => {
   return (
@@ -13,11 +14,7 @@ const SectionTwo = () => {
         solid financial foundation and a vast pool of expertise, we now deliver
         solutions that exceed even our founders’ most ambitious aspirations.
       </div>
-      <div
-        className="w-fit bg-primary text-lightBlue mb-6 rounded-full p-4 border hover:text-dark hover:bg-white cursor-pointer transition-all duration-300"
-      >
-        <FaDownload className="text-xl sm:text-2xl" />
-      </div>
+      <DownloadBtn pdf={"/assets/pdf/APSTECHSDesignCatalogue.pdf"} />
     </div>
   );
 };

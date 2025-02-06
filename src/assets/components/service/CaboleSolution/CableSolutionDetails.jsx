@@ -1,4 +1,6 @@
 import { useState } from "react";
+import DownloadBtn from "../../common/DownloadBtn";
+import { FaDownload } from "react-icons/fa";
 const tabContent = {
   cableSizing: {
     title: "Cable Sizing Calculation",
@@ -45,6 +47,19 @@ const tabContent = {
       "Custom-length cable supply with necessary accessories",
     ],
   },
+  soilResistivityTest: {
+    title: "Soil Resistivity Test",
+    description:
+      "Our soil resistivity testing helps determine the soil's resistance to electrical currents, essential for designing optimal earthing systems.",
+    items: [
+      "Four-point method resistivity testing",
+      "Wenner method resistivity testing",
+      "Analysis of soil resistivity at different depths",
+      "Impact of seasonal variation on resistivity",
+      "Evaluation of resistivity for grounding grid design",
+      "Comprehensive soil resistivity report",
+    ],
+  },
 };
 
 const civilServices = [
@@ -71,7 +86,7 @@ export default function CableSolutionDetails() {
   return (
     <div className="bg-[#001529] min-h-screen">
       {/* Cable System Design Section */}
-      <section className="py-16 px-4 text-center">
+      <section className="py-16 px-4 text-center relative">
         <div className="max-w-8xl mx-auto">
           {/* Icon */}
           <div className="relative w-24 h-24 mx-auto mb-8">
@@ -102,14 +117,24 @@ export default function CableSolutionDetails() {
           </div>
 
           <div className="max-w-6xl mx-auto space-y-8 text-white">
-            <p className="text-lg text-white/90">
-              Expanding our reach beyond the UK and India, APSTECHS now offers
-              comprehensive cable system design services for clients worldwide,
-              covering a wide range of voltages from low voltage to extra high
-              voltage. Leveraging advanced software tools such as CREATER and
-              CYMCAP, we ensure precise and efficient designs tailored to meet
-              the unique requirements of each project.
-            </p>
+            <div className=" relative flex flex-col items-center justify-center ">
+              <p className="text-lg text-white/90">
+                Expanding our reach beyond the UK and India, APSTECHS now offers
+                comprehensive cable system design services for clients
+                worldwide, covering a wide range of voltages from low voltage to
+                extra high voltage. Leveraging advanced software tools such as
+                CREATER and CYMCAP, we ensure precise and efficient designs
+                tailored to meet the unique requirements of each project.
+              </p>
+              <div
+                onClick={() =>
+                  window.open("/assets/pdf/APSTECHSCableSolutions.pdf")
+                }
+                className={`bg-primary w-fit mt-5 text-lightBlue rounded-full p-4 border hover:text-dark hover:bg-white cursor-pointer transition-all duration-1000 delay-500 ease-out transform `}
+              >
+                <FaDownload />
+              </div>
+            </div>
             {/* Tabs Section */}
             <section className="py-16 px-4 border-t border-white/10">
               <div className="max-w-6xl mx-auto">
@@ -160,10 +185,6 @@ export default function CableSolutionDetails() {
               </div>
             </section>
           </div>
-
-          <button className="mt-12 px-6 py-3 text-white border border-white rounded hover:bg-white hover:text-[#001529] transition-colors">
-            Get in touch with our team
-          </button>
         </div>
       </section>
 

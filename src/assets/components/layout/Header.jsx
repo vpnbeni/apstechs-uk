@@ -14,6 +14,11 @@ const navItems = [
     subItems: [],
   },
   {
+    name: "Products",
+    link: "/products",
+    subItems: [],
+  },
+  {
     name: "Gallery",
     link: "/gallery",
     subItems: [],

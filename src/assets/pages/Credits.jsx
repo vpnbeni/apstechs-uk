@@ -203,6 +203,8 @@ const CreditPage = () => {
             <a href="https://unsplash.com/photos/green-trees-near-snow-covered-mountain-during-daytime-ZWH6Wm4rUw4?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
               Unsplash
             </a>
+            Photo by Markus Spiske:
+            https://www.pexels.com/photo/black-and-white-electric-plug-218445/
           </div>
         </div>
       </div>

@@ -19,8 +19,18 @@ const Footer = () => {
 
         <div>
           <span className="font-medium mr-2">Tel:</span>
-          <a href="tel:+44 3301184436" className="text-blue-500 underline">
+          <a href="tel:+44 3301184436"  className="text-blue-500 underline">
             +44 3301184436
+          </a>
+        </div>
+        <div>
+          <span className="font-medium mr-2">Whatsapp:</span>
+          <a
+            href="https://wa.me/447429924413"
+            target="_blank"
+            className="text-blue-500 underline"
+          >
+            +44 7429 924413
           </a>
         </div>
 
@@ -50,31 +60,26 @@ const Footer = () => {
       <div className="w-full lg:w-[65%] flex justify-start lg:justify-end">
         <div className="flex justify-center items-start gap-6 sm:gap-10">
           <div className="flex flex-col gap-4 sm:gap-6">
-            {[
-              "Service",
-              "About",
-              "Careers",
-              "Privacy Policy",
-            ].map((item, index) => {
-              return (
-                <div className="font-medium text-sm sm:text-base" key={index}>
-                  {item}
-                </div>
-              );
-            })}
+            {["Service", "About", "Careers", "Privacy Policy"].map(
+              (item, index) => {
+                return (
+                  <div className="font-medium text-sm sm:text-base" key={index}>
+                    {item}
+                  </div>
+                );
+              }
+            )}
           </div>
           <div className="flex flex-col justify-start gap-4 sm:gap-6">
-            {[
-              "Case Studies",
-              "Sustainability",
-              "Contact us",
-            ].map((item, index) => {
-              return (
-                <div className="font-medium text-sm sm:text-base" key={index}>
-                  {item}
-                </div>
-              );
-            })}
+            {["Case Studies", "Sustainability", "Contact us"].map(
+              (item, index) => {
+                return (
+                  <div className="font-medium text-sm sm:text-base" key={index}>
+                    {item}
+                  </div>
+                );
+              }
+            )}
           </div>
           <div className="flex flex-col gap-4 sm:gap-6">
             {/* Address */}

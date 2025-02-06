@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { FaDownload } from "react-icons/fa";
-import DownloadBtn from "../common/DownloadBtn";
 
 const CareersHero = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -31,7 +30,7 @@ const CareersHero = () => {
           </div>
         </div>
       </div>
-      <DownloadBtn />
+      
     </div>
   );
 };

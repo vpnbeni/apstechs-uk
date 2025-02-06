@@ -25,6 +25,8 @@ import PowerSystemStudiesService from "./assets/pages/service/PowerSystemStudies
 import Survey from "./assets/pages/service/Survey";
 import LoadTestCaseStudy from "./assets/pages/caseStudies/LoadTestCaseStudy";
 import GalleryPage from "./assets/pages/gallery/GalleryPage";
+import Products from "./assets/pages/Products";
+import ProductsPage from "./assets/pages/ProductsPage";
 
 const App = () => {
   return (
@@ -35,6 +37,7 @@ const App = () => {
         {/* Main Routes */}
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/products" element={<ProductsPage />} />
         <Route path="/credit" element={<CreditPage />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/case-studies" element={<CaseStudies />} />
@@ -43,7 +46,6 @@ const App = () => {
         <Route path="/apply" element={<JobApplicationForm />} />
         <Route path="/temp" element={<JobApplicationForm />} />
         <Route path="/gallery" element={<GalleryPage />} />
-
 
         {/* Service Sub-Routes */}
         <Route
@@ -68,11 +70,6 @@ const App = () => {
           element={<PowerSystemStudiesService />}
         />
         <Route path="/services/survey" element={<Survey />} />
-
-
-
-
-
 
         {/* Case Studies Sub-Routes */}
         <Route

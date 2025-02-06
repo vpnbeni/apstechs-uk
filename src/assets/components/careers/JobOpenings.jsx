@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import SectionHeading from "../common/heading/SectionHeading";
-import DownloadBtn from "../common/DownloadBtn";
 import JobSwiper from "./JobSwiper";
 import ContactCards from "./ContactCards";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";

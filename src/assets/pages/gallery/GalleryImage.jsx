@@ -11,6 +11,19 @@ const images = [
   "/assets/gallery/8.jpg",
   "/assets/gallery/9.jpg",
   "/assets/gallery/10.jpg",
+  "/assets/gallery/11.jpg",
+  "/assets/gallery/12.jpg",
+  "/assets/gallery/14.jpg",
+  "/assets/gallery/15.jpg",
+  "/assets/gallery/16.jpg",
+  "/assets/gallery/17.jpg",
+  "/assets/gallery/18.jpg",
+  "/assets/gallery/19.jpg",
+  "/assets/gallery/22.jpg",
+  "/assets/gallery/23.jpg",
+  "/assets/gallery/24.jpg",
+  "/assets/gallery/25.jpg",
+  "/assets/gallery/26.jpg",
 ];
 
 const Gallery = () => {
@@ -22,7 +35,7 @@ const Gallery = () => {
             <img
               src={src}
               alt={`Gallery Image ${index + 1}`}
-              className="w-full h-48 object-cover"
+              className="w-full h-full object-cover"
             />
           </div>
         ))}

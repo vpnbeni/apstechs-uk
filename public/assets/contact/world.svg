@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 500">
+  <rect width="100%" height="100%" fill="#E0E0E0"/>
+
+  <!-- World Map Outline -->
+  <g fill="#D0D0D0" stroke="black" stroke-width="0.5">
+    <!-- Sample paths for other countries -->
+    <path d="M50,250 L200,240 L180,280 L70,290 Z"/> <!-- Placeholder -->
+  </g>
+
+  <!-- India -->
+  <g fill="#FF5733" stroke="black" stroke-width="0.5">
+    <path d="M600,300 L650,290 L640,320 L610,330 Z"/>
+  </g>
+
+  <!-- United Kingdom -->
+  <g fill="#FF5733" stroke="black" stroke-width="0.5">
+    <path d="M480,100 L500,90 L510,110 L490,120 Z"/>
+  </g>
+
+  <!-- Uzbekistan -->
+  <g fill="#FF5733" stroke="black" stroke-width="0.5">
+    <path d="M700,180 L750,170 L740,200 L710,210 Z"/>
+  </g>
+
+  <!-- Labels -->
+  <text x="620" y="295" font-size="12" fill="black">India</text>
+  <text x="490" y="95" font-size="12" fill="black">United Kingdom</text>
+  <text x="720" y="175" font-size="12" fill="black">Uzbekistan</text>
+</svg>

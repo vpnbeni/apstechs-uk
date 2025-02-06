@@ -1,7 +1,6 @@
 import React from "react";
 import { FaArrowRight } from "react-icons/fa";
 import SectionHeading from "../common/heading/SectionHeading";
-import DownloadBtn from "../common/DownloadBtn";
 import { Link } from "react-router-dom";
 
 const AboutHeroSection = () => {
@@ -32,8 +31,7 @@ const AboutHeroSection = () => {
         </Link>
       </div>
 
-      {/* Right content (Download button) */}
-      <DownloadBtn className="absolute bottom-10 right-10 lg:right-32" />
+    
     </div>
   );
 };
