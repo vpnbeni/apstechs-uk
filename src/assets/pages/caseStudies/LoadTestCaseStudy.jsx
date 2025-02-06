@@ -69,7 +69,7 @@ const LoadTestCaseStudy = () => {
               <h3 className="text-xl font-normal mb-2">Real-Time Monitoring</h3>
               <p>
                 The use of SCADA and SuperTAPP relay systems ensured accurate
-                load monitoring and minimized discrepancies caused by natural
+                load monitoring and minimised discrepancies caused by natural
                 losses.
               </p>
             </div>
@@ -168,7 +168,7 @@ const LoadTestCaseStudy = () => {
             <div className="p-6 border rounded-lg shadow-md">
               <h3 className="text-xl font-normal mb-2">Efficiency</h3>
               <p>
-                The systematic approach minimized losses and ensured an
+                The systematic approach minimised losses and ensured an
                 efficient testing process.
               </p>
             </div>

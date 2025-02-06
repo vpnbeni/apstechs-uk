@@ -11,7 +11,7 @@ const CableSolution = () => {
   return (
     <div className="py-24">
       <HeroSectionTemplate
-        heading={"Cable Solution"}
+        heading={"Cable Solutions"}
         description={`Expanding our reach beyond the UK and India, APSTECHS now offers comprehensive cable system design services for clients worldwide, covering a wide range of voltages from low voltage to extra high voltage. `}
         bg={"/assets/services/plant-engineering/herosection.jpg"}
       />

@@ -11,17 +11,17 @@ const tabContent = {
       "Derating factor assessment (temperature, grouping, soil resistivity)",
       "Selection of appropriate insulation and conductor material",
       "Earthing and shielding considerations",
-      "Compliance with IEC 60287, NEC, and IEEE standards",
-      "Optimization for energy efficiency and cost-effectiveness",
+      "Compliance with IEC 60287,BS-7671, NEC, and IEEE standards",
+      "Optimisation for energy efficiency and cost-effectiveness",
     ],
   },
   cablePulling: {
     title: "Cable Pulling Calculation",
     description:
-      "We conduct cable pulling calculations to ensure safe and efficient installation, minimizing mechanical stress and preventing damage during cable laying.",
+      "We conduct cable pulling calculations to ensure safe and efficient installation, minimising mechanical stress and preventing damage during cable laying.",
     items: [
       "Tension and sidewall pressure analysis",
-      "Cable route planning and optimization",
+      "Cable route planning and Optimisation",
       "Bend radius and pulling force calculation",
       "Lubrication and friction coefficient evaluation",
       "Cable tray and conduit sizing",
@@ -38,7 +38,7 @@ const tabContent = {
       "LV, MV, and HV power cables",
       "Control and instrumentation cables",
       "XLPE, PVC, and EPR insulated cables",
-      "Copper and aluminum conductor cables",
+      "Copper and aluminium conductor cables",
       "Armored and unarmored cables",
       "Fire-resistant and flame-retardant cables",
       "Underground and overhead transmission cables",
@@ -159,59 +159,6 @@ export default function CableSolutionDetails() {
                 </div>
               </div>
             </section>
-            {/* Services Grid */}
-            <div className="grid md:grid-cols-2 gap-8 mt-12 text-left">
-              <div className="space-y-6">
-                <h3 className="text-xl font-semibold mb-4">
-                  Civil Design Services
-                </h3>
-                <ul className="space-y-4">
-                  {civilServices.map((service, index) => (
-                    <li key={index} className="flex items-start gap-3">
-                      <svg
-                        className="w-6 h-6 text-sebg-secondary flex-shrink-0 mt-1"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M5 13l4 4L19 7"
-                        />
-                      </svg>
-                      <span>{service}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div className="space-y-6">
-                <h3 className="text-xl font-semibold mb-4">
-                  Electrical Design Services
-                </h3>
-                <ul className="space-y-4">
-                  {electricalServices.map((service, index) => (
-                    <li key={index} className="flex items-start gap-3">
-                      <svg
-                        className="w-6 h-6 text-sebg-secondary flex-shrink-0 mt-1"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M5 13l4 4L19 7"
-                        />
-                      </svg>
-                      <span>{service}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
           </div>
 
           <button className="mt-12 px-6 py-3 text-white border border-white rounded hover:bg-white hover:text-[#001529] transition-colors">

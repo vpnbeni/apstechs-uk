@@ -69,7 +69,7 @@ const PowerSystemStudies = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="p-6 border rounded-lg shadow-md">
               <h3 className="text-lg md:text-xl font-normal mb-2">
-                Comprehensive Network Modeling
+                Comprehensive Network modelling
               </h3>
               <p>
                 A detailed model of the electrical network was developed using{" "}
@@ -240,7 +240,7 @@ const PowerSystemStudies = () => {
             The comprehensive load flow and short circuit studies conducted by
             APSTECHS UK LTD ensured the successful integration of the Client
             Substation with the 132kV Substation. By leveraging advanced
-            modeling and simulation tools, the analysis validated the network’s
+            modelling and simulation tools, the analysis validated the network’s
             performance, safety, and reliability under diverse operational
             scenarios. The findings provided the client with confidence in the
             robustness of their electrical system, ensuring long-term

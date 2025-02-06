@@ -24,6 +24,7 @@ import ProtectionDesign from "./assets/pages/service/ProtectionDesign";
 import PowerSystemStudiesService from "./assets/pages/service/PowerSystemStudiesService";
 import Survey from "./assets/pages/service/Survey";
 import LoadTestCaseStudy from "./assets/pages/caseStudies/LoadTestCaseStudy";
+import GalleryPage from "./assets/pages/gallery/GalleryPage";
 
 const App = () => {
   return (
@@ -38,14 +39,10 @@ const App = () => {
         <Route path="/contact" element={<Contact />} />
         <Route path="/case-studies" element={<CaseStudies />} />
         <Route path="/services" element={<Services />} />
-        {/* <Route path="/teampage" element={<TeamPage />} /> */}
-        {/* <Route path="/whychooseus" element={<WhyChooseUs />} /> */}
         <Route path="/careers" element={<Careers />} />
         <Route path="/apply" element={<JobApplicationForm />} />
         <Route path="/temp" element={<JobApplicationForm />} />
-
-
-
+        <Route path="/gallery" element={<GalleryPage />} />
 
 
         {/* Service Sub-Routes */}

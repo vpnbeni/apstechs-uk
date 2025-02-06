@@ -120,7 +120,7 @@ const OurValue = () => {
         letter: "T",
         title: "Timeliness",
         value:
-          "We understand the value of time and always strive to deliver our projects on schedule, ensuring efficiency and minimizing delays.",
+          "We understand the value of time and always strive to deliver our projects on schedule, ensuring efficiency and minimising delays.",
         tagline: "Delivering on time, every time.",
       },
     ],
@@ -135,7 +135,12 @@ const OurValue = () => {
             OUR VALUES
           </h1>
           <div className="text-base ">
-          At APSTECHS, our core values—EXCEL, TRUST, and IMPACT—shape everything we do. We strive for excellence through innovation, collaboration, and integrity while building trust through transparency, reliability, and sustainability. With a focus on impact, we drive innovation, professionalism, and customer success, delivering high-quality, sustainable solutions.
+            At APSTECHS, our core values—EXCEL, TRUST, and IMPACT—shape
+            everything we do. We strive for excellence through innovation,
+            collaboration, and integrity while building trust through
+            transparency, reliability, and sustainability. With a focus on
+            impact, we drive innovation, professionalism, and customer success,
+            delivering high-quality, sustainable solutions.
           </div>
           <div className="flex space-x-4 mt-8">
             {Object.keys(tabsData).map((tab) => (

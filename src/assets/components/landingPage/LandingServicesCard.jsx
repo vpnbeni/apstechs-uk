@@ -21,7 +21,7 @@ const LandingServicesCard = () => {
       slug: "services/battery-storage-integration",
     },
     {
-      name: "Cable Solution",
+      name: "Cable Solutions",
       description:
         "High-quality cable solutions designed for durability and performance in demanding environments.",
       image: "/assets/landingPage/service/CableSolution.jpg",

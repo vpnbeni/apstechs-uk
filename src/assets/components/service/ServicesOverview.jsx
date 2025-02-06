@@ -222,7 +222,7 @@ const tabContent = {
       "Cable network planning",
       "Power factor correction",
       "Harmonic mitigation",
-      "Energy efficiency optimization",
+      "Energy efficiency Optimisation",
       "Compliance with safety standards",
     ],
   },
@@ -231,7 +231,7 @@ const tabContent = {
     description:
       "From greenfield developments to upgrades and expansions, we provide end-to-end substation design solutions.",
     items: [
-      "Site layout optimization",
+      "Site layout Optimisation",
       "Equipment specification",
       "Protection and control systems",
       "SCADA integration",
@@ -250,7 +250,7 @@ const tabContent = {
       "Circuit breaker selection",
       "Disconnect switch design",
       "Lightning arrestor placement",
-      "Busbar system optimization",
+      "Busbar system Optimisation",
       "Insulation coordination",
       "Earthing system design",
       "Power flow analysis",
@@ -289,7 +289,7 @@ const tabContent = {
   commissioning: {
     title: "Concept-to-Commissioning Support",
     description:
-      "From conceptualization to commissioning, we provide comprehensive support throughout the project lifecycle.",
+      "From conceptualisation to commissioning, we provide comprehensive support throughout the project lifecycle.",
     items: [
       "Feasibility studies",
       "Detailed engineering",
@@ -443,7 +443,7 @@ const processSteps = [
       "Create comprehensive design documentation, including electrical schematics and civil drawings.",
   },
   {
-    title: "Review and Optimization",
+    title: "Review and Optimisation",
     description:
       "Conduct design reviews, perform simulations, and optimize the design for performance and cost-effectiveness.",
   },

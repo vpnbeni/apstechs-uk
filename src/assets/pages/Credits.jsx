@@ -189,11 +189,19 @@ const CreditPage = () => {
             </a>
             Image by{" "}
             <a href="https://pixabay.com/users/gabriellepapalia-38460324/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8149854">
-              Gabrielle Papalia
+              Gabrielle Papalia1``
             </a>{" "}
             from{" "}
             <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8149854">
               Pixabay
+            </a>
+            Photo by{" "}
+            <a href="https://unsplash.com/@jan_huber?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
+              Jan Huber
+            </a>{" "}
+            on{" "}
+            <a href="https://unsplash.com/photos/green-trees-near-snow-covered-mountain-during-daytime-ZWH6Wm4rUw4?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
+              Unsplash
             </a>
           </div>
         </div>

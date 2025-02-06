@@ -45,7 +45,7 @@ export default function SurveyDetails() {
           </h1>
 
           <p className="text-lg text-white/90 max-w-3xl mx-auto mb-12">
-            At APSTECHS, we provide a range of specialized survey services to
+            At APSTECHS, we provide a range of specialised survey services to
             ensure the successful planning, design, and implementation of
             substation projects. Our surveys form the foundation for informed
             decision-making and optimal project outcomes.
@@ -191,8 +191,8 @@ const tabContent = {
       "Precise land contour mapping",
       "Elevation profiling",
       "Existing structure and feature identification",
-      "Digital terrain modeling",
-      "3D visualization of the site",
+      "Digital terrain modelling",
+      "3D visualisation of the site",
       "Boundary and easement delineation",
       "Vegetation and natural feature mapping",
       "Integration with GIS systems",
@@ -238,7 +238,7 @@ const tabContent = {
       "Flood risk assessment",
       "Drainage pattern analysis",
       "Watershed delineation",
-      "Stormwater runoff modeling",
+      "Stormwater runoff modelling",
       "Erosion potential evaluation",
       "Water quality testing",
     ],
@@ -269,7 +269,7 @@ const tabContent = {
       "Evaluation of backfill material suitability",
       "Temperature-dependent resistivity measurement",
       "Identification of thermal hotspots",
-      "Optimization of grounding system design",
+      "Optimisation of grounding system design",
       "Mitigation strategies for high-resistivity soils",
     ],
   },
@@ -314,7 +314,7 @@ const benefits = [
     ),
     title: "Time and Cost Efficiency",
     description:
-      "Minimize project delays and unforeseen expenses through comprehensive pre-construction surveys.",
+      "minimise project delays and unforeseen expenses through comprehensive pre-construction surveys.",
   },
   {
     icon: (
@@ -374,7 +374,7 @@ const benefits = [
     ),
     title: "Environmental Stewardship",
     description:
-      "Minimize ecological impact through thorough environmental assessments and sustainable planning.",
+      "minimise ecological impact through thorough environmental assessments and sustainable planning.",
   },
   {
     icon: (

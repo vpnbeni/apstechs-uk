@@ -221,9 +221,14 @@ export default function EarthingDesignDetails() {
             prioritize safety, reliability, and compliance with industry
             standards.
           </p>
-          <button className="px-8 py-4 bg-secondary text-white rounded hover:bg-secondary transition-colors">
-            Start Your Project
-          </button>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <button className="px-8 py-4 bg-secondary text-white rounded hover:bg-[#45a049] transition-colors">
+              Request a Consultation
+            </button>
+            <button className="px-8 py-4 border border-white text-white rounded hover:bg-white hover:text-[#001529] transition-colors">
+              Learn More
+            </button>
+          </div>
         </div>
       </section>
     </div>
@@ -233,25 +238,25 @@ const tabContent = {
   earthingCalculation: {
     title: "Earthing Calculation using CDEGS",
     description:
-      "We perform advanced earthing system analysis using CDEGS software to ensure safe grounding, minimize step and touch potential hazards, and comply with international standards.",
+      "We perform advanced earthing system analysis using CDEGS software to ensure safe grounding, minimise step and touch potential hazards, and comply with international standards.",
     items: [
-      "Soil resistivity measurement and modeling",
+      "Soil resistivity measurement and modelling",
       "Grid resistance and touch/step voltage analysis",
       "Ground potential rise (GPR) assessment",
       "Fault current distribution studies",
       "Design of grounding grids, rods, and mats",
       "Lightning protection system integration",
-      "Optimization of grounding conductor sizing",
-      "Compliance with IEEE 80, IEC 60479, and other standards",
+      "Optimisation of grounding conductor sizing",
+      "Compliance with IEEE 80, IEC 60479,BS 7430, and other standards",
     ],
   },
   earthingMaterialSupply: {
-    title: "Supply of Earthing Material",
+    title: "Supply of Earthing Materials",
     description:
       "We supply high-quality earthing materials to ensure the reliability and longevity of grounding systems for substations, transmission lines, and industrial facilities.",
     items: [
       "Copper-bonded grounding rods",
-      "Galvanized and copper earthing strips",
+      "Galvanised and copper earthing strips",
       "Grounding conductors and wires",
       "Earthing electrodes and pits",
       "Bentonite and conductive backfill materials",
@@ -270,7 +275,7 @@ const tabContent = {
       "Potential gradient mapping",
       "Assessment of earthing system effectiveness",
       "Identification of system improvement areas",
-      "Compliance with IEEE 81, IEC 60364",
+      "Compliance with IEEE 81, IEC 60364,BS 7430:2011",
     ],
   },
   soilResistivityTest: {
@@ -293,7 +298,7 @@ const softwareServices = [
   "Sophisticated soil resistivity modelling",
   "Fault current distribution analysis",
   "Step and touch voltage calculations",
-  "3D modeling and visualization",
+  "3D modelling and visualisation",
   "Real-time simulation capabilities",
 ];
 

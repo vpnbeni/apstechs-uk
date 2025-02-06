@@ -19,7 +19,7 @@ const ContactMap = () => {
       {/* Left side map */}
       <div className="w-full bg-primaryText lg:w-1/2 h-full flex justify-center items-center ">
         <img
-          src="/assets/contact/map.svg"
+          src="/assets/contact/india.svg"
           alt="map"
           className="object-contain w-full h-full lg:w-[55%] "
         />

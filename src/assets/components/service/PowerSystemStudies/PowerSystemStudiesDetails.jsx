@@ -238,7 +238,7 @@ const tabContent = {
       "Assessment of harmonic limits compliance",
       "Interharmonic analysis",
       "Resonance studies",
-      "Filter design and optimization",
+      "Filter design and Optimisation",
       "Mitigation strategy development",
       "Compliance reporting and recommendations",
     ],
@@ -249,7 +249,7 @@ const tabContent = {
       "We perform relay coordination studies to optimize the coordination of protective relays within electrical networks.",
     items: [
       "Fault condition analysis",
-      "Relay setting calculation and optimization",
+      "Relay setting calculation and Optimisation",
       "Time-current curve development",
       "Selectivity and sensitivity assessment",
       "Breaker failure protection coordination",
@@ -270,7 +270,7 @@ const tabContent = {
       "Short circuit current calculation",
       "Equipment rating verification",
       "Power factor correction studies",
-      "Network optimization recommendations",
+      "Network Optimisation recommendations",
     ],
   },
   reactive: {
@@ -285,7 +285,7 @@ const tabContent = {
       "Static VAR compensator (SVC) studies",
       "STATCOM performance analysis",
       "Voltage collapse point determination",
-      "Reactive power optimization strategies",
+      "Reactive power Optimisation strategies",
     ],
   },
   faultride: {
@@ -359,7 +359,7 @@ const benefits = [
     ),
     title: "Increased Reliability",
     description:
-      "Identify and mitigate potential issues to minimize downtime and improve system stability.",
+      "Identify and mitigate potential issues to minimise downtime and improve system stability.",
   },
   {
     icon: (
@@ -397,7 +397,7 @@ const benefits = [
         />
       </svg>
     ),
-    title: "Cost Optimization",
+    title: "Cost Optimisation",
     description:
       "Identify opportunities for cost reduction through improved system design and operation.",
   },
@@ -450,14 +450,14 @@ const processSteps = [
       "Gather all relevant system information, including network topology, equipment specifications, and operational data.",
   },
   {
-    title: "Modeling & Analysis",
+    title: "modelling & Analysis",
     description:
       "Develop detailed system models and perform comprehensive analysis using advanced software tools.",
   },
   {
     title: "Results Interpretation",
     description:
-      "Analyze study results to identify potential issues, optimization opportunities, and compliance gaps.",
+      "Analyze study results to identify potential issues, Optimisation opportunities, and compliance gaps.",
   },
   {
     title: "Recommendations",

@@ -47,9 +47,10 @@ export default function ProtectionDesignDetails() {
 
           <p className="text-lg text-white/90 max-w-3xl mx-auto mb-12">
             Our protection design team is dedicated to ensuring that protection
-            systems effectively safeguard assets and ensure uninterrupted power
-            supply. We specialise in performing detailed designs of protection
-            schemes tailored to our clients' standards and specifications.
+            systems effectively safeguard assets and provide an uninterrupted
+            power supply. We specialise in performing detailed designs of
+            protection schemes tailored to our clients' standards and
+            specifications.
           </p>
 
           <Link
@@ -265,8 +266,8 @@ export default function ProtectionDesignDetails() {
             and enhance the resilience of electrical systems.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="px-8 py-4 bg-secondary text-white rounded hover:bg-secondary transition-colors">
-              Start Your Project
+            <button className="px-8 py-4 bg-secondary text-white rounded hover:bg-[#45a049] transition-colors">
+              Request a Consultation
             </button>
             <button className="px-8 py-4 border border-white text-white rounded hover:bg-white hover:text-[#001529] transition-colors">
               Learn More
@@ -281,12 +282,12 @@ const tabContent = {
   RelayCoordination: {
     title: "Relay Coordination studies",
     description:
-      "Our Relay Coordination studies ensure the proper selection and setting of protective devices to minimize equipment damage and improve system reliability.",
+      "Our Relay Coordination studies ensure the proper selection and setting of protective devices to minimise equipment damage and improve system reliability.",
     items: [
       "Short circuit and fault analysis",
       "Relay coordination and grading",
       "Time-current characteristic (TCC) curve analysis",
-      "Protection scheme optimization",
+      "Protection scheme Optimisation",
       "Arc flash hazard analysis",
       "Breaker and fuse coordination",
       "Relay trip sequence evaluation",
@@ -305,7 +306,7 @@ const tabContent = {
       "Redundancy and fail-safe mechanism design",
       "Testing and validation of protection schemes",
       "Remote monitoring and control integration",
-      "Troubleshooting and system optimization",
+      "Troubleshooting and system Optimisation",
     ],
   },
   scadaInterfacing: {
@@ -332,7 +333,7 @@ const tabContent = {
       "Pickup and time delay adjustments",
       "Primary and secondary injection testing",
       "Distance relay zone setting configuration",
-      "Differential relay setting optimization",
+      "Differential relay setting Optimisation",
       "Directional overcurrent relay coordination",
       "Load encroachment and stability analysis",
       "Relay setting validation and testing",
@@ -379,7 +380,7 @@ const keyFeatures = [
     ),
     title: "Rapid Response",
     description:
-      "Quick fault detection and isolation to minimize system downtime",
+      "Quick fault detection and isolation to minimise system downtime",
   },
   {
     icon: (
@@ -535,7 +536,7 @@ const benefits = [
   {
     title: "Reduced Downtime",
     description:
-      "Minimized system interruptions through effective fault isolation",
+      "minimised system interruptions through effective fault isolation",
   },
   {
     title: "Cost Efficiency",

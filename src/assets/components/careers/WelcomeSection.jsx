@@ -4,7 +4,7 @@ import { FaArrowRight } from "react-icons/fa";
 
 const WelcomeSection = () => {
   return (
-    <div className="w-full h-auto lg:h-[60vh] flex flex-col lg:flex-row">
+    <div className="w-full h-auto lg:h-[70vh] flex flex-col lg:flex-row">
       {/* Left Side Content */}
       <div className="w-full lg:w-1/2 px-6 lg:px-32 py-8 lg:py-16">
         <div className="mb-5 w-full flex justify-start items-center">

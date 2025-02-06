@@ -39,7 +39,7 @@ const CaseStudyCards = () => {
       link: "case-studies/design&supply",
     },
     {
-      name: "Power System Optimization Studies",
+      name: "Power System Optimisation Studies",
       description:
         "Conducted in-depth power system studies to optimize electrical infrastructure, ensuring reliability and long-term performance.",
       image: "/assets/case-study/card/PowerSystem.jpg",

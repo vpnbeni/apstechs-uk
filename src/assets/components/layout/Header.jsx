@@ -14,6 +14,11 @@ const navItems = [
     subItems: [],
   },
   {
+    name: "Gallery",
+    link: "/gallery",
+    subItems: [],
+  },
+  {
     name: "Case Studies",
     link: "/case-studies",
     subItems: [],
@@ -28,7 +33,7 @@ const navItems = [
       //   name: "Battery Storage Integration",
       //   link: "/services/battery-storage-integration",
       // },
-      { name: "Cable Solution", link: "/services/cable-solution" },
+      { name: "Cable Solutions", link: "/services/cable-solution" },
       { name: "Protection Design", link: "/services/protection-design" },
       { name: "Power System Studies", link: "/services/power-system" },
       { name: "Survey", link: "/services/survey" },
