@@ -25,6 +25,16 @@ const images = [
   "/assets/gallery/25.jpg",
   "/assets/gallery/26.jpg",
   "/assets/gallery/27.jpg",
+  "/assets/gallery/28.jpg",
+  "/assets/gallery/29.jpg",
+  "/assets/gallery/30.jpg",
+  "/assets/gallery/31.jpg",
+  "/assets/gallery/32.jpg",
+  "/assets/gallery/33.jpg",
+  "/assets/gallery/34.jpg",
+  "/assets/gallery/35.jpg",
+  "/assets/gallery/36.jpg",
+  "/assets/gallery/37.jpg",
 ];
 
 const Gallery = () => {
