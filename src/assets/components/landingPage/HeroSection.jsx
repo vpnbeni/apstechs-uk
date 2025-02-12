@@ -12,7 +12,7 @@ const HeroSection = () => {
   return (
     <div
       className="relative flex flex-col items-start justify-center px-4 sm:px-8 lg:px-[20%] min-h-screen max-h-screen bg-cover bg-no-repeat bg-center min-w-full max-w-full"
-      style={{ backgroundImage: `url('/assets/landingPage/bg-11.jpg')` }}
+      style={{ backgroundImage: `url('/assets/landingPage/bg17.jpg')` }}
     >
       {/* Content */}
       <div
@@ -20,8 +20,8 @@ const HeroSection = () => {
           isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-48"
         }`}
       >
-        <div className="relative text-primaryText leading-8 sm:leading-10 text-xl sm:text-2xl lg:text-3xl font-light text-start w-full sm:w-3/4 lg:w-1/2">
-          <span className="font-semibold text-primaryText">
+        <div className="relative text-white leading-8 sm:leading-10 text-xl sm:text-2xl lg:text-3xl font-light text-start w-full sm:w-3/4 lg:w-1/2">
+          <span className="font-semibold text-white">
             Welcome to APSTECHS, <br />
           </span>
           Design and Engineering Solutions For Power Sector.
@@ -35,7 +35,6 @@ const HeroSection = () => {
           </button>
         </div>
       </div>
-  \
     </div>
   );
 };

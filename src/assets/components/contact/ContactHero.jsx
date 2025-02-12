@@ -18,9 +18,7 @@ const ContactHero = () => {
               Contact Us
             </div>{" "}
             <br />
-            <div className="">
-              To get in touch with us, please reach out during our office hours
-            </div>
+            <div className="">We’re Just a Message Away</div>
           </div>
         </div>
         <div className="text-base sm:text-lg lg:text-xl">

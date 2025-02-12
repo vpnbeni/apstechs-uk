@@ -15,7 +15,7 @@ const DownloadBtn = ({ pdf }) => {
         isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-48"
       }`}
     >
-      <FaDownload />  
+      <FaDownload />
     </div>
   );
 };

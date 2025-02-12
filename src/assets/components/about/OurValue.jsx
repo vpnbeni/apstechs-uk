@@ -3,46 +3,9 @@
 import { useState } from "react";
 
 const OurValue = () => {
-  const [activeTab, setActiveTab] = useState("EXCEL");
+  const [activeTab, setActiveTab] = useState("TRUST");
 
   const tabsData = {
-    EXCEL: [
-      {
-        letter: "E",
-        title: "Excellence",
-        value:
-          "We pursue the highest standard of quality in everything we do, from design to delivery, ensuring that our work stands out as the best in the industry.",
-        tagline: "Striving for excellence at every step.",
-      },
-      {
-        letter: "X",
-        title: "Xcellence in Innovation",
-        value:
-          "We foster a culture of innovation, where new ideas are encouraged and implemented to enhance efficiency and effectiveness.",
-        tagline: "Innovating solutions for a changing world.",
-      },
-      {
-        letter: "C",
-        title: "Collaboration",
-        value:
-          "We believe in the power of working together—internally and with clients—to ensure the best outcomes through collective expertise and shared goals.",
-        tagline: "Teamwork that delivers success.",
-      },
-      {
-        letter: "E",
-        title: "Ethical Integrity",
-        value:
-          "We operate with unwavering ethics, maintaining transparency and integrity in all of our dealings, fostering trust with clients and partners.",
-        tagline: "Building trust through integrity.",
-      },
-      {
-        letter: "L",
-        title: "Leadership",
-        value:
-          "We aim to lead by example, inspiring others through our commitment to innovation, sustainability, and customer success.",
-        tagline: "Leading the way with vision and purpose.",
-      },
-    ],
     TRUST: [
       {
         letter: "T",
@@ -122,6 +85,43 @@ const OurValue = () => {
         value:
           "We understand the value of time and always strive to deliver our projects on schedule, ensuring efficiency and minimising delays.",
         tagline: "Delivering on time, every time.",
+      },
+    ],
+    EXCEL: [
+      {
+        letter: "E",
+        title: "Excellence",
+        value:
+          "We pursue the highest standard of quality in everything we do, from design to delivery, ensuring that our work stands out as the best in the industry.",
+        tagline: "Striving for excellence at every step.",
+      },
+      {
+        letter: "X",
+        title: "Xcellence in Innovation",
+        value:
+          "We foster a culture of innovation, where new ideas are encouraged and implemented to enhance efficiency and effectiveness.",
+        tagline: "Innovating solutions for a changing world.",
+      },
+      {
+        letter: "C",
+        title: "Collaboration",
+        value:
+          "We believe in the power of working together—internally and with clients—to ensure the best outcomes through collective expertise and shared goals.",
+        tagline: "Teamwork that delivers success.",
+      },
+      {
+        letter: "E",
+        title: "Ethical Integrity",
+        value:
+          "We operate with unwavering ethics, maintaining transparency and integrity in all of our dealings, fostering trust with clients and partners.",
+        tagline: "Building trust through integrity.",
+      },
+      {
+        letter: "L",
+        title: "Leadership",
+        value:
+          "We aim to lead by example, inspiring others through our commitment to innovation, sustainability, and customer success.",
+        tagline: "Leading the way with vision and purpose.",
       },
     ],
   };
