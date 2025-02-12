@@ -15,7 +15,7 @@ const EarthingSystemDesign = () => {
             Case Study: Earthing System Design for 50MW Battery Energy Storage
             System
           </h1>
-          <p className="text-base md:text-lg">
+          <p className="text-base md:text-lg text-justify">
             The project required the installation of a 50MW Battery Energy
             Storage System (BESS) in Yorkshire. APSTECHS was commissioned to
             perform earthing grid calculations and design to ensure safety and
@@ -61,7 +61,7 @@ const EarthingSystemDesign = () => {
             />
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 text-justify">
             <div className="p-6 border rounded-lg shadow-md">
               <h3 className="text-xl font-normal mb-2">
                 Soil Resistivity Analysis
@@ -103,7 +103,7 @@ const EarthingSystemDesign = () => {
         </section>
 
         {/* Results */}
-        <section className="py-10">
+        <section className="py-10 text-justify">
           <div className="mb-5">
             <SectionHeading
               heading={"Results"}
@@ -143,7 +143,7 @@ const EarthingSystemDesign = () => {
         </section>
 
         {/* Conclusion */}
-        <footer className="py-10 text-black">
+        <footer className="py-10 text-black text-justify">
           <div className="mb-5">
             <SectionHeading
               heading={"Conclusion"}

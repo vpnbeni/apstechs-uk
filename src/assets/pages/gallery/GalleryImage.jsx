@@ -35,6 +35,7 @@ const images = [
   "/assets/gallery/35.jpg",
   "/assets/gallery/36.jpg",
   "/assets/gallery/37.jpg",
+  "/assets/gallery/38.jpg",
 ];
 
 const Gallery = () => {

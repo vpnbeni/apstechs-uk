@@ -11,12 +11,13 @@ const WelcomeSection = () => {
           <SectionHeading heading={"WELCOME TO OUR CAREERS PAGE"} />
         </div>
         <div className="py-4 leading-8 text-sm sm:text-base lg:text-lg">
-          Our approach is innovative and unique. We're a collective of
-          forward-thinking individuals uniting under a shared purpose - to value
-          and elevate our team members as our greatest asset. Our ambition is to
-          be recognised as an employer of choice, providing unparalleled
-          opportunities for professional growth while fostering a diverse and
-          inclusive workforce.
+          At Apstechs UK Limited, we do things differently. We’re a team of
+          innovators, problem-solvers, and forward-thinkers, united by a shared
+          vision—to empower our people as our greatest strength. We strive to be
+          the employer of choice, offering exceptional career opportunities,
+          fostering growth, and championing a diverse, inclusive workplace where
+          talent thrives. Here, your potential has no limits, and your ideas
+          shape the future.
         </div>
         <div className="flex w-fit mt-10 border border-primary rounded-lg text-primaryText items-center justify-center">
           <div className="px-4 cursor-pointer font-light text-[14px] sm:text-base lg:text-lg hover:bg-primaryText hover:text-white py-2 border-r border-primary rounded-l-lg">

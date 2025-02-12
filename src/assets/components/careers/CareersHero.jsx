@@ -21,7 +21,7 @@ const CareersHero = () => {
         <div className="relative w-full px-4">
           <div className="text-lg w-full lg:text-[28px] flex flex-col justify-center items-center text-start leading-[30px] sm:leading-[40px] lg:leading-[40px] tracking-widest font-light my-4">
             <span className="font-bold text-[32px] sm:text-[38px] lg:text-[44px] text-center">
-              We Power Big Ideas
+              Fuel Your Future with Innovation
             </span>
             <br />
             <span className="text-base sm:text-lg lg:text-xl">
@@ -30,7 +30,6 @@ const CareersHero = () => {
           </div>
         </div>
       </div>
-      
     </div>
   );
 };

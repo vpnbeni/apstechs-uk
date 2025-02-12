@@ -19,8 +19,8 @@ const Footer = () => {
 
         <div>
           <span className="font-medium mr-2">Tel:</span>
-          <a href="tel:+44 3301184436"  className="text-blue-500 underline">
-            +44 3301184436
+          <a href="tel:+44 03300431870"  className="text-blue-500 underline">
+            +44 03300431870
           </a>
         </div>
         <div>

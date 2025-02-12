@@ -15,7 +15,7 @@ const PowerSystemStudies = () => {
             Case Study: Power System Studies - Integration of Client Substation
             with 132kV Substation
           </h1>
-          <p className="text-base md:text-lg">
+          <p className="text-base md:text-lg text-justify">
             APSTECHS UK LTD was appointed to carry out comprehensive load flow
             and short circuit studies for the integration of the Client
             Substation with the 132kV Substation. This project involved an
@@ -59,14 +59,14 @@ const PowerSystemStudies = () => {
         </section>
 
         {/* APSTECHS Solution */}
-        <section className="py-6 md:py-10 bg-white">
+        <section className="py-6 md:py-10 bg-white text-justify">
           <div className="mb-5">
             <SectionHeading
               heading={"APSTECHS Solution"}
               clasName={"bg-secondary text-white text-sm"}
             />
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 ">
             <div className="p-6 border rounded-lg shadow-md">
               <h3 className="text-lg md:text-xl font-normal mb-2">
                 Comprehensive Network modelling
@@ -175,7 +175,7 @@ const PowerSystemStudies = () => {
         </section>
 
         {/* Results */}
-        <section className="py-6 md:py-10 bg-gradient-to-r bg-white text-black">
+        <section className="py-6 md:py-10 bg-gradient-to-r bg-white text-black text-justify">
           <div className="mb-5">
             <SectionHeading
               heading={"Results"}
@@ -229,7 +229,7 @@ const PowerSystemStudies = () => {
         </section>
 
         {/* Conclusion */}
-        <footer className="py-6 md:py-10 text-black">
+        <footer className="py-6 md:py-10 text-black text-justify">
           <div className="mb-5">
             <SectionHeading
               heading={"Conclusion"}

@@ -10,7 +10,7 @@ const data = {
     {
       title: "POWER SYSTEM ENGINEER",
       type: "PROJECTS",
-      place: "Colchester, England",  
+      place: "Colchester, England",
       description:
         "Power System Engineer with expertise in modelling single-line diagrams in Digsilent Powerfactory, PSCAD, and PSS/E. Skilled in conducting power system studies, including load flow analysis, short circuit studies, motor starting analysis, voltage stability, harmonic analysis, and transient stability assessments. Experienced in transmission capability evaluation, voltage constraints, and filter design.",
     },
@@ -87,20 +87,12 @@ const JobOpenings = () => {
           <SectionHeading heading={"JOB OPENINGS"} />
         </div>
         <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium">
-          Be Part of Something Big
+          Fuel Your Future with Innovation
         </div>
         <div className="leading-8 text-base sm:text-lg md:text-xl lg:text-2xl max-w-3xl mx-auto">
-          Our central office is situated in the heart of Downham Market,
-          Norfolk, and is complemented by a strategic operational hub in
-          Birmingham. With our engineers and technicians strategically stationed
-          from Birmingham to Glasgow and across the regions of Hertfordshire to
-          Norfolk, the opportunity for a rewarding career that feels like home
-          is never too distant. ​
-        </div>
-        <div className="leading-8 text-base sm:text-lg md:text-xl lg:text-2xl max-w-3xl mx-auto">
-          We are constantly on the lookout for talented individuals to join our
-          team. <br /> Discover below whether your ideal career opportunity is
-          on the horizon.
+          We're always looking for passionate and talented individuals to grow
+          with us. <br /> Explore our career opportunities and find out if your next
+          great opportunity is here.
         </div>
       </div>
 

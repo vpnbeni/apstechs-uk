@@ -14,7 +14,7 @@ const LoadTestCaseStudy = () => {
           <h1 className="text-2xl md:text-5xl tracking-wider font-light mb-4">
             Case Study: Load Bank Testing for Generator GT1 and Transformer
           </h1>
-          <p className="text-base md:text-lg">
+          <p className="text-base md:text-lg text-justify">
             On October 30, 2024, APSTECHS UK LTD conducted a load bank test on
             Generator GT1 and its associated transformer (TX). The test aimed to
             verify the reliability of the transformer and the accuracy of its
@@ -176,7 +176,7 @@ const LoadTestCaseStudy = () => {
         </section>
 
         {/* Results */}
-        <section className="py-10 bg-gradient-to-r bg-white text-black">
+        <section className="py-10 bg-gradient-to-r bg-white text-black text-justify" >
           <div className="mb-5">
             <SectionHeading
               heading={"Results"}
@@ -236,7 +236,7 @@ const LoadTestCaseStudy = () => {
         </section>
 
         {/* Conclusion */}
-        <footer className="py-10 text-black">
+        <footer className="py-10 text-black text-justify">
           <div className="mb-5">
             <SectionHeading
               heading={"Conclusion"}

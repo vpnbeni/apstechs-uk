@@ -3,15 +3,15 @@ import React from "react";
 const CoreValues = () => {
   const values = [
     {
-      title: "Responsibility and Reliability",
+      title: "Trust",
       description: "We take ownership and deliver dependable solutions.",
     },
     {
-      title: "Innovation",
+      title: " Impact",
       description: "Pioneering advancements for optimal performance.",
     },
     {
-      title: "Integrity",
+      title: "Excel",
       description: "We adhere to the highest ethical standards.",
     },
   ];

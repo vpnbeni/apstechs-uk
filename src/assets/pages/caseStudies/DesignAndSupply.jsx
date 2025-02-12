@@ -6,14 +6,14 @@ const DesignAndSupply = () => {
     window.scrollTo(0, 0); // Scroll to the top of the page
   }, []);
   return (
-    <div className="bg-primaryText w-full pt-[96px] md:py-32">
+    <div className="bg-primaryText w-full pt-[96px] md:py-32 ">
       <div className="font-sans max-w-4xl mx-auto p-4 md:p-20 bg-white">
         {/* Project Overview */}
         <section className="bg-gradient-to-r bg-white text-black pb-10">
           <h1 className="text-2xl md:text-5xl tracking-wider font-light mb-4">
             Case Study: Design and Supply of 33kV Containerised Switchroom
           </h1>
-          <p className="text-base md:text-lg">
+          <p className="text-base md:text-lg text-justify">
             The project involved the design, manufacturing, and supply of a 33kV
             containerised switchroom, ensuring quality, safety, and
             functionality. This bespoke solution was developed to meet the
@@ -63,7 +63,7 @@ const DesignAndSupply = () => {
               <h3 className="text-xl font-normal mb-2">
                 Custom-Engineered Containerised Switchroom
               </h3>
-              <p>
+              <p className="text-justify">
                 Optimised performance, durability, and operational efficiency,
                 designed and constructed to meet stringent industry standards.
               </p>
@@ -72,7 +72,7 @@ const DesignAndSupply = () => {
               <h3 className="text-xl font-normal mb-2">
                 Advanced Safety Features
               </h3>
-              <p>
+              <p className="text-justify">
                 Incorporated advanced safety features, ensuring personnel and
                 equipment protection.
               </p>
@@ -163,7 +163,7 @@ const DesignAndSupply = () => {
         </section>
 
         {/* Key Findings and Outcomes */}
-        <section className="py-10">
+        <section className="py-10 text-justify">
           <div className="mb-5">
             <SectionHeading
               heading={"Key Findings and Outcomes"}
@@ -197,7 +197,7 @@ const DesignAndSupply = () => {
         </section>
 
         {/* Results */}
-        <section className="py-10 bg-gradient-to-r bg-white text-black">
+        <section className="py-10 bg-gradient-to-r bg-white text-black text-justify">
           <div className="mb-5">
             <SectionHeading
               heading={"Results"}
@@ -218,13 +218,13 @@ const DesignAndSupply = () => {
             </div>
             {/* Image Section */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div className="bg-gray-200 border rounded-lg aspect-video flex items-center overflow-hidden">
+              {/* <div className="bg-gray-200 border rounded-lg aspect-video flex items-center overflow-hidden">
                 <img
                   src="/assets/case-study/Design&Supply/img2.jpg"
                   className="w-full h-full object-cover"
                   alt="Result Image 1"
                 />
-              </div>
+              </div> */}
               <div className="bg-gray-200 border rounded-lg aspect-video flex items-center overflow-hidden">
                 <img
                   src="/assets/case-study/Design&Supply/img3.jpg"
@@ -237,7 +237,7 @@ const DesignAndSupply = () => {
         </section>
 
         {/* Conclusion */}
-        <footer className="py-10 text-black">
+        <footer className="py-10 text-black text-justify">
           <div className="mb-5">
             <SectionHeading
               heading={"Conclusion"}
