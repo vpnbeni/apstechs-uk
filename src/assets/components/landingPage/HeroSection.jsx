@@ -10,24 +10,31 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <div className="relative flex flex-col items-start justify-center px-4 sm:px-8 lg:px-[20%] min-h-screen max-h-screen min-w-full max-w-full">
-      <video
+    <div
+      style={{
+        backgroundImage: "url('/bg/bg2.jpg')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+      className="relative text-primaryText flex flex-col items-start justify-center px-4 sm:px-8 lg:px-[20%] min-h-screen max-h-screen min-w-full max-w-full"
+    >
+      {/* <video
         className="absolute top-0 left-0 w-full h-full object-cover"
         autoPlay
         loop
         muted
       >
         <source src="/bg/bg.mp4" type="video/mp4" />
-        Your browser does not support the video tag.  
-      </video>
+        Your browser does not support the video tag.
+      </video> */}
       {/* Content */}
       <div
         className={`relative z-10 transition-all duration-1000 delay-500 ease-out transform ${
           isVisible ? "opacity-100 translate-y-0" : "opacity-0   translate-y-48"
         }`}
       >
-        <div className="relative text-white leading-8 sm:leading-10 text-xl sm:text-2xl lg:text-3xl font-light text-start w-full sm:w-3/4 lg:w-1/2">
-          <span className="font-semibold text-white">
+        <div className="relative text-primaryText leading-8 sm:leading-10 text-xl sm:text-2xl lg:text-3xl font-light text-start w-full sm:w-3/4 lg:w-1/2">
+          <span className="font-semibold text-primaryText">
             Welcome to APSTECHS, <br />
           </span>
           Design and Engineering Solutions For Power Sector.

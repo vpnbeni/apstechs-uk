@@ -25,7 +25,7 @@ const CareersHero = () => {
             </span>
             <br />
             <span className="text-base sm:text-lg lg:text-xl">
-              Looking to Spark a New Career with Us?
+            Ready to Power Up Your Career with Us?
             </span>
           </div>
         </div>

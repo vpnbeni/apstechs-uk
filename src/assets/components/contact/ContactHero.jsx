@@ -21,9 +21,6 @@ const ContactHero = () => {
             <div className="">We’re Just a Message Away</div>
           </div>
         </div>
-        <div className="text-base sm:text-lg lg:text-xl">
-          Monday through to Friday <br /> from 8am to 4pm
-        </div>
       </div>
     </div>
   );
