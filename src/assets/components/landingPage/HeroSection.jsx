@@ -16,7 +16,7 @@ const HeroSection = () => {
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
-      className="relative text-primaryText flex flex-col items-start justify-center px-4 sm:px-8 lg:px-[20%] min-h-screen max-h-screen min-w-full max-w-full"
+      className="relative text-primaryText flex flex-col items-start justify-start py-[12%] px-4 sm:px-8 lg:px-[10%] min-h-screen max-h-screen min-w-full max-w-full"
     >
       {/* <video
         className="absolute top-0 left-0 w-full h-full object-cover"
@@ -30,7 +30,7 @@ const HeroSection = () => {
       {/* Content */}
       <div
         className={`relative z-10 transition-all duration-1000 delay-500 ease-out transform ${
-          isVisible ? "opacity-100 translate-y-0" : "opacity-0   translate-y-48"
+          isVisible ? "opacity-100 translate-y-0" : "opacity-0   translate-y-24"
         }`}
       >
         <div className="relative text-primaryText leading-8 sm:leading-10 text-xl sm:text-2xl lg:text-3xl font-light text-start w-full sm:w-3/4 lg:w-1/2">

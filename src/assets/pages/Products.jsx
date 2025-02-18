@@ -20,14 +20,18 @@ const products = [
   {
     id: 2,
     title: "Transformer",
-    thumbnail: "/assets/products/PowerEquipment/transformer.jpeg" || "/common/placeholder.svg",
+    thumbnail:
+      "/assets/products/PowerEquipment/transformer.jpeg" ||
+      "/common/placeholder.svg",
     category: { name: "Power Equipment", color: "bg-green-100 text-green-800" },
     description: "High-quality transformers for reliable power distribution.",
   },
   {
     id: 3,
     title: "Instrument Transformer",
-    thumbnail: "/assets/products/Measurement/instrument-transformer.jpeg" || "/common/placeholder.svg",
+    thumbnail:
+      "/assets/products/Measurement/instrument-transformer.jpeg" ||
+      "/common/placeholder.svg",
     category: { name: "Measurement", color: "bg-yellow-100 text-yellow-800" },
     description:
       "Precise measurement transformers for accurate power system monitoring.",
@@ -35,14 +39,18 @@ const products = [
   {
     id: 4,
     title: "Panels",
-    thumbnail: "/assets/products/ControlSystems/panels.jpeg" || "/common/placeholder.svg",
+    thumbnail:
+      "/assets/products/ControlSystems/panels.jpeg" ||
+      "/common/placeholder.svg",
     category: { name: "Control Systems", color: "bg-red-100 text-red-800" },
     description: "Advanced control panels for efficient power management.",
   },
   {
     id: 5,
     title: "Earthing Material",
-    thumbnail: "/assets/products/SafetyEquipment/earthing-material.jpeg" || "/common/placeholder.svg",
+    thumbnail:
+      "/assets/products/SafetyEquipment/earthing-material.jpeg" ||
+      "/common/placeholder.svg",
     category: {
       name: "Safety Equipment",
       color: "bg-purple-100 text-purple-800",
@@ -52,14 +60,17 @@ const products = [
   {
     id: 6,
     title: "Cable",
-    thumbnail: "/assets/products/Connectivity/cable.jpeg" || "/common/placeholder.svg",
+    thumbnail:
+      "/assets/products/Connectivity/cable.jpeg" || "/common/placeholder.svg",
     category: { name: "Connectivity", color: "bg-indigo-100 text-indigo-800" },
     description: "High-performance cables for various electrical applications.",
   },
   {
     id: 7,
     title: "Battery Charger",
-    thumbnail: "/assets/products/PowerSupply/battery-charger.jpeg" || "/common/placeholder.svg",
+    thumbnail:
+      "/assets/products/PowerSupply/battery-charger.jpeg" ||
+      "/common/placeholder.svg",
     category: { name: "Power Supply", color: "bg-pink-100 text-pink-800" },
     description: "Efficient battery chargers for uninterrupted power supply.",
   },
@@ -120,7 +131,7 @@ export default function Products() {
       <main>
         <div className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
           {/* Tabs */}
-          <div className="flex flex-wrap justify-center gap-4 mb-8">
+          {/* <div className="flex flex-wrap justify-center gap-4 mb-8">
             {[
               "all",
               "power distribution",
@@ -143,10 +154,10 @@ export default function Products() {
                 {tab.charAt(0).toUpperCase() + tab.slice(1)}
               </button>
             ))}
-          </div>
+          </div> */}
 
           {/* Product Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 my-10">
             {filteredProducts.map((product) => (
               <ProductCard key={product.id} product={product} />
             ))}
