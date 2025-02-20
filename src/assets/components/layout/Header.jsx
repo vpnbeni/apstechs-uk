@@ -58,7 +58,7 @@ const Header = () => {
   return (
     <div
       onMouseLeave={() => setActiveTab("")}
-      className="w-full h-[96px] fixed z-[1000] top-0 bg-[#f0f8ff] bg-opacity-80 flex justify-between items-center px-5 lg:px-[10%] gap-10 transition-transform duration-300"
+      className="w-full h-[96px] fixed z-[1000] top-0 bg-[#f0f8ff] flex justify-between items-center px-5 lg:px-[10%] gap-10 transition-transform duration-300"
     >
       <Link to="/">
         <img className="h-[80px]" src="/assets/header/logo.png" alt="Logo" />

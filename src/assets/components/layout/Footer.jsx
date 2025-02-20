@@ -1,25 +1,33 @@
-import React from "react";
-import SectionHeading from "../common/heading/SectionHeading";
-import { MdMail } from "react-icons/md";
-import { IoCall } from "react-icons/io5";
-import { FaXTwitter } from "react-icons/fa6";
-import { FaInstagram } from "react-icons/fa";
+import React, { useEffect, useState } from "react";
+
+import { FaDownload } from "react-icons/fa";
 
 const Footer = () => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    setIsVisible(true);
+  }, []);
   return (
-    <div className="flex flex-col lg:flex-row justify-between items-start px-4 sm:px-8 lg:px-[13%] my-8 lg:my-16 gap-10">
+    <div className="flex relative w-full flex-col lg:flex-row justify-between items-start px-4 sm:px-8 lg:px-[13%] my-8 lg:my-16 gap-10">
       <div className="flex flex-col gap-4 w-full lg:w-[35%]">
-        <div className="bg-white relative text-4xl sm:text-5xl rounded-b-lg">
-          <span className="text-secondary font-medium">APS</span>
-          <span className="font-medium text-[#063374]">TECHS</span>
-        </div>
+          <div className="bg-white relative text-4xl sm:text-5xl rounded-b-lg">
+            <span className="text-secondary font-medium">APS</span>
+            <span className="font-medium text-[#063374]">TECHS</span>
+          </div>
         <div className="text-[14px] sm:text-[16px]">
           Empowering Sustainable Solutions for Tomorrow’s Energy Needs
+        </div>
+        <div
+          onClick={() => window.open("/assets/pdf/APSTECHSDesignCatalogue.pdf")}
+          className={` bottom-8  px-4 py-1 border-primary w-fit rounded-full p-4 border hover:text-dark hover:bg-white cursor-pointer `}
+        >
+          APS brochure
         </div>
 
         <div>
           <span className="font-medium mr-2">Tel:</span>
-          <a href="tel:+44 03300431870"  className="text-blue-500 underline">
+          <a href="tel:+44 03300431870" className="text-blue-500 underline">
             +44 03300431870
           </a>
         </div>
