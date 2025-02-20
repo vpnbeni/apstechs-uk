@@ -21,7 +21,7 @@ const products = [
     id: 2,
     title: "Transformer",
     thumbnail:
-      "/assets/products/PowerEquipment/transformer.jpeg" ||
+      "/assets/products/PowerEquipment/transformer.jpg" ||
       "/common/placeholder.svg",
     category: { name: "Power Equipment", color: "bg-green-100 text-green-800" },
     description: "High-quality transformers for reliable power distribution.",
