@@ -2,10 +2,12 @@
 
 import { useState } from "react";
 import { Heart } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const products = [
   {
     id: 1,
+    link:"product/pd-1",
     title: "Containerised Switchroom",
     thumbnail:
       "/assets/products/PowerDistribution/containerised-switchroom.jpeg" ||
@@ -19,6 +21,8 @@ const products = [
   },
   {
     id: 2,
+    link:"product/pe-2",
+
     title: "Transformer",
     thumbnail:
       "/assets/products/PowerEquipment/transformer.jpg" ||
@@ -28,6 +32,8 @@ const products = [
   },
   {
     id: 3,
+    link:"product/me-3",
+
     title: "Instrument Transformer",
     thumbnail:
       "/assets/products/Measurement/instrument-transformer.jpeg" ||
@@ -38,6 +44,8 @@ const products = [
   },
   {
     id: 4,
+    link:"product/cs-4",
+
     title: "Panels",
     thumbnail:
       "/assets/products/ControlSystems/panels.jpeg" ||
@@ -47,6 +55,8 @@ const products = [
   },
   {
     id: 5,
+    link:"product/se-5",
+
     title: "Earthing Material",
     thumbnail:
       "/assets/products/SafetyEquipment/earthing-material.jpeg" ||
@@ -59,6 +69,8 @@ const products = [
   },
   {
     id: 6,
+    link:"product/cn-6",
+
     title: "Cable",
     thumbnail:
       "/assets/products/Connectivity/cable.jpeg" || "/common/placeholder.svg",
@@ -67,6 +79,8 @@ const products = [
   },
   {
     id: 7,
+    link:"product/ps-7",
+
     title: "Battery Charger",
     thumbnail:
       "/assets/products/PowerSupply/battery-charger.jpeg" ||
@@ -80,7 +94,7 @@ function ProductCard({ product }) {
   const [isLiked, setIsLiked] = useState(false);
 
   return (
-    <div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
+    <Link to={`/${product.link}`} className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
       <div className="relative w-full h-48">
         <img
           src={product.thumbnail || "/common/placeholder.svg"}
@@ -112,7 +126,7 @@ function ProductCard({ product }) {
           {product.description}
         </p>
       </div>
-    </div>
+    </Link>
   );
 }
 

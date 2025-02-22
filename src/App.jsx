@@ -27,6 +27,7 @@ import LoadTestCaseStudy from "./assets/pages/caseStudies/LoadTestCaseStudy";
 import GalleryPage from "./assets/pages/gallery/GalleryPage";
 import Products from "./assets/pages/Products";
 import ProductsPage from "./assets/pages/ProductsPage";
+import Product from "./assets/pages/Product";
 
 const App = () => {
   return (
@@ -46,6 +47,7 @@ const App = () => {
         <Route path="/apply" element={<JobApplicationForm />} />
         <Route path="/temp" element={<JobApplicationForm />} />
         <Route path="/gallery" element={<GalleryPage />} />
+        <Route path="/product/:productId" element={<Product />} />
 
         {/* Service Sub-Routes */}
         <Route
