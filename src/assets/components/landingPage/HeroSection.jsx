@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const HeroSection = () => {
   const [currentBg, setCurrentBg] = useState(0);
   const [prevBg, setPrevBg] = useState(null);
-  const backgrounds = ["/bg/bg1.jpg", "/bg/bg2.jpg", "/bg/bg3.jpg"];
+  const backgrounds = ["/bg/bg1.jpg", "/bg/bg4.jpg", "/bg/bg3.jpg"];
 
   useEffect(() => {
     const interval = setInterval(() => {
