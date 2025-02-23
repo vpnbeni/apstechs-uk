@@ -26,7 +26,7 @@ const Gallery = () => {
       </div>
       
       {selectedImage && (
-        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-60 backdrop-blur-md p-4" onClick={() => setSelectedImage(null)}>
+        <div className="fixed  inset-0 flex items-center justify-center bg-black bg-opacity-60 backdrop-blur-md p-4" onClick={() => setSelectedImage(null)}>
           <div className="relative max-w-3xl w-full" onClick={(e) => e.stopPropagation()}>
             <button className="absolute top-2 right-2 bg-white rounded-full p-1 shadow-md" onClick={() => setSelectedImage(null)}>✕</button>
             <img src={selectedImage} alt="Selected" className="w-full h-auto rounded-lg shadow-lg" />
