@@ -39,10 +39,10 @@ const products = [
       "Robust insulation"
     ],
     specifications: {
-      capacity: "500 kVA - 5000 kVA",
+      capacity: "Up to 280 mVA",
       coolingType: "Oil-cooled / Air-cooled",
-      voltageRatio: "11kV / 415V",
-      weight: "1 - 5 tons"
+      voltageRatio: "400kV / 33kV",
+      weight: "50 Ton"
     },
     applications: [
       "Power stations",
@@ -63,7 +63,7 @@ const products = [
       "Weatherproof design"
     ],
     specifications: {
-      voltageRating: "Up to 36kV",
+      voltageRating: "Up to 200kV",
       accuracyClass: "0.2S / 0.5",
       insulation: "Epoxy resin / Oil-filled",
       frequency: "50/60 Hz"
@@ -136,9 +136,9 @@ const products = [
     ],
     specifications: {
       type: "Copper / Aluminum",
-      voltageRating: "Up to 33kV",
+      voltageRating: "Up to 500 kV",
       insulation: "XLPE / PVC",
-      conductorSize: "1.5mm² - 400mm²"
+      conductorSize: "4mm² - 1000mm²"
     },
     applications: [
       "Power transmission",
@@ -230,8 +230,7 @@ const ProductPage = () => {
             ))}
           </ul>
 
-          <h3 className="text-2xl font-semibold text-gray-900 mt-6 mb-3">Price Range:</h3>
-          <p className="text-lg text-gray-700">{product.price}</p>
+        
         </div>
       </div>
     </div>
