@@ -8,7 +8,7 @@ const ContactMap = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState({ type: '', message: '' });
   
-  const { 
+  const {    
     register,
     handleSubmit,
     formState: { errors },

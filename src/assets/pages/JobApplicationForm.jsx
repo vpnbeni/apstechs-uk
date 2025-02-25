@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import emailjs from '@emailjs/browser';
 
 export default function JobApplicationForm() {
   const [formData, setFormData] = useState({
@@ -11,16 +12,21 @@ export default function JobApplicationForm() {
     comments: "",
   });
   const [file, setFile] = useState(null);
-
   const [step, setStep] = useState(1);
   const [isDragging, setIsDragging] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState({ type: '', message: '' });
+
+  useEffect(() => {
+    emailjs.init(import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
+  }, []);
+
   const positions = [
-    "HSQE Advisor",
-    "O&M Project Engineer - Inverness",
-    "O&M Project Engineer - Central Scotland",
-    "O&M Technician",
-    "Projects Engineer",
-    "Projects Technician",
+    "Power System Engineer",
+    "Protection and Control Engineer",
+    "Electrical Design Manager",
+    "Electrical Design Engineer",
+    "Graduate Engineer Trainee",
     "Other: Submit Your CV",
   ];
 
@@ -55,8 +61,65 @@ export default function JobApplicationForm() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    // Handle form submission here
-    console.log("Form submitted:", formData, file);
+    setIsSubmitting(true);
+    setSubmitStatus({ type: '', message: '' });
+
+    try {
+      // Convert file to base64
+      let fileData = '';
+      if (file) {
+        const reader = new FileReader();
+        fileData = await new Promise((resolve, reject) => {
+          reader.onload = (e) => resolve(e.target.result);
+          reader.onerror = (e) => reject(e);
+          reader.readAsDataURL(file);
+        });
+      }
+
+      const templateParams = {
+        from_name: `${formData.firstName} ${formData.lastName}`,
+        from_email: formData.email,
+        phone_number: formData.phone,
+        position: formData.position,
+        linkedin_url: formData.linkedin,
+        message: formData.comments,
+        cv_file: fileData,
+        cv_filename: file ? file.name : 'No file attached',
+        to_email: 'info@apstechs.co.uk'
+      };
+
+      await emailjs.send(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_JOB_TEMPLATE_ID,
+        templateParams
+      );
+
+      setSubmitStatus({
+        type: 'success',
+        message: 'Thank you for your application. We will review it and get back to you soon!'
+      });
+      
+      // Reset form
+      setFormData({
+        firstName: "",
+        lastName: "",
+        email: "",
+        phone: "",
+        position: "",
+        linkedin: "",
+        comments: "",
+      });
+      setFile(null);
+      setStep(1);
+    } catch (error) {
+      console.error('Error sending application:', error);
+      setSubmitStatus({
+        type: 'error',
+        message: 'Sorry, there was an error submitting your application. Please try again later.'
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -311,12 +374,28 @@ export default function JobApplicationForm() {
                 Back
               </button>
             )}
+            {submitStatus.message && (
+              <div className={`p-3 rounded-md ${
+                submitStatus.type === 'success' 
+                  ? 'bg-green-50 text-green-800' 
+                  : 'bg-red-50 text-red-800'
+              }`}>
+                {submitStatus.message}
+              </div>
+            )}
             <button
               type={step === 3 ? "submit" : "button"}
               onClick={() => step < 3 && setStep(step + 1)}
-              className="ml-auto px-6 py-3 bg-secondary text-white rounded-lg hover:bg-secondary focus:ring-2 focus:ring-offset-2 focus:ring-secondary transition-all duration-200"
+              disabled={isSubmitting}
+              className={`ml-auto px-6 py-3 bg-secondary text-white rounded-lg ${
+                isSubmitting 
+                  ? 'opacity-70 cursor-not-allowed' 
+                  : 'hover:bg-secondary'
+              } focus:ring-2 focus:ring-offset-2 focus:ring-secondary transition-all duration-200`}
             >
-              {step === 3 ? "Submit Application" : "Continue"}
+              {step === 3 
+                ? (isSubmitting ? 'Submitting...' : 'Submit Application') 
+                : 'Continue'}
             </button>
           </div>
         </form>
