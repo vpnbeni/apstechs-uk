@@ -8,7 +8,7 @@ const HeroSection = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setPrevBg(currentBg); // Store the previous background
+      setPrevBg(currentBg);
       setCurrentBg((prev) => (prev + 1) % backgrounds.length);
     }, 5000);
 
@@ -16,7 +16,7 @@ const HeroSection = () => {
   }, [currentBg]);
 
   return (
-    <div className="relative min-h-screen flex items-center justify-end overflow-hidden ">
+    <div className="relative min-h-screen flex items-center justify-end overflow-hidden">
       {/* Previous Background (Fading Out) */}
       {prevBg !== null && (
         <motion.div
@@ -40,12 +40,14 @@ const HeroSection = () => {
       />
 
       {/* Content */}
-      <div className="relative text-primaryText bg-opacity-90 bg-white rounded-l-lg font-light px-10 py-10 text-3xl">
-        <div className="text-7xl sm:text-5xl">
+      <div className="relative text-primaryText bg-opacity-90 bg-white rounded-l-lg font-light p-6 md:px-10 md:py-10 text-xl md:text-3xl max-w-[90%] md:max-w-[600px]">
+        <div className="text-4xl md:text-7xl lg:text-5xl mb-4">
           <span className="text-secondary font-medium">APS</span>
           <span className="font-medium text-[#063374]">TECHS</span>
         </div>
-        Empowering Sustainable Solutions <br /> for Tomorrow's Energy Needs
+        <div className="leading-tight">
+          Empowering Sustainable Solutions <br /> for Tomorrow's Energy Needs
+        </div>
       </div>
     </div>
   );

@@ -1,17 +1,57 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { IoIosMailUnread } from "react-icons/io";
 import { SlLocationPin } from "react-icons/sl";
 import { useForm } from "react-hook-form";
+import emailjs from '@emailjs/browser';
 
 const ContactMap = () => {
-  const {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState({ type: '', message: '' });
+  
+  const { 
     register,
     handleSubmit,
     formState: { errors },
+    reset
   } = useForm();
 
-  const onSubmit = (data) => {
-    console.log("Form Submitted:", data);
+  useEffect(() => {
+    emailjs.init(import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
+  }, []);
+
+  const onSubmit = async (data) => {
+    setIsSubmitting(true);
+    setSubmitStatus({ type: '', message: '' });
+
+    try {
+      const templateParams = {
+        from_name: `${data.firstName} ${data.lastName}`,
+        from_email: data.email,
+        phone_number: data.phone,
+        message: data.message,
+        to_email: 'info@apstechs.co.uk'
+      };
+
+      await emailjs.send(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        templateParams
+      );
+
+      setSubmitStatus({
+        type: 'success',
+        message: 'Thank you for your message. We will get back to you soon!'
+      });
+      reset();
+    } catch (error) {
+      console.error('Error sending email:', error);
+      setSubmitStatus({
+        type: 'error',
+        message: 'Sorry, there was an error sending your message. Please try again later.'
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -193,12 +233,26 @@ const ContactMap = () => {
           </div>
 
           {/* Submit Button */}
-          <div>
+          <div className="space-y-4">
+            {submitStatus.message && (
+              <div className={`p-3 rounded-md ${
+                submitStatus.type === 'success' 
+                  ? 'bg-green-50 text-green-800' 
+                  : 'bg-red-50 text-red-800'
+              }`}>
+                {submitStatus.message}
+              </div>
+            )}
             <button
               type="submit"
-              className="w-full bg-primary text-white py-2 px-4 hover:bg-opacity-90 focus:ring-2 focus:ring-primary focus:ring-offset-2"
+              disabled={isSubmitting}
+              className={`w-full bg-primary text-white py-2 px-4 ${
+                isSubmitting 
+                  ? 'opacity-70 cursor-not-allowed' 
+                  : 'hover:bg-opacity-90'
+              } focus:ring-2 focus:ring-primary focus:ring-offset-2`}
             >
-              Send
+              {isSubmitting ? 'Sending...' : 'Send'}
             </button>
           </div>
         </form>

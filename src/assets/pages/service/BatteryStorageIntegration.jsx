@@ -4,7 +4,7 @@ import ContactCTA from "../../components/service/ContactCTA";
 import TestimonialSlider from "../../components/landingPage/TestimonialSlider";
 import HeroSectionTemplate from "../../components/common/HeroSectionTemplate";
 import ServiceParallaxSection from "../../components/service/ServiceParallaxSection";
-import AboutBatteryService from "../../components/service/BatteryStorageIntegration/AboutBatteryService";
+import AboutBatteryService from "../../components/service/BatteryService/AboutBatteryService";
 
 const BatteryStorageIntegration = () => {
   return (

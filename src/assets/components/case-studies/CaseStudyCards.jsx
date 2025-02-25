@@ -30,21 +30,7 @@ const CaseStudyCards = () => {
         "Confirm the stability and reliability of GT1's operation under controlled conditions.",
       image: "/assets/case-study/card/LoadBankTesting.jpeg",
       link: "case-studies/loadtestcasestudy",
-    },
-    {
-      name: "Energy-Efficient Infrastructure Design",
-      description:
-        "Designed and implemented energy-efficient infrastructure solutions to reduce environmental impact while maintaining performance.",
-      image: "/assets/case-study/card/Energy-Efficient.jpg",
-      link: "case-studies/design&supply",
-    },
-    {
-      name: "Power System Optimisation Studies",
-      description:
-        "Conducted in-depth power system studies to optimize electrical infrastructure, ensuring reliability and long-term performance.",
-      image: "/assets/case-study/card/PowerSystem.jpg",
-      link: "case-studies/design&supply",
-    },
+    }
   ];
 
   return (

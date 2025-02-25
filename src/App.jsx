@@ -54,13 +54,13 @@ const App = () => {
           path="/services/plant-engineering"
           element={<PlantEngineering />}
         />
-        {/* <Route
+        <Route
           path="/services/battery-storage-integration"
           element={<BatteryStorageIntegration />}
-        /> */}
+        />
         <Route path="/services/cable-solution" element={<CableSolution />} />
         <Route
-          path="/services/earthing-solution"
+          path="/services/earthing-solution" 
           element={<EarthingDesign />}
         />
         <Route
