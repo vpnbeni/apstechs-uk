@@ -1,5 +1,7 @@
-import { useState, useEffect } from "react";
-import emailjs from '@emailjs/browser';
+"use client"
+
+import { useState, useEffect } from "react"
+import emailjs from "@emailjs/browser"
 
 export default function JobApplicationForm() {
   const [formData, setFormData] = useState({
@@ -7,129 +9,126 @@ export default function JobApplicationForm() {
     lastName: "",
     email: "",
     phone: "",
+    country: "",
     position: "",
     linkedin: "",
+    cvLink: "",
     comments: "",
-  });
-  const [file, setFile] = useState(null);
-  const [step, setStep] = useState(1);
-  const [isDragging, setIsDragging] = useState(false);
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitStatus, setSubmitStatus] = useState({ type: '', message: '' });
+  })
+  const [step, setStep] = useState(1)
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [submitStatus, setSubmitStatus] = useState({ type: "", message: "" })
 
   useEffect(() => {
-    emailjs.init(import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
-  }, []);
+    emailjs.init(import.meta.env.VITE_EMAILJS_PUBLIC_KEY)
+  }, [])
 
-  const positions = [
-    "Power System Engineer",
-    "Protection and Control Engineer",
-    "Electrical Design Manager",
-    "Electrical Design Engineer",
-    "Graduate Engineer Trainee",
-    "Other: Submit Your CV",
-  ];
+  const countries = [
+    "United Kingdom",
+    "India",
+    "Uzbekistan"
+  ]
+
+  const positionsByCountry = {
+    "United Kingdom": [
+      "Power System Engineer",
+      "Protection and Control Engineer",
+      "Electrical Design Manager",
+      "Electrical Design Engineer",
+      "Graduate Engineer Trainee",
+      "Other: Submit Your CV",
+    ],
+    "India": [
+      "Software Developer",
+      "Power System Engineer",
+      "Protection Engineer",
+      "Electrical Design Engineer",
+      "Graduate Trainee",
+      "Other: Submit Your CV",
+    ],
+    "Uzbekistan": [
+      "Power System Engineer",
+      "Control Systems Engineer",
+      "Electrical Engineer",
+      "Project Manager",
+      "Graduate Engineer",
+      "Other: Submit Your CV",
+    ]
+  }
+
+  const positions = formData.country ? positionsByCountry[formData.country] : []
 
   const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({ ...prev, [name]: value }));
-  };
-
-  const handleFileChange = (e) => {
-    if (e.target.files?.[0]) {
-      setFile(e.target.files[0]);
-    }
-  };
-
-  const handleDragOver = (e) => {
-    e.preventDefault();
-    setIsDragging(true);
-  };
-
-  const handleDragLeave = (e) => {
-    e.preventDefault();
-    setIsDragging(false);
-  };
-
-  const handleDrop = (e) => {
-    e.preventDefault();
-    setIsDragging(false);
-    if (e.dataTransfer.files?.[0]) {
-      setFile(e.dataTransfer.files[0]);
-    }
-  };
+    const { name, value } = e.target
+    setFormData((prev) => ({ ...prev, [name]: value }))
+  }
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    setSubmitStatus({ type: '', message: '' });
+    e.preventDefault()
+    setIsSubmitting(true)
+    setSubmitStatus({ type: "", message: "" })
 
     try {
-      // Convert file to base64
-      let fileData = '';
-      if (file) {
-        const reader = new FileReader();
-        fileData = await new Promise((resolve, reject) => {
-          reader.onload = (e) => resolve(e.target.result);
-          reader.onerror = (e) => reject(e);
-          reader.readAsDataURL(file);
-        });
-      }
-
       const templateParams = {
         from_name: `${formData.firstName} ${formData.lastName}`,
         from_email: formData.email,
         phone_number: formData.phone,
+        country: formData.country,
         position: formData.position,
         linkedin_url: formData.linkedin,
+        cv_url: formData.cvLink,
         message: formData.comments,
-        cv_file: fileData,
-        cv_filename: file ? file.name : 'No file attached',
-        to_email: 'info@apstechs.co.uk'
-      };
+        to_email: "info@apstechs.co.uk",
+      }
 
       await emailjs.send(
         import.meta.env.VITE_EMAILJS_SERVICE_ID,
         import.meta.env.VITE_EMAILJS_JOB_TEMPLATE_ID,
-        templateParams
-      );
+        templateParams,
+      )
 
       setSubmitStatus({
-        type: 'success',
-        message: 'Thank you for your application. We will review it and get back to you soon!'
-      });
-      
+        type: "success",
+        message: "Thank you for your application. We will review it and get back to you soon!",
+      })
+
       // Reset form
       setFormData({
         firstName: "",
         lastName: "",
         email: "",
         phone: "",
+        country: "",
         position: "",
         linkedin: "",
+        cvLink: "",
         comments: "",
-      });
-      setFile(null);
-      setStep(1);
+      })
+      setStep(1)
     } catch (error) {
-      console.error('Error sending application:', error);
+      console.error("Error sending application:", error)
       setSubmitStatus({
-        type: 'error',
-        message: 'Sorry, there was an error submitting your application. Please try again later.'
-      });
+        type: "error",
+        message: "Sorry, there was an error submitting your application. Please try again later.",
+      })
     } finally {
-      setIsSubmitting(false);
+      setIsSubmitting(false)
     }
-  };
+  }
+
+  const handleFormSubmit = (e) => {
+    e.preventDefault()
+    if (step === 3) {
+      handleSubmit(e)
+    }
+  }
 
   return (
     <div className="min-h-screen bg-gradient-to-br mt-16 from-gray-50 to-gray-100 py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-2xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-primaryText mb-4">
-            Join Our Team
-          </h1>
+          <h1 className="text-4xl font-bold text-primaryText mb-4">Join Our Team</h1>
           <div className="flex justify-center gap-2 mb-8">
             {[1, 2, 3].map((i) => (
               <div
@@ -142,22 +141,14 @@ export default function JobApplicationForm() {
           </div>
         </div>
 
-        <form
-          onSubmit={handleSubmit}
-          className="space-y-8 bg-white shadow-lg rounded-2xl px-8 py-4"
-        >
+        <form onSubmit={handleFormSubmit} className="space-y-8 bg-white shadow-lg rounded-2xl px-8 py-4">
           {step === 1 && (
             <div className="space-y-6">
-              <h2 className="text-2xl font-semibold text-gray-900 mb-8">
-                Personal Information
-              </h2>
+              <h2 className="text-2xl font-semibold text-gray-900 mb-8">Personal Information</h2>
 
               <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
                 <div>
-                  <label
-                    htmlFor="firstName"
-                    className="block text-sm font-medium text-gray-700 mb-1"
-                  >
+                  <label htmlFor="firstName" className="block text-sm font-medium text-gray-700 mb-1">
                     First Name <span className="text-red-500">*</span>
                   </label>
                   <input
@@ -172,10 +163,7 @@ export default function JobApplicationForm() {
                   />
                 </div>
                 <div>
-                  <label
-                    htmlFor="lastName"
-                    className="block text-sm font-medium text-gray-700 mb-1"
-                  >
+                  <label htmlFor="lastName" className="block text-sm font-medium text-gray-700 mb-1">
                     Last Name <span className="text-red-500">*</span>
                   </label>
                   <input
@@ -192,10 +180,7 @@ export default function JobApplicationForm() {
               </div>
 
               <div>
-                <label
-                  htmlFor="email"
-                  className="block text-sm font-medium text-gray-700 mb-1"
-                >
+                <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
                   Email <span className="text-red-500">*</span>
                 </label>
                 <input
@@ -211,10 +196,7 @@ export default function JobApplicationForm() {
               </div>
 
               <div>
-                <label
-                  htmlFor="phone"
-                  className="block text-sm font-medium text-gray-700 mb-1"
-                >
+                <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">
                   Phone <span className="text-red-500">*</span>
                 </label>
                 <input
@@ -233,15 +215,38 @@ export default function JobApplicationForm() {
 
           {step === 2 && (
             <div className="space-y-6">
-              <h2 className="text-2xl font-semibold text-gray-900 mb-8">
-                Professional Details
-              </h2>
+              <h2 className="text-2xl font-semibold text-gray-900 mb-8">Professional Details</h2>
 
               <div>
-                <label
-                  htmlFor="position"
-                  className="block text-sm font-medium text-gray-700 mb-1"
+                <label htmlFor="country" className="block text-sm font-medium text-gray-700 mb-1">
+                  Country <span className="text-red-500">*</span>
+                </label>
+                <select
+                  id="country"
+                  name="country"
+                  required
+                  value={formData.country}
+                  onChange={(e) => {
+                    const newCountry = e.target.value;
+                    setFormData(prev => ({
+                      ...prev,
+                      country: newCountry,
+                      position: "" // Reset position when country changes
+                    }));
+                  }}
+                  className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-secondary focus:border-transparent transition-all duration-200 outline-none appearance-none bg-white"
                 >
+                  <option value="">Select a country</option>
+                  {countries.map((country) => (
+                    <option key={country} value={country}>
+                      {country}
+                    </option>
+                  ))}
+                </select>
+              </div>
+
+              <div>
+                <label htmlFor="position" className="block text-sm font-medium text-gray-700 mb-1">
                   Position <span className="text-red-500">*</span>
                 </label>
                 <select
@@ -250,9 +255,12 @@ export default function JobApplicationForm() {
                   required
                   value={formData.position}
                   onChange={handleInputChange}
-                  className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-secondary focus:border-transparent transition-all duration-200 outline-none appearance-none bg-white"
+                  disabled={!formData.country}
+                  className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-secondary focus:border-transparent transition-all duration-200 outline-none appearance-none bg-white disabled:bg-gray-100 disabled:cursor-not-allowed"
                 >
-                  <option value="">Select a position</option>
+                  <option value="">
+                    {formData.country ? "Select a position" : "Please select a country first"}
+                  </option>
                   {positions.map((pos) => (
                     <option key={pos} value={pos}>
                       {pos}
@@ -262,10 +270,7 @@ export default function JobApplicationForm() {
               </div>
 
               <div>
-                <label
-                  htmlFor="linkedin"
-                  className="block text-sm font-medium text-gray-700 mb-1"
-                >
+                <label htmlFor="linkedin" className="block text-sm font-medium text-gray-700 mb-1">
                   LinkedIn URL
                 </label>
                 <input
@@ -280,75 +285,29 @@ export default function JobApplicationForm() {
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">
-                  CV Upload <span className="text-red-500">*</span>
+                <label htmlFor="cvLink" className="block text-sm font-medium text-gray-700 mb-1">
+                  CV Link <span className="text-red-500">*</span>
                 </label>
-                <div
-                  className={`relative border-2 border-dashed rounded-lg p-8 text-center transition-all duration-200 ${
-                    isDragging
-                      ? "border-secondary bg-green-50"
-                      : "border-gray-300 hover:border-gray-400"
-                  }`}
-                  onDragOver={handleDragOver}
-                  onDragLeave={handleDragLeave}
-                  onDrop={handleDrop}
-                >
-                  <input
-                    type="file"
-                    id="cv"
-                    accept=".pdf,.doc,.docx"
-                    onChange={handleFileChange}
-                    className="absolute inset-0 w-full h-full opacity-0 cursor-pointer"
-                  />
-                  <div className="space-y-2">
-                    <svg
-                      className="mx-auto h-12 w-12 text-gray-400"
-                      stroke="currentColor"
-                      fill="none"
-                      viewBox="0 0 48 48"
-                      aria-hidden="true"
-                    >
-                      <path
-                        d="M28 8H12a4 4 0 00-4 4v20m32-12v8m0 0v8a4 4 0 01-4 4H12a4 4 0 01-4-4v-4m32-4l-3.172-3.172a4 4 0 00-5.656 0L28 28M8 32l9.172-9.172a4 4 0 015.656 0L28 28m0 0l4 4m4-24h8m-4-4v8m-12 4h.02"
-                        strokeWidth={2}
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                    </svg>
-                    <div className="text-sm text-gray-600">
-                      {file ? (
-                        <p className="text-secondary font-medium">
-                          {file.name}
-                        </p>
-                      ) : (
-                        <p>
-                          <span className="text-secondary font-medium">
-                            Click to upload
-                          </span>{" "}
-                          or drag and drop
-                        </p>
-                      )}
-                    </div>
-                    <p className="text-xs text-gray-500">
-                      PDF, DOC, DOCX up to 15MB
-                    </p>
-                  </div>
-                </div>
+                <input
+                  type="url"
+                  id="cvLink"
+                  name="cvLink"
+                  required
+                  value={formData.cvLink}
+                  onChange={handleInputChange}
+                  className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-secondary focus:border-transparent transition-all duration-200 outline-none"
+                  placeholder="Enter your CV link"
+                />
               </div>
             </div>
           )}
 
           {step === 3 && (
             <div className="space-y-6">
-              <h2 className="text-2xl font-semibold text-gray-900 mb-8">
-                Additional Information
-              </h2>
+              <h2 className="text-2xl font-semibold text-gray-900 mb-8">Additional Information</h2>
 
               <div>
-                <label
-                  htmlFor="comments"
-                  className="block text-sm font-medium text-gray-700 mb-1"
-                >
+                <label htmlFor="comments" className="block text-sm font-medium text-gray-700 mb-1">
                   Tell Us About Yourself
                 </label>
                 <textarea
@@ -364,6 +323,17 @@ export default function JobApplicationForm() {
             </div>
           )}
 
+          {/* Status Message */}
+          {submitStatus.message && (
+            <div
+              className={`mb-6 p-4 rounded-md text-center ${
+                submitStatus.type === "success" ? "bg-green-50 text-green-800" : "bg-red-50 text-red-800"
+              }`}
+            >
+              {submitStatus.message}
+            </div>
+          )}
+
           <div className="flex justify-between pt-6">
             {step > 1 && (
               <button
@@ -374,32 +344,29 @@ export default function JobApplicationForm() {
                 Back
               </button>
             )}
-            {submitStatus.message && (
-              <div className={`p-3 rounded-md ${
-                submitStatus.type === 'success' 
-                  ? 'bg-green-50 text-green-800' 
-                  : 'bg-red-50 text-red-800'
-              }`}>
-                {submitStatus.message}
-              </div>
-            )}
             <button
-              type={step === 3 ? "submit" : "button"}
-              onClick={() => step < 3 && setStep(step + 1)}
+              type="button"
+              onClick={() => {
+                if (step < 3) {
+                  setStep(step + 1)
+                } else if (step === 3) {
+                  handleSubmit(new Event('submit'))
+                }
+              }}
               disabled={isSubmitting}
               className={`ml-auto px-6 py-3 bg-secondary text-white rounded-lg ${
-                isSubmitting 
-                  ? 'opacity-70 cursor-not-allowed' 
-                  : 'hover:bg-secondary'
+                isSubmitting ? "opacity-70 cursor-not-allowed" : "hover:bg-secondary"
               } focus:ring-2 focus:ring-offset-2 focus:ring-secondary transition-all duration-200`}
             >
-              {step === 3 
-                ? (isSubmitting ? 'Submitting...' : 'Submit Application') 
-                : 'Continue'}
+              {step === 3
+                ? isSubmitting
+                  ? "Submitting..."
+                  : "Submit Application"
+                : "Continue"}
             </button>
           </div>
         </form>
       </div>
     </div>
-  );
+  )
 }
