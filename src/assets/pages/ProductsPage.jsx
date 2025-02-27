@@ -1,13 +1,11 @@
 import React from "react";
-import Products from "./Products";
-import ProductHeroSection from "../components/product/ProductHeroSection";
+import Maintainence from "../components/common/Maintainence";
 
 const ProductsPage = () => {
   return (
-    <div className="pt-[96px] w-full overflow-x-hidden">
-      <ProductHeroSection />
-      <Products />
-    </div>
+    <>
+      <Maintainence />
+    </>
   );
 };
 

@@ -9,9 +9,9 @@ export default function JobApplicationForm() {
     lastName: "",
     email: "",
     phone: "",
-    country: "",
+    country: "",   
     position: "",
-    linkedin: "",
+    linkedin: "",  
     cvLink: "",
     comments: "",
   })

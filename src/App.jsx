@@ -28,6 +28,7 @@ import GalleryPage from "./assets/pages/gallery/GalleryPage";
 import Products from "./assets/pages/Products";
 import ProductsPage from "./assets/pages/ProductsPage";
 import Product from "./assets/pages/Product";
+import Maintainence from "./assets/components/common/Maintainence";
 
 const App = () => {
   return (
@@ -37,59 +38,68 @@ const App = () => {
       <Routes>
         {/* Main Routes */}
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/about" element={About ? <About /> : <Maintainence />} />
         <Route path="/products" element={<ProductsPage />} />
-        <Route path="/credit" element={<CreditPage />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/case-studies" element={<CaseStudies />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/careers" element={<Careers />} />
-        <Route path="/apply" element={<JobApplicationForm />} />
-        <Route path="/temp" element={<JobApplicationForm />} />
-        <Route path="/gallery" element={<GalleryPage />} />
-        <Route path="/product/:productId" element={<Product />} />
+        <Route path="/credit" element={CreditPage ? <CreditPage /> : <Maintainence />} />
+        <Route path="/contact" element={Contact ? <Contact /> : <Maintainence />} />
+        <Route path="/case-studies" element={CaseStudies ? <CaseStudies /> : <Maintainence />} />
+        <Route path="/services" element={Services ? <Services /> : <Maintainence />} />
+        <Route path="/careers" element={Careers ? <Careers /> : <Maintainence />} />
+        <Route path="/apply" element={JobApplicationForm ? <JobApplicationForm /> : <Maintainence />} />
+        <Route path="/temp" element={<Maintainence />} />
+        <Route path="/gallery" element={GalleryPage ? <GalleryPage /> : <Maintainence />} />
+        <Route path="/product/:productId" element={Product ? <Product /> : <Maintainence />} />
 
         {/* Service Sub-Routes */}
         <Route
           path="/services/plant-engineering"
-          element={<PlantEngineering />}
+          element={PlantEngineering ? <PlantEngineering /> : <Maintainence />}
         />
         <Route
           path="/services/battery-storage-integration"
-          element={<BatteryStorageIntegration />}
+          element={BatteryStorageIntegration ? <BatteryStorageIntegration /> : <Maintainence />}
         />
-        <Route path="/services/cable-solution" element={<CableSolution />} />
+        <Route 
+          path="/services/cable-solution" 
+          element={CableSolution ? <CableSolution /> : <Maintainence />} 
+        />
         <Route
           path="/services/earthing-solution" 
-          element={<EarthingDesign />}
+          element={EarthingDesign ? <EarthingDesign /> : <Maintainence />}
         />
         <Route
           path="/services/protection-design"
-          element={<ProtectionDesign />}
+          element={ProtectionDesign ? <ProtectionDesign /> : <Maintainence />}
         />
         <Route
           path="/services/power-system"
-          element={<PowerSystemStudiesService />}
+          element={PowerSystemStudiesService ? <PowerSystemStudiesService /> : <Maintainence />}
         />
-        <Route path="/services/survey" element={<Survey />} />
+        <Route 
+          path="/services/survey" 
+          element={Survey ? <Survey /> : <Maintainence />} 
+        />
 
         {/* Case Studies Sub-Routes */}
         <Route
           path="/case-studies/design&supply"
-          element={<DesignAndSupply />}
+          element={DesignAndSupply ? <DesignAndSupply /> : <Maintainence />}
         />
         <Route
           path="/case-studies/earthingsystemdesign"
-          element={<EarthingSystemDesign />}
+          element={EarthingSystemDesign ? <EarthingSystemDesign /> : <Maintainence />}
         />
         <Route
           path="/case-studies/powersystemstudies"
-          element={<PowerSystemStudies />}
+          element={PowerSystemStudies ? <PowerSystemStudies /> : <Maintainence />}
         />
         <Route
           path="/case-studies/loadtestcasestudy"
-          element={<LoadTestCaseStudy />}
+          element={LoadTestCaseStudy ? <LoadTestCaseStudy /> : <Maintainence />}
         />
+
+        {/* Catch all route for undefined pages */}
+        <Route path="*" element={<Maintainence />} />
       </Routes>
       <Footer />
     </Router>
