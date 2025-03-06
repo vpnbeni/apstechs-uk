@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { FaDownload } from "react-icons/fa";
+import { PhoneCall } from "lucide-react";
 
 const Footer = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -40,13 +41,15 @@ const Footer = () => {
           APS brochure
         </div>
 
-        <div>
-          <span className="font-medium mr-2">Tel:</span>
+        <div className="flex items-center">
+          <span className="font-medium mr-2">
+            <PhoneCall />
+          </span>
           <a href="tel:+44 3300431870" className="text-blue-500 underline">
             +44 3300431870
           </a>
         </div>
-        <div>
+        <div className="flex items-center">
           <span className="font-medium mr-2">Whatsapp:</span>
           <a
             href="https://wa.me/447429924413"

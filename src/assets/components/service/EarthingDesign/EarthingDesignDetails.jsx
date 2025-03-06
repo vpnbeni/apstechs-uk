@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import DownloadBtn from "../../common/DownloadBtn";
 import { FaDownload } from "react-icons/fa";
 
 export default function EarthingDesignDetails() {

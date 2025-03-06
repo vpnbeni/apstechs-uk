@@ -6,7 +6,6 @@ import CoreValues from "../../components/service/CoreValues";
 import ServiceParallaxSection from "../../components/service/ServiceParallaxSection";
 import TestimonialSlider from "../../components/landingPage/TestimonialSlider";
 import ContactCTA from "../../components/service/ContactCTA";
-import DownloadBtn from "../../components/common/DownloadBtn";
 
 const CableSolution = () => {
   return (

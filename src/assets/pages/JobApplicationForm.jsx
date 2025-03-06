@@ -7,7 +7,7 @@ export default function JobApplicationForm() {
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
-    email: "",
+    email: "", 
     phone: "",
     country: "",   
     position: "",

@@ -206,9 +206,10 @@ const CreditPage = () => {
             Photo by Markus Spiske:
             https://www.pexels.com/photo/black-and-white-electric-plug-218445/
           </div>
+          Photo by Pixabay: https://www.pexels.com/photo/low-angle-shot-of-manufacturing-plant-under-blue-sky-257700/
         </div>
       </div>
-    </div>
+    </div>  
   );
 };
 

@@ -14,7 +14,7 @@ const GoogleMaps = () => {
       ></iframe>
 
       <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.3970689674456!2d77.14089507550135!3d28.647827275656436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d03b403173e55%3A0x416867d6c278ca28!2sAPS%20Hydro%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1739290448841!5m2!1sen!2sin"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.3964580226016!2d77.14089807554313!3d28.647845575656508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d03224176f1d5%3A0xc13da152f58cab0e!2sAPSTECHS%20INFRATAK%20PVT.%20LTD.!5e0!3m2!1sen!2sin!4v1740680235539!5m2!1sen!2sin"
         style={{ border: 0 }}
         className="w-full"
         height="400"

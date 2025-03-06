@@ -1,5 +1,4 @@
 import { useState } from "react";
-import DownloadBtn from "../../common/DownloadBtn";
 import { FaDownload } from "react-icons/fa";
 const tabContent = {
   cableSizing: {
